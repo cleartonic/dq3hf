@@ -1,0 +1,448 @@
+areas:
+    Aliahan:
+        connections:
+            Reeve:
+            Promontory Cave:
+            
+    Promontory Cave:
+        connections:
+            Aliahan:
+            
+    Reeve:
+        connections:
+            Najimi Tower:
+            Shrine of Temptation:
+            Cave of Temptation Aliahan Side:
+            Portoga Lighthouse:
+                reqs: final_key
+                
+    Shrine of Temptation:
+        connections:
+            Reeve:
+
+    Najimi Tower:
+        connections:
+            Aliahan:
+            Reeve:
+
+    Cave of Temptation Aliahan Side:
+        connections:
+            Reeve:
+            Cave of Temptation Romaly Side:
+                reqs: magic_ball, thief_key
+    Cave of Temptation Romaly Side:
+        connections:
+            Romaly:
+        
+    Romaly:        
+        connections:
+            Cave of Temptation Romaly Side:
+                reqs: thief_key
+            Kazave:
+            Ashalam:
+            Pachisi Track Romaly:
+            Portoga Shrine Romaly Side:
+                reqs: magic_key
+                
+
+    Portoga Lighthouse:
+        connections:
+            Reeve:
+                reqs: final_key
+
+    Portoga Shrine Romaly Side:
+        connections:
+            Romaly:
+            Portoga Shrine Portoga Side:
+                reqs: magic_key
+            West Edinbear Shrine:
+                reqs: final_key
+
+    Portoga Shrine Portoga Side:
+        connections:
+            Portoga:
+            Portoga Shrine Romaly Side:
+                reqs: magic_key
+            West Edinbear Shrine:
+                reqs: final_key
+           
+
+    Portoga:
+        connections:
+            Portoga Shrine Portoga Side:
+                reqs: magic_key
+            Sea:
+                reqs: kandar_1, kandar_2, black_pepper
+                
+
+                
+    Pirate Hideout:
+        connections:
+            Arb Tower:
+
+    Arb Tower:
+        connections:
+            Pirate Hideout:
+                
+    Kazave:
+        connections:
+            Romaly:
+            Shampane Tower:
+            Noaniels:
+            
+    Noaniels:
+        connections:
+            Underworld Lake:
+            Elf Village:
+            
+    Underworld Lake:
+        connections:
+            Noaniels:
+
+    Elf Village:
+        connections:
+            Noaniels:
+            
+    Shampane Tower:
+        connections:
+            Kazave:
+        reward: kandar_1
+            
+    Ashalam:
+        connections:
+            Romaly:
+            Isis Town:
+            Bahn Tunnel Ashalam Side:
+            Pachisi Track Ashalam:
+            
+    Isis Town:
+        connections:
+            Ashalam:
+            Pyramid:
+            Isis Castle:
+            Desert Shrine:
+            
+            
+    Isis Castle:
+        connections:
+            Isis Town:
+    Desert Shrine:
+        connections:
+            Isis Town:
+    Pyramid:
+        connections:
+            Isis Town:
+            
+            
+    Bahn Tunnel Ashalam Side:
+        connections:
+            Ashalam:
+            Bahn Tunnel Baharata Side:
+                reqs: king_letter, thief_key
+                
+    Bahn Tunnel Baharata Side:
+        connections:
+            Baharata:
+            Cape Olivia Shrine:
+            
+    Baharata:
+        connections:
+            Bahn Tunnel Baharata Side:
+            Kandar Cave:
+            Dharma:
+            Pachisi Track Cape:
+            
+        
+
+    Kandar Cave:
+        connections:
+            Baharata:
+        reward: kandar_2
+            
+
+    Dharma:
+        connections:
+            Garuna Tower:
+            Baharata:
+            Muor:
+            East Dharma Shrine:
+
+
+    Garuna Tower:
+        connections:
+            Dharma:
+    Muor:
+        connections:
+            Dharma:    
+            East Dharma Shrine:
+    
+    East Dharma Shrine:
+        connections:
+            North Tedanki Shrine:
+                reqs: final_key
+            
+    North Tedanki Shrine:
+        connections:
+            East Dharma Shrine:
+                reqs: final_key
+    
+    Cape Olivia Shrine:
+        connections:
+            West Edinbear Shrine:
+                reqs: final_key
+            East Samanosa Shrine:
+                reqs: final_key
+            Bahn Tunnel Baharata Side:
+
+    West Edinbear Shrine:
+        connections:
+            Portoga Shrine Romaly Side:
+                reqs: final_key, magic_key         
+            Portoga Shrine Portoga Side:
+                reqs: final_key, magic_key
+            Cape Olivia Shrine:
+                reqs: final_key
+            East Samanosa Shrine:
+                reqs: final_key
+    
+    East Samanosa Shrine:
+        connections:
+            Cape Olivia Shrine:
+                reqs: final_key
+            West Edinbear Shrine:
+                reqs: final_key
+            Samanosa:
+                
+                
+    Sea:
+        connections:
+            Edinbear:
+            Romaly:
+            Aliahan:
+            Portoga:
+            Ghost Ship:
+                reqs: sailor_bone
+            Sioux:
+            Pirate Hideout:
+            Final Key Shrine:
+                reqs: thirsty_pitcher
+            Merchant Town:
+            Sailor Bone Hut:
+            Luzami:
+            Lancel:
+            Ramia Shrine:
+            Tedanki:
+            Gaia Volcano:
+            Hobbit Shrine:
+            Cape Olivia Strait:
+    
+    Ghost Ship:
+        connections:
+            None:
+    Edinbear:
+        connections:
+            None:
+    Sioux:
+        connections:
+            None:
+    Pirate Hideout:
+        connections:
+            Arb Tower:
+    Arb Tower:
+        connections:
+            Pirate Hideout:
+    Final Key Shrine:
+        connections:
+            None:
+    Merchant Town:
+        connections:
+            None:
+    Sailor Bone Hut:
+        connections:
+            None:
+    Tedanki:
+        connections:
+            None:
+    Lancel:
+        connections:
+            Gaia Navel:
+    Gaia Navel:
+        connections:
+            Lancel:
+    Gaia Volcano:
+        connections:
+            Necrogond Cave:
+                reqs: gaia_sword
+    Necrogond Cave:
+        connections:
+            Necrogond Shrine:
+    Necrogond Shrine:
+        connections:
+            Necrogond Cave:
+    Hobbit Shrine:
+        connections:
+            None:
+    Cape Olivia Strait:
+        connections:
+            Shrine Prison:
+                reqs: lovely_memories, final_key
+
+    Shrine Prison:
+        connections:
+            None:
+
+
+    Samanosa:
+        connections:
+            East Samanosa Shrine:
+            Ra Mirror Cave:
+            
+    Ra Mirror Cave:
+        connections:
+            Samanosa:
+            
+    Ramia Shrine:
+        connections:
+            Flight:
+                reqs: blue_orb, yellow_orb, purple_orb, silver_orb, green_orb, red_orb
+                
+                
+        
+    Flight:
+        connections:
+            Edinbear:
+            Romaly:
+            Aliahan:
+            Portoga:
+            Ghost Ship:
+            Sioux:
+            Pirate Hideout:
+            Merchant Town:
+            Sailor Bone Hut:
+            Luzami:
+            Lancel:
+            Ramia Shrine:
+            Tedanki:
+            Zipangu:
+            Gaia Volcano:
+            Hobbit Shrine:
+            Dragon Queen Castle:
+            Baramos Castle:
+            Gaia Pit:
+            
+    Luzami:
+        connections:
+            None:
+            
+    Dragon Queen Castle:
+        connections:
+            Bonus Dungeon:
+                req: zoma
+                
+    Zipangu:
+        connections:
+            Zipangu Cave:
+            Pachisi Track Zipangu:
+                reqs: zoma
+            
+    Zipangu Cave:
+        connections:
+            Zipangu:
+                
+    Baramos Castle:
+        connections:
+            None:
+        reward: baramos
+    Gaia Pit:
+        connections:
+            Dark World Harbor:
+                reqs: baramos
+            
+    Dark World Harbor:
+        connections:
+            Ludatorm:
+            
+    Ludatorm:
+        connections:
+            Dark World Harbor:
+            Loto Cave:
+            Garin Shrine:
+            Mountain Cave:
+            Domdora:
+            Mercado:
+            Rimuldar:
+            Rubiss Shrine:
+            Rubiss Tower:
+            Rain Staff Shrine:
+            Kol:
+            Marsh Cave:
+            Zoma Castle:
+                reqs: rain_staff, stones_of_sunlight, sacred_talisman
+                
+    Zoma Castle:
+        connections:
+            None:
+        reward: zoma
+            
+            
+    Bonus Dungeon:
+        connections:
+            None:
+            
+    Loto Cave:
+        connections:
+            None:
+    Rubiss Tower:
+        connections:
+            None:
+    Garin Shrine:
+        connections:
+            None:
+    Mountain Cave:
+        connections:
+            None:
+    Domdora:
+        connections:
+            Ludatorm:
+    Mercado:
+        connections:
+            Ludatorm:
+    Rimuldar:
+        connections:
+            Ludatorm:
+    Rubiss Shrine:
+        connections:
+            None:
+    Rain Staff Shrine:
+        connections:
+            None:
+    Kol:
+        connections:
+            Pachisi Track Kol:
+            Ludatorm:
+    Marsh Cave:
+        connections:
+            None:
+            
+    Pachisi Track Romaly:
+        connections:
+            None:
+    Pachisi Track Ashalam:
+        connections:
+            None:
+    Pachisi Track Cape:
+        connections:
+            None:
+    Pachisi Track Kol:
+        connections:
+            None:
+    Pachisi Track Zipangu:
+        connections:
+            None:
+            
+            
+            
+            
+            
+            
+            

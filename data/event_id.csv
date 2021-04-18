@@ -1,0 +1,42 @@
+idx,name,og_name,address,type,data,parsed_item_id,parsed_event_flags,valid
+1,Reeve Elder,Magic Ball,CC9F71,bag_id,a9aa00a2040122c581c7a902000c41356b,aa,0200,valid
+2,Underworld Lake Bottom,Dream Ruby,"CC9FA4, CACB4C",bag_id,a9ae00a2040122c581c7a910000c41356b,ae,1000,valid
+3,Elf Queen,Wake-Up Powder,CC9FB5,bag_id,a9af00a2040122c581c7a920000c41356b,af,2000,valid
+4,Isis Basement,Starry Ring,CC9FC6,bag_id,a98700a2040122c581c7a940000c41356b,87,4000,valid
+5,Isis Queen Room,Wizard Ring,CC9FD7,bag_id,a98500a2040122c581c7a908000c50356b,85,0800,valid
+6,Portoga Throne,King's Letter,CC9FF9,bag_id,a9b000a2040122c581c7a980000c41356b,b0,8000,valid
+7,Muor Family,Ortega's Helmet,CCA02C,bag_id,a97600a2040122c581c7a908000c42356b,76,0800,valid
+8,Change Staff Man,Sailor's Bone,CCA05F,bag_id,a9c100a2040122c581c7a940000c42356b,c1,4000,valid
+9,Tedanki Prisoner,Green Orb,CCA0B4,bag_id,a9cf00a2040122c581c7a902000c43356b,cf,0200,valid
+10,Orochi II,Purple Orb,"CCA0E7, CB40D1",bag_id,a9cd00a2040122c581c7a910000c43356b,cd,1000,valid
+11,Merchant Town,Yellow Orb,CCA0F8,bag_id,a9cc00a2040122c581c7a920000c4335a9,cc,2000,valid
+12,Dancer Sidequest,Magic Bikini,CCA13C,bag_id,a94f00a2040122c581c7a901000c4b356b,4f,0100,valid
+13,Rubiss Statue,Sacred Talisman,CCA15E,bag_id,a98400a2040122c581c7a902000c44356b,84,0200,valid
+14,,Magic Map,CC9F82,bag_id,a9d100a2040122c581c7a904000c41356b,d1,0400,invalid
+15,,Golden Crown,CC9F93,bag_id,a97200a2040122c581c7a908000c41356b,72,0800,invalid
+16,,Magic Key,CC9FE8,bag_id,a9ac00a2040122c581c7a980000c40356b,ac,8000,invalid
+17,,Black Pepper,CCA00A,bag_id,a9a200a2040122c581c7a901000c42356b,a2,0100,invalid
+18,,Black Pepper,CCA01B,bag_id,a9a200a2040122c581c7a902000c19366b,a2,0200,invalid
+19,,Mirror Of Ra,CCA03D,bag_id,a9a400a2040122c581c7a910000c42356b,a4,1000,invalid
+20,,Change Staff,CCA04E,bag_id,a9a700a2040122c581c7a920000c42356b,a7,2000,invalid
+21,,Lovely Memories,CCA070,bag_id,a9be00a2040122c581c7a980000c42356b,be,8000,invalid
+22,,Gaia Sword,CCA081,bag_id,a91200a2040122c581c7a901000c43356b,12,0100,invalid
+23,,Thirsty Pitcher,CCA092,bag_id,a9a500a2040122c581c7a904000c42356b,a5,0400,invalid
+24,,Final Key,CCA0A3,bag_id,a9ad00a2040122c581c7a901000c41356b,ad,0100,invalid
+25,,Blue Orb,CCA0C5,bag_id,a9ce00a2040122c581c7a904000c43356b,ce,0400,invalid
+26,,Red Orb,CCA0D6,bag_id,a9cb00a2040122c581c7a908000c43356b,cb,0800,invalid
+27,,Empty,CCA10F,bag_id,a9ca00a2040122c581c7a940000c43356b,00,0122,invalid
+28,,Empty,CCA11A,bag_id,40000c43356ba9c500a2040122c581c7a9,00,0122,invalid
+29,,Empty,CCA12B,bag_id,80000c43356ba92d00a2040122c581c76b,00,0122,invalid
+30,,Light Armor,CCA14D,bag_id,a94500a2040122c581c7a910000c44356b,45,1000,invalid
+31,,Orichalcum,CCA16F,bag_id,a9b100a2040122c581c7a904000c44356b,b1,0400,invalid
+32,,King's Sword,CCA180,bag_id,a91e00a2040122c581c7a908000c44356b,1e,0800,invalid
+33,,Fairy Map,CCA191,bag_id,a9d200a2040122c581c7a901000c44356b,d2,0100,invalid
+34,,Sun Stone,CCA1A2,bag_id,a9c800a2040122c581c7a920000c44356b,c8,2000,invalid
+35,,Fairy Flute,CCA1B3,bag_id,a9c300a2040122c581c7a940000c44356b,c3,4000,invalid
+36,,Rain Staff,CCA1C4,bag_id,a91100a2040122c581c7a980000c44356b,11,8000,invalid
+37,,Rainbow Drop,CCA1D5,bag_id,a9c900a2040122c581c7a901000c45356b,c9,0100,invalid
+38,,Empty,CCA1E6,bag_id,a900008d0bc1a90300a2050022c581c76b,00,0022,invalid
+39,,Empty,CCA1F7,bag_id,a900008d0bc1a90100a2050122c581c76b,00,0122,invalid
+40,,Empty,CCA208,bag_id,a900008d0bc1a90100a2050122c581c76b,00,0122,invalid
+0,,Thief Key,CC9F5F,bag_id,a9ab00a2040122c581c7a940000c40356b,ab,4000,valid

@@ -1,0 +1,460 @@
+id,address,data,item_data,item_lookup,check_type,og_name,area,location,type,valid,reqs
+1,c87075,844305005bfd00,005b,05b,pickup,Wisdom Seed,Reeve,Elder House 1F Pot,search,valid,thief_key
+2,c8707c,47c306805c0001,805c,85c,pickup,Antidote Herb,Reeve,Elder House 2F Drawer,search,valid,thief_key
+3,C87083,00ca160068fe00,0068,068,pickup,Small Medal,Reeve,Field,search,valid,
+4,C8708A,ca0205006dff00,006d,06d,pickup,Muscle Guidebook,Reeve,House Bookshelf,search,valid,
+5,C87091,47cd0d00720401,0072,072,pickup,Pachisi Ticket,Portoga,Inn Drawer,search,valid,
+6,C87098,80cd0900680501,0068,068,pickup,Small Medal,Portoga,Stable,search,valid,
+7,C8709F,4a8406006f0601,006f,06f,pickup,Tragic Tale,Portoga,Hidden Passage Right Bookshelf,search,valid,
+8,C870A6,44c30700680701,0068,068,pickup,Small Medal,Portoga,Hidden Passage Pot,search,valid,
+9,C870AD,9b420a00590801,0059,059,pickup,Strength Seed,Portoga,House Sack,search,valid,
+10,C870B4,c14410005a0201,005a,05a,pickup,Stamina Seed,Portoga,Castle Vault Middle,chest,valid,thief_key
+11,C870BB,014510001c0301,001c,01c,pickup,Mist Staff,Portoga,Castle Vault Right,chest,valid,thief_key
+12,C870C2,81441000490101,0049,049,pickup,Angry Tattoo,Portoga,Castle Vault Left,chest,valid,thief_key
+13,C870C9,01440700680a01,0068,068,pickup,Small Medal,Merchant Town,Form 3 Throne Right,chest,no_keys,
+14,C870D0,c14207804d0901,804d,84d,pickup,Golden Beak,Merchant Town,Form 3 Throne Left,chest,no_keys,
+15,C870D7,c0c60d00720b01,0072,072,pickup,Pachisi Ticket,Merchant Town,Form 2 Pool,search,no_keys,
+16,C870DE,47cc0700720c01,0072,072,pickup,Pachisi Ticket,Merchant Town,Form 3 Inn Drawer,search,no_keys,thief_key
+17,C870E5,47cc0700720c01,0072,072,pickup,Pachisi Ticket,Merchant Town,Form 4 Inn Drawer,search,no_keys,
+18,C870EC,07430680470d01,8047,847,pickup,Garter Belt,Merchant Town,Form 3 Theater Left Drawer,search,no_keys,
+19,C870F3,47430600400e01,0040,040,pickup,Bunny Ears,Merchant Town,Form 3 Theater Right Drawer,search,no_keys,
+20,C870FA,074306004b0d01,004b,04b,pickup,Pacifier,Merchant Town,Form 4 Theater Left Drawer,search,no_keys,
+21,C87101,87420600680f01,0068,068,pickup,Small Medal,Merchant Town,House Drawer,search,no_keys,
+22,C87108,c0c21000721001,0072,072,pickup,Pachisi Ticket,Noaniels,Town Wall,search,valid,
+23,C8710F,84c70c04591101,0459,059,pickup,Strength Seed,Noaniels,House E Pot,search,valid,
+24,C87116,47c306002b1201,002b,02b,pickup,Leather Kilt,Noaniels,Inn 2F Left Room Drawer,search,valid,
+25,C8711D,07c608805f1301,805f,85f,pickup,Full Moon Herb,Noaniels,Inn 2F Right Room Right Drawer,search,valid,
+26,C87124,04c30680591401,8059,859,pickup,Agility Seed,Noaniels,House W 1F Pot,search,valid,
+27,C8712B,8a8306006f1501,006f,06f,pickup,Tragic Tale,Noaniels,House W 2F Bookshelf,search,valid,
+28,C87132,c8871500631601,0063,063,pickup,Moth Powder,Ashalam,Inn Drawer,search,valid,thief_key
+29,C87139,4a050680701701,8070,870,pickup,Joke Book,Ashalam,House 2F Bookshelf,search,valid,"thief_key, magic_key"
+30,C87140,00440700681801,0068,068,pickup,Small Medal,Ashalam,House 2F Pool,search,valid,"thief_key, magic_key"
+31,C87147,08830500721901,0072,072,pickup,Pachisi Ticket,Ashalam,House 1F Drawer,search,valid,
+32,C8714E,47c80f00721a01,0072,072,pickup,Pachisi Ticket,Baharata,House 1F Drawer,search,valid,
+33,C87155,87420880261b01,8026,826,pickup,Traveler Clothes,Baharata,House 1 2F Right Drawer,search,valid,
+34,C8715C,07c60500681c01,0068,068,pickup,Small Medal,Baharata,House 2 2F Right Room Drawer,search,valid,magic_key
+35,C87163,81c90500681d01,0068,068,pickup,Small Medal,Lancel,Interior Corridor,search,valid,final_key
+36,C8716A,c0470f00681e01,0068,068,pickup,Small Medal,Lancel,Exterior Corridor,chest,valid,
+37,C87171,07440700721f01,0072,072,pickup,Pachisi Ticket,Lancel,House Drawer,search,valid,
+38,C87178,00430904682101,0468,068,pickup,Small Medal,Mercado,W Room,search,valid,
+39,C8717F,a0c31a80422201,8042,842,pickup,Wizard Ring,Mercado,SW Foundation,search,valid,
+40,C87186,00c81a00722301,0072,072,pickup,Pachisi Ticket,Mercado,SE Table,search,valid,
+41,C8718D,00c70f86302c01,8630,830,pickup,Dark Outfit,Mercado,Secret Area NE,search,no_keys,zoma
+42,C87194,ca0207006b2401,006b,06b,pickup,Kindly Book,Mercado,House 2F Bookshelves 1st,search,valid,thief_key
+43,C8719B,0a0307006c2501,006c,06c,pickup,Lady Manual,Mercado,House 2F Bookshelves 2nd,search,valid,thief_key
+44,C871A2,4a0307806c2601,806c,86c,pickup,Smart Book,Mercado,House 2F Bookshelves 3rd,search,valid,thief_key
+45,C871A9,8a0307806d2701,806d,86d,pickup,Hero Guide,Mercado,House 2F Bookshelves 4th,search,valid,thief_key
+46,C871B0,ca030700702801,0070,070,pickup,Defy Book,Mercado,House 2F Bookshelves 5th,search,valid,thief_key
+47,C871B7,47440700722901,0072,072,pickup,Pachisi Ticket,Mercado,House 2F Left Drawer,search,valid,thief_key
+48,C871BE,87440700302a01,0030,030,pickup,Party Dress,Mercado,House 2F Right Drawer,search,valid,thief_key
+49,C871C5,87c306804b2b01,804b,84b,pickup,Rockstar Ring,Mercado,Inn Drawer,search,valid,
+50,C871CC,c1cc1104452d01,0445,045,pickup,Life Ring,Rimuldar,House S,chest,valid,thief_key
+51,C871D3,87c60508722e01,0872,072,pickup,Pachisi Ticket,Rimuldar,House NW Left Drawer,search,valid,
+52,C871DA,c7c60508682f01,0868,068,pickup,Small Medal,Rimuldar,House NW Right Drawer,search,valid,
+53,C871E1,07cc0f00503001,0050,050,pickup,Hard Heart,Rimuldar,Inn Drawer,search,valid,thief_key
+54,C871E8,04c607085b3101,085b,05b,pickup,Wisdom Seed,Rimuldar,House NE Pot,search,valid,
+55,C871EF,c0c20500683201,0068,068,pickup,Small Medal,Rimuldar,House NE Right Drawer,search,valid,
+56,C871F6,44430500683301,0068,068,pickup,Small Medal,Rimuldar,House Top Pot,search,valid,
+57,C871FD,44c30600593401,0059,059,pickup,Strength Seed,Rimuldar,House Bottom Pot,search,valid,
+58,C87204,47c204804d3501,804d,84d,pickup,Golden Beak,Rimuldar,House Left Drawer,search,valid,
+59,C8720B,c7c40400443601,0044,044,pickup,Zen Book,Rimuldar,House Right Drawer,search,valid,
+60,C87212,80471a80585200,8058,858,pickup,Orichalcum,Domdora,Stable Exterior,search,valid,
+61,C87219,c0491706683701,0668,068,pickup,Small Medal,Domdora,Stable Interior,search,valid,
+62,C87220,04031900683801,0068,068,pickup,Small Medal,Domdora,House Bookshelf Left,search,valid,
+63,C87227,8a031980703901,8070,870,pickup,Joke Book,Domdora,House Bookshelf Right,search,valid,
+64,C8722E,08840800403a01,0040,040,pickup,Bunny Ears,Domdora,House 1 2F Drawer,search,valid,
+65,C87235,888305004b3b01,004b,04b,pickup,Pacifier,Domdora,House 2 2F Drawer,search,valid,
+66,C8723C,60811600683c01,0068,068,pickup,Small Medal,Domdora,Well,search,valid,
+67,C87243,c4491506683d01,0668,068,pickup,Small Medal,Isis Town,Shop SE Pot,search,valid,
+68,C8724A,00c60a86593e01,8659,859,pickup,Agility Seed,Isis Town,Outside Well,search,valid,
+69,C87251,c0431606683f01,0668,068,pickup,Small Medal,Isis Town,Graveyard Middle Cross,search,valid,
+70,C87258,5bc70f00724201,0072,072,pickup,Pachisi Ticket,Isis Town,Nighttime House 1F Chest,search,valid,
+71,C8725F,888205002c4001,002c,02c,pickup,Boxer Shorts,Isis Town,House 2F Left Drawer,search,valid,
+72,C87266,8a8205806c4101,806c,86c,pickup,Smart Book,Isis Town,Nighttime House 2F Bookshelf,search,valid,magic_key
+73,C8726D,c14312806faa01,806f,86f,pickup,Brave Book,Isis Town,Well,chest,valid,
+74,C87274,804408805a4301,805a,85a,pickup,Luck Seed,Luzami,Graveyard,search,valid,
+75,C8727B,c0c90600684401,0068,068,pickup,Small Medal,Luzami,Foundation NE,search,valid,
+76,C87282,00430580514701,8051,851,pickup,Sage's Stone,Luzami,Telescope,search,no_keys,zoma
+77,C87289,4a8304006d4501,006d,06d,pickup,Muscle Guidebook,Luzami,North House Left Bookshelf,search,valid,
+78,C87290,ca8304006e4601,006e,06e,pickup,Lucky Book,Luzami,North House Right Bookshelf,search,valid,
+79,C87297,01c80c80044801,8004,804,pickup,Poison Dagger,Kazave,Nighttime House Top,chest,valid,magic_key
+80,C8729E,01c80d00014901,0001,001,pickup,Club,Kazave,Nighttime House Bottom,chest,valid,magic_key
+81,C872A5,80850700684a01,0068,068,pickup,Small Medal,Kazave,Graveyard Right Cross,search,valid,
+82,C872AC,c7c80c062c4b01,062c,02c,pickup,Boxer Shorts,Kazave,Nighttime House Right Drawer,search,valid,magic_key
+83,C872B3,47491100724c01,0072,072,pickup,Pachisi Ticket,Kazave,Inn Right Drawer,search,valid,
+84,C872BA,874206003e4d01,003e,03e,pickup,Fur Hood,Kazave,Floor 2F Right Drawer,search,valid,
+85,C872C1,45c407805b4e01,805b,85b,pickup,Life Nut,Kazave,Floor 2F Top Barrel,search,valid,
+86,C872C8,40c50600684f01,0068,068,pickup,Small Medal,Elf Village,Throne Exterior NW,search,valid,
+87,C872CF,a0470f00685201,0068,068,pickup,Small Medal,Tedanki,Poison Bog,search,valid,
+88,C872D6,40c814801a5501,801a,81a,pickup,Beast Claw,Tedanki,Church Interior,search,no_keys,zoma
+89,C872DD,41430a00535001,0053,053,pickup,Darkness Lamp,Tedanki,Floor 2F,chest,valid,
+90,C872E4,874207803f5401,803f,83f,pickup,Black Hood,Tedanki,Floor 2F Drawer,search,valid,
+91,C872EB,e0c208805b5101,805b,85b,pickup,Life Nut,Tedanki,Crypt,search,valid,
+92,C872F2,00c90b00685601,0068,068,pickup,Small Medal,Muor,Exterior Corridor,search,valid,final_key
+93,C872F9,c7c316002b5701,002b,02b,pickup,Leather Kilt,Muor,Inn Drawer,search,valid,
+94,C87300,40c307805b5801,805b,85b,pickup,Life Nut,Muor,Church,search,valid,
+95,C87307,44420a00725901,0072,072,pickup,Pachisi Ticket,Muor,NE House 2F Bottom Pot,search,valid,thief_key
+96,C8730E,44c20900685a01,0068,068,pickup,Small Medal,Muor,NE House 2F Top Pot,search,valid,thief_key
+97,C87315,880814803d5b01,803d,83d,pickup,Wooden Helmet,Zipangu,NE House Drawer,search,valid,
+98,C8731C,c8861e801e5c01,801e,81e,pickup,Clothes,Zipangu,S House Drawer,search,valid,
+99,C87323,044317806a5d01,806a,86a,pickup,Mystic Nut,Zipangu,W House Bottom Pot,search,valid,
+100,C8732A,9bc31400636601,0063,063,pickup,Moth Powder,Zipangu,W House Sack,search,valid,
+101,C87331,84c20300685e01,0068,068,pickup,Small Medal,Zipangu,Underground Bottom Left Pot,search,valid,
+102,C87338,04410500595f01,0059,059,pickup,Strength Seed,Zipangu,Underground Top Right Pot,search,valid,
+103,C8733F,c44306806a6001,806a,86a,pickup,Mystic Nut,Zipangu,Interior NW Top Right Pot,search,valid,
+104,C87346,84c70900596101,0059,059,pickup,Strength Seed,Zipangu,Interior NE Left Top Pot,search,valid,
+105,C8734D,84c80a00686201,0068,068,pickup,Small Medal,Zipangu,Interior NE Right Middle Pot,search,valid,
+106,C87354,c8070500366301,0036,036,pickup,Scale Shield,Zipangu,Interior NE Left Drawer,search,valid,
+107,C8735B,880805001f6401,001f,01f,pickup,Training Suit,Zipangu,Interior NE Right Drawer,search,valid,
+108,C87362,00041180436501,8043,843,pickup,Starry Ring,Zipangu,Well Pachisi Area,search,no_keys,zoma
+109,C87369,c4430704726901,0472,072,pickup,Pachisi Ticket,Pirate Hideout,Storage Top Left Pot,search,valid,
+110,C87370,44440704726a01,0472,072,pickup,Pachisi Ticket,Pirate Hideout,Storage Top Right Pot,search,valid,
+111,C87377,05c40704686b01,0468,068,pickup,Small Medal,Pirate Hideout,Storage Bottom Middle Barrel,search,valid,
+112,C8737E,07c30684506c01,8450,850,pickup,Tube Socks,Pirate Hideout,Room NW Drawer,search,valid,thief_key
+113,C87385,41c20800596701,0059,059,pickup,Strength Seed,Pirate Hideout,Secret Area Top Left,chest,valid,
+114,C8738C,41420980654b00,8065,865,pickup,Red Orb,Pirate Hideout,Secret Area Bottom Left,chest,valid,
+115,C87393,c14209804b6801,804b,84b,pickup,Rockstar Ring,Pirate Hideout,Secret Area Right,chest,valid,
+116,C8739A,00430700686d01,0068,068,pickup,Small Medal,Pirate Hideout,Prison,search,valid,"thief_key, final_key"
+117,C873A1,c0450d800e6e01,800e,80e,pickup,Bolt Staff,Sioux,Outside Well Below,search,valid,
+118,C873A8,c0450c00686f01,0068,068,pickup,Small Medal,Sioux,Outside Well Above,search,valid,
+119,C873AF,84420680597001,8059,859,pickup,Agility Seed,Sioux,House S Right Pot,search,valid,
+120,C873B6,44c20500687101,0068,068,pickup,Small Medal,Sioux,House N Pot,search,valid,
+121,C873BD,47c40f00727201,0072,072,pickup,Pachisi Ticket,Sioux,Well Drawer,search,valid,
+122,C873C4,87420600687301,0068,068,pickup,Small Medal,Sailor Bone Hut,Left Drawer,search,valid,
+123,C873CB,c7420680407401,8040,840,pickup,Silk Hat,Sailor Bone Hut,Right Drawer,search,valid,
+124,C873D2,80c51080615600,8061,861,pickup,Fairy Flute,Kol,Below Bath,search,valid,
+125,C873D9,a00709806a7501,806a,86a,pickup,Mystic Nut,Kol,Upper Trees,search,valid,
+126,C873E0,80850c00687601,0068,068,pickup,Small Medal,Kol,Above Bath,search,valid,
+127,C873E7,00c51900727701,0072,072,pickup,Pachisi Ticket,Kol,Tavern Center,search,valid,thief_key
+128,C873EE,080313801e7801,801e,81e,pickup,Clothes,Kol,House W Left Drawer,search,valid,thief_key
+129,C873F5,48031300727901,0072,072,pickup,Pachisi Ticket,Kol,House W Right Drawer,search,valid,
+130,C873FC,5bc20300727a01,0072,072,pickup,Pachisi Ticket,Kol,Upstairs Shop Left Sack,search,valid,
+131,C87403,dbc20300687b01,0068,068,pickup,Small Medal,Kol,Upstairs Shop Right Sack,search,valid,
+132,C8740A,c0421300687c01,0068,068,pickup,Small Medal,Kol,Well Pachisi Area,search,valid,
+133,C87411,054405005c8401,005c,05c,pickup,Medical Herb,Aliahan,Hero’s House 1F,search,valid,
+134,c87418,87440400598601,0059,059,pickup,Strength Seed,Aliahan,Hero’s House 2F,search,valid,
+135,C8741F,c7c30500688701,0068,068,pickup,Small Medal,Aliahan,House 2F,search,valid,
+136,C87426,01c20f80497f01,8049,849,pickup,Hero Ring,Aliahan,Vault Top Right,chest,valid,magic_key
+137,C8742D,81411080598001,8059,859,pickup,Agility Seed,Aliahan,Vault Bottom Left,chest,valid,magic_key
+138,C87434,c1411000598101,0059,059,pickup,Strength Seed,Aliahan,Vault Middle Bottom,chest,valid,magic_key
+139,C8743B,01421000178201,0017,017,pickup,Rune Staff,Aliahan,Vault Bottom Right,chest,valid,magic_key
+140,C87442,45471c805c8801,805c,85c,pickup,Antidote Herb,Aliahan,Right Barrel,search,valid,
+141,C87449,05471c00688d01,0068,068,pickup,Small Medal,Aliahan,Left Barrel,search,valid,
+142,C87450,c7410a00688901,0068,068,pickup,Small Medal,Aliahan,Kitchen Drawer,search,valid,
+143,C87457,87c210805a8a01,805a,85a,pickup,Luck Seed,Aliahan,Castle 2F Drawer,search,valid,
+144,C8745E,44c30500598c01,0059,059,pickup,Strength Seed,Aliahan,Prison Right Cell,search,valid,final_key
+145,C87465,40c80600689001,0068,068,pickup,Small Medal,Romaly,Castle Exterior,search,valid,
+146,C8746C,004b0b00729c01,0072,072,pickup,Pachisi Ticket,Romaly,Nighttime Right Trees,search,valid,
+147,C87473,47c914805f9101,805f,85f,pickup,Full Moon Herb,Romaly,Inn Drawer,search,valid,thief_key
+148,C8747A,874305803c9201,803c,83c,pickup,Leather Hat,Romaly,House Drawer,search,valid,
+149,C87481,84c30700689301,0068,068,pickup,Small Medal,Romaly,House Pot,search,valid,
+150,C87488,87440400509401,0050,050,pickup,Hard Heart,Romaly,Church Drawer,search,valid,
+151,C8748F,4a0504806c9501,806c,86c,pickup,Smart Book,Romaly,Church Bookshelf,search,valid,
+152,C87496,474206805c9601,805c,85c,pickup,Antidote Herb,Romaly,House Drawer,search,valid,
+153,C8749D,00c70900689701,0068,068,pickup,Small Medal,Romaly,Castle 1F Courtyard,search,valid,magic_key
+154,C874A4,40481800689801,0068,068,pickup,Small Medal,Romaly,Castle 1F Flowers,search,valid,
+155,C874AB,c0030a00689901,0068,068,pickup,Small Medal,Romaly,Castle Leftside 4F Ground,search,valid,final_key
+156,C874B2,c7c20900729a01,0072,072,pickup,Pachisi Ticket,Romaly,Castle Rightside 4F Drawer,search,valid,
+157,C874B9,8a820980719b01,8071,871,pickup,Cheater Guide,Romaly,Castle Rightside 4F Bookshelf,search,valid,
+158,C874C0,01430880188e01,8018,818,pickup,Assassin Dagger,Romaly,Castle B1 Left,chest,valid,final_key
+159,C874C7,41430880378f01,8037,837,pickup,Expel Shield,Romaly,Castle B1 Right,chest,valid,final_key
+160,C874CE,e0441500689d01,0068,068,pickup,Small Medal,Edinbear,Castle Exterior Rightside,search,valid,
+161,C874D5,c0c61600689e01,0068,068,pickup,Small Medal,Edinbear,Castle Exterior Leftside,search,valid,
+162,C874DC,10430780524200,8052,852,pickup,Thirsty Pitcher,Edinbear,Castle B1 Puzzle,chest,valid,
+163,C874E3,8a8607006c9f01,006c,06c,pickup,Lady Manual,Edinbear,Castle 1F NE Room Bookshelf,search,valid,
+164,C874EA,47c707802fa001,802f,82f,pickup,Slick Suit,Edinbear,Castle 1F NE Room Left,search,valid,
+165,C874F1,87c7070030a101,0030,030,pickup,Party Dress,Edinbear,Castle 1F NE Room Right,search,valid,
+166,C874F8,81c308842ea201,842e,82e,pickup,Silk Robe,Isis Castle,Floor 1F Vault Leftside Top Left,search,valid,magic_key
+167,C874FF,8143098448a401,8448,848,pickup,Ruby Ring,Isis Castle,Floor 1F Vault Leftside Bottom Left,search,valid,magic_key
+168,C87506,c14309045ba501,045b,05b,pickup,Wisdom Seed,Isis Castle,Floor 1F Vault Leftside Bottom Right,search,valid,magic_key
+169,C8750D,c1c908044ea601,044e,04e,pickup,Golden Tiara,Isis Castle,Floor 1F Vault Rightside Top Left,search,valid,magic_key
+170,C87514,01ca08845ba701,845b,85b,pickup,Life Nut,Isis Castle,Floor 1F Vault Rightside Top Right,search,valid,magic_key
+171,C8751B,c149090468a801,0468,068,pickup,Small Medal,Isis Castle,Floor 1F Vault Rightside Bottom Left,search,valid,magic_key
+172,C87522,47c90b0472ab01,0472,072,pickup,Pachisi Ticket,Isis Castle,Floor 1F Room Left Drawer,search,valid,
+173,C87529,4a8a100470ac01,0470,070,pickup,Defy Book,Isis Castle,Floor 1F Room Right Drawer,search,valid,
+174,C87530,c1c90f0008ad01,0008,008,pickup,Demon Axe,Baramos Castle,Chest Area Top,chest,valid,
+175,C87537,c149108042ae01,8042,842,pickup,Wizard Ring,Baramos Castle,Chest Area Middle,chest,valid,
+176,C8753E,c1c910803aaf01,803a,83a,pickup,Misery Helmet,Baramos Castle,Chest Area Bottom,chest,valid,
+177,C87545,e043070068b001,0068,068,pickup,Small Medal,Baramos Castle,Throne Room,search,valid,
+178,C8754C,004a070068b101,0068,068,pickup,Small Medal,Baramos Castle,B1 Cell,search,valid,
+179,C87553,40c8070068b201,0068,068,pickup,Small Medal,Dragon Queen Castle,North Light,search,valid,final_key
+180,C8755A,e0c8130068b301,0068,068,pickup,Small Medal,Dharma,Statue,search,valid,magic_key
+181,C87561,01c30a80534500,8053,853,pickup,Change Staff,Samanosa,King Room,chest,valid,"magic_key, final_key, ra_mirror"
+182,C87568,05c30e0072b401,0072,072,pickup,Pachisi Ticket,Samanosa,Outside Inn Barrel,search,valid,
+183,C8756F,80480b0068b501,0068,068,pickup,Small Medal,Samanosa,Graveyard Top Row,search,valid,
+184,C87576,c0470c8059b601,8059,859,pickup,Agility Seed,Samanosa,Graveyard Middle Row,search,valid,
+185,C8757D,00480d0072b701,0072,072,pickup,Pachisi Ticket,Samanosa,Graveyard Bottom Row,search,valid,
+186,C87584,4442050059b801,0059,059,pickup,Strength Seed,Samanosa,House Left Pot,search,valid,
+187,C8758B,00040a0068b901,0068,068,pickup,Small Medal,Samanosa,Castle Exterior Leftside,search,valid,
+188,C87592,8546110068ba01,0068,068,pickup,Small Medal,Samanosa,Castle Kitchen Pot,search,valid,magic_key
+189,C87599,c0c50b805bbb01,805b,85b,pickup,Life Nut,Samanosa,Castle Garden,search,valid,"magic_key, final_key"
+190,C875A0,ca82078071bd01,8071,871,pickup,Cheater Guide,Samanosa,King Room Bookshelf,search,valid,
+191,C875A7,47c3070001be01,0001,001,pickup,Club,Samanosa,King Room Right Drawer,search,valid,
+192,C875AE,8443060068bc01,0068,068,pickup,Small Medal,Samanosa,Underground Prison Pot,search,valid,"magic_key, final_key"
+193,C875B5,8046140054bf01,0054,054,pickup,Life Stone,Samanosa,Underground Prison Near Bed,search,valid,"magic_key, final_key"
+194,C875BC,c0c408806ac301,806a,86a,pickup,Mystic Nut,Ludatorm,Town Flowerbed,search,valid,
+195,C875C3,40ca050068c401,0068,068,pickup,Small Medal,Ludatorm,Town Northeast Trees,search,valid,
+196,C875CA,4442060072c501,0072,072,pickup,Pachisi Ticket,Ludatorm,House Pot,search,valid,thief_key
+197,C875D1,0a0405006ec601,006e,06e,pickup,Lucky Book,Ludatorm,Upstairs House N Left Bookshelf,search,valid,
+198,C875D8,4a0405806bc701,806b,86b,pickup,Wimpy Book,Ludatorm,Upstairs House N Right Bookshelf,search,valid,
+199,C875DF,474305805bc801,805b,85b,pickup,Life Nut,Ludatorm,Upstairs House SW Right Drawer,search,valid,
+200,C875E6,41420600645500,0064,064,pickup,Sun Stone,Ludatorm,Castle Vault Left ,chest,valid,thief_key
+201,C875ED,c0ca860072c901,0072,072,pickup,Pachisi Ticket,Ludatorm,Castle Exterior Northeast,search,valid,
+202,C875F4,a047130072ca01,0072,072,pickup,Pachisi Ticket,Ludatorm,Castle Exterior Rightside,search,valid,
+203,C875FB,85470e0068cb01,0068,068,pickup,Small Medal,Ludatorm,Castle Kitchen Pot,search,valid,
+204,C87602,07c3050072cc01,0072,072,pickup,Pachisi Ticket,Ludatorm,Castle 2F Left Drawer,search,valid,thief_key
+205,C87609,47c305002ccd01,002c,02c,pickup,Boxer Shorts,Ludatorm,Castle 2F Right Drawer,search,valid,thief_key
+206,C87610,85c3058059ce01,8059,859,pickup,Agility Seed,Ludatorm,Castle Vault Barrel,search,valid,thief_key
+207,C87617,a00b190068d701,0068,068,pickup,Small Medal,Zoma Castle,Floor 1F SW Barrier,search,valid,
+208,C8761E,a0c70b0068d801,0068,068,pickup,Small Medal,Zoma Castle,Floor 1F Throne,search,valid,
+209,C87625,01431f800ad001,800a,80a,pickup,Double-Edged Sword,Zoma Castle,Floor B1 ,chest,valid,
+210,C8762C,8147130068d101,0068,068,pickup,Small Medal,Zoma Castle,Floor B2 Left Left ,chest,valid,
+211,C87633,c147130054d301,0054,054,pickup,Life Stone,Zoma Castle,Floor B2 Left Right ,chest,valid,
+212,C8763A,01c813005ed401,005e,05e,pickup,Yggdrasil Leaf,Zoma Castle,Floor B2 Middle Left ,chest,valid,
+213,C87641,41c8138051d501,8051,851,pickup,Sage's Stone,Zoma Castle,Floor B2 Middle Right ,chest,valid,
+214,C87648,8148138042d601,8042,842,pickup,Wizard Ring,Zoma Castle,Floor B2 Right Left ,chest,valid,
+215,C8764F,c1c915005cd901,005c,05c,pickup,Medical Herb,Promontory Cave,Underground B1 NE ,chest,valid,
+216,C87656,014b0d8026da01,8026,826,pickup,Traveler Clothes,Promontory Cave,Underground B1 SW ,chest,valid,
+217,C8765D,c14b06001fe701,001f,01f,pickup,Training Suit,Bahn Tunnel Ashalam Side,Floor 1F Left ,chest,valid,
+218,C87664,014c060001e801,0001,001,pickup,Club,Bahn Tunnel Ashalam Side,Floor 1F Right ,chest,valid,
+219,C8766B,c0c40f805be901,805b,85b,pickup,Life Nut,Bahn Tunnel Ashalam Side,Well Wall,search,valid,
+220,C87672,c1ca13000eeb01,000e,00e,pickup,Thunder Sword,Necrogond Cave,Floor B1 E ,chest,valid,
+221,C87679,41c4168029ec01,8029,829,pickup,Blade Armor,Necrogond Cave,Floor B1 SE ,chest,valid,
+222,C87680,014306805cdc01,805c,85c,pickup,Antidote Herb,Cave of Temptation Romaly Side,Floor B1 1,chest,valid,
+223,C87687,81c2240002dd01,0002,002,pickup,Sacred Knife,Cave of Temptation Romaly Side,Floor B1 2,chest,valid,
+224,C8768E,81c70d005dde01,005d,05d,pickup,Holy Water,Underworld Lake,Floor 1F ,chest,valid,
+225,C87695,41c2088002e001,8002,802,pickup,Iron Spear,Underworld Lake,Floor B1 ,chest,valid,
+226,C8769C,0148050059e101,0059,059,pickup,Strength Seed,Underworld Lake,Floor B2 1,chest,valid,
+227,C876A3,81450e802be201,802b,82b,pickup,Leather Dress,Underworld Lake,Floor B2 2,chest,valid,
+228,C876AA,8145110072e401,0072,072,pickup,Pachisi Ticket,Underworld Lake,Floor B2 3,chest,valid,
+229,C876B1,814b11804ae501,804a,84a,pickup,Silver Rosary,Underworld Lake,Floor B2 4,chest,valid,
+230,C876B8,01c3060068e601,0068,068,pickup,Small Medal,Underworld Lake,Floor B3 ,chest,valid,
+231,C876BF,c1c40a0068ea01,0068,068,pickup,Small Medal,Necrogond Cave,Floor B1 ,chest,valid,
+232,C876C6,c0c50a0068ed01,0068,068,pickup,Small Medal,Necrogond Cave,Floor B3,search,valid,
+233,C876CD,c14426005aee01,005a,05a,pickup,Stamina Seed,Kandar Cave,Floor 1F 1,chest,valid,
+234,C876D4,01c9060068f001,0068,068,pickup,Small Medal,Kandar Cave,Floor 1F 2,chest,valid,
+235,C876DB,0143060059f401,0059,059,pickup,Strength Seed,Kandar Cave,B1 Area Top Left,chest,valid,magic_key
+236,C876E2,414306805bf501,805b,85b,pickup,Life Nut,Kandar Cave,B1 Area Top Right,chest,valid,magic_key
+237,C876E9,01c306005bf601,005b,05b,pickup,Wisdom Seed,Kandar Cave,B1 Area Bottom Left,chest,valid,magic_key
+238,C876F0,41c3068059f701,8059,859,pickup,Agility Seed,Kandar Cave,B1 Area Bottom Right,chest,valid,magic_key
+239,C876F7,00c419805af801,805a,85a,pickup,Luck Seed,Kandar Cave,B1 Cells Left Mat,search,valid,magic_key
+240,C876FE,40c719806af901,806a,86a,pickup,Mystic Nut,Kandar Cave,B1 Cells Right Mat,search,valid,magic_key
+241,C87705,9bc4140072fa01,0072,072,pickup,Pachisi Ticket,Kandar Cave,B1 Room Left,search,valid,magic_key
+242,C8770C,01cd18003cfb01,003c,03c,pickup,All-Knowing Mask,Zipangu Cave,Floor 1F ,chest,valid,
+243,C87713,c14926015bff01,015b,05b,pickup,Wisdom Seed,Gaia Navel,Floor 1F SE ,chest,valid,
+244,C8771A,c1c91f0168fd01,0168,068,pickup,Small Medal,Gaia Navel,Floor 1F NE ,chest,valid,
+245,C87721,c1460e80280002,8028,828,pickup,Terra Armor,Gaia Navel,Floor B1 ,chest,valid,
+246,C87728,01ca0c00680102,0068,068,pickup,Small Medal,Gaia Navel,Floor B2 Left ,chest,valid,
+247,C8772F,41ca0c00674a00,0067,067,pickup,Blue Orb,Gaia Navel,Floor B2 Right ,chest,valid,
+248,C87736,41c70400681002,0068,068,pickup,Small Medal,Ra Mirror Cave,Floor B1 1,chest,valid,
+249,C8773D,414d0e00680702,0068,068,pickup,Small Medal,Ra Mirror Cave,Floor B1 2,chest,valid,
+250,C87744,01c504805b1102,805b,85b,pickup,Life Nut,Ra Mirror Cave,Floor B1 3,chest,valid,
+251,C8774B,c1450b00721202,0072,072,pickup,Pachisi Ticket,Ra Mirror Cave,Floor B1 4,chest,valid,
+252,C87752,c1480a00591302,0059,059,pickup,Strength Seed,Ra Mirror Cave,Floor B1 5,chest,valid,
+253,C87759,814a12005a1402,005a,05a,pickup,Stamina Seed,Ra Mirror Cave,Floor B1 6,chest,valid,
+254,C87760,414c1000721502,0072,072,pickup,Pachisi Ticket,Ra Mirror Cave,Floor B1 7,chest,valid,
+255,C87767,41d00e00541602,0054,054,pickup,Life Stone,Ra Mirror Cave,Floor B1 8,chest,valid,
+256,C8776E,81c30c80231702,8023,823,pickup,Plush Suit,Ra Mirror Cave,Floor B2 1,chest,valid,
+257,C87775,41c50b00524400,0052,052,pickup,Mirror Of Ra,Ra Mirror Cave,Floor B2 2,chest,valid,
+258,C8777C,01c30900341802,0034,034,pickup,Hero Shield,Loto Cave,Floor B3 1,chest,valid,
+259,C87783,c1440b00681902,0068,068,pickup,Small Medal,Loto Cave,Floor B3 2,chest,valid,
+260,C8778A,80420600721d02,0072,072,pickup,Pachisi Ticket,Marsh Cave,Floor B1 Drawer,search,valid,
+261,C87791,a0462100681e02,0068,068,pickup,Small Medal,Marsh Cave,Floor B1 Bottom Wall,search,valid,
+262,C87798,41cf1580422002,8042,842,pickup,Wizard Ring,Mountain Cave,Floor B1 ,chest,valid,
+263,C8779F,c1cc1900682102,0068,068,pickup,Small Medal,Mountain Cave,Floor B2 1,chest,valid,
+264,C877A6,41c41200252202,0025,025,pickup,Devil's Armor,Mountain Cave,Floor B2 2,chest,valid,
+265,C877AD,01c412000a2302,000a,00a,pickup,Sword Of Destruction,Mountain Cave,Floor B2 3,chest,valid,
+266,C877B4,c1ca1300592402,0059,059,pickup,Strength Seed,Bonus Dungeon,Necrogond Area B1 ,chest,no_keys,
+267,C877BB,c1c40a80092602,8009,809,pickup,Staff Of Reflection,Bonus Dungeon,Necrogond Area B1 ,chest,no_keys,
+268,C877C2,01cd1800092702,0009,009,pickup,Gaia Sword,Bonus Dungeon,Necrogond Area B2 ,chest,no_keys,
+269,C877C9,01c41d00682802,0068,068,pickup,Small Medal,Bonus Dungeon,Pyramid Area ,chest,no_keys,
+270,C877D0,60c308806a2b02,806a,86a,pickup,Mystic Nut,Bonus Dungeon,Cleric Area,search,no_keys,
+271,C877D7,41c20880342902,8034,834,pickup,Sorrow Shield,Bonus Dungeon,Underworld Area 1,chest,no_keys,
+272,C877DE,01480500682a02,0068,068,pickup,Small Medal,Bonus Dungeon,Underworld Area 2,chest,no_keys,
+273,C877E5,80460a00592c02,0059,059,pickup,Strength Seed,Bonus Dungeon,Necrogond Area 1F Top,search,no_keys,
+274,C877EC,c0c50b805b2d02,805b,85b,pickup,Life Nut,Bonus Dungeon,Necrogond Area 1F Bottom,search,no_keys,
+275,C877F3,804506806d2e02,806d,86d,pickup,Hero Guide,Bonus Dungeon,Samanosa Prison Area Left,search,no_keys,
+276,C877FA,84430600682f02,0068,068,pickup,Small Medal,Bonus Dungeon,Samanosa Prison Area Right,search,no_keys,
+277,C87801,80440a00723002,0072,072,pickup,Pachisi Ticket,Bonus Dungeon,Arena Area,search,no_keys,
+278,C87808,444305804f3102,804f,84f,pickup,Flee Ring,Bonus Dungeon,Reeve Area Left Pot,search,no_keys,
+279,C8780F,84430500683202,0068,068,pickup,Small Medal,Bonus Dungeon,Reeve Area Right Pot,search,no_keys,
+280,C87816,04c305805d3302,805d,85d,pickup,Wing Of Wyvern,Shrine of Temptation,Left Pot,search,valid,thief_key
+281,C8781D,84c30500683402,0068,068,pickup,Small Medal,Shrine of Temptation,Right Pot,search,valid,thief_key
+282,C87824,c0c81200094800,0009,009,pickup,Gaia Sword,Shrine Prison,Simon Cell,search,valid,final_key
+283,C8782B,84c30900683502,0068,068,pickup,Small Medal,Shrine Prison,Left Cell,search,valid,final_key
+284,C87832,8a0406806e3602,806e,86e,pickup,Tomboy Book,Desert Shrine,Right Bookcase,search,valid,
+285,C87839,c4420500683702,0068,068,pickup,Small Medal,Desert Shrine,Left Pot,search,valid,
+286,C87840,47420600723802,0072,072,pickup,Pachisi Ticket,Desert Shrine,Left Drawer,search,valid,
+287,C87847,c0c40700723902,0072,072,pickup,Pachisi Ticket,Necrogond Shrine,Left Cross,search,valid,
+288,C8784E,40c50700683a02,0068,068,pickup,Small Medal,Necrogond Shrine,Middle Cross,search,valid,
+289,C87855,c0c50700723b02,0072,072,pickup,Pachisi Ticket,Necrogond Shrine,Right Cross,search,valid,
+290,C8785C,87c20480003c02,8000,800,pickup,Cypress Stick,East Dharma Shrine,Left Drawer,search,valid,magic_key
+291,C87863,87c50400683d02,0068,068,pickup,Small Medal,East Dharma Shrine,Right Drawer,search,valid,magic_key
+292,C8786A,80450d00683e02,0068,068,pickup,Small Medal,West Edinbear Shrine,Above Pool,search,valid,
+293,C87871,c0c20600623f02,0062,062,pickup,Silver Harp,Garin Shrine,Underground B1,search,valid,
+294,C87878,c7c30600484002,0048,048,pickup,Mohawk Wig,Garin Shrine,Left Drawer,search,valid,
+295,C8787F,47c40600684102,0068,068,pickup,Small Medal,Garin Shrine,Right Drawer,search,valid,
+296,C87886,80880900684302,0068,068,pickup,Small Medal,Dark World Harbor,Pier NE,search,valid,
+297,C8788D,80420a00594402,0059,059,pickup,Strength Seed,Dark World Harbor,Left Trees,search,valid,
+298,C87894,474408805a4502,805a,85a,pickup,Luck Seed,Dark World Harbor,Right Drawer,search,valid,
+299,C8789B,00c608804a4602,804a,84a,pickup,Silver Rosary,Rubiss Shrine,Flowers 2F NE,search,valid,
+300,C878A2,80440c00684702,0068,068,pickup,Small Medal,Rubiss Shrine,Carpet,search,valid,
+301,C878A9,c0430c00684802,0068,068,pickup,Small Medal,Rain Staff Shrine,Left Cross,search,valid,
+302,C878B0,20840e00684902,0068,068,pickup,Small Medal,Portoga Shrine Portoga Side,Warp Area,search,valid,"magic_key, final_key"
+303,C878B7,40440a00684a02,0068,068,pickup,Small Medal,Final Key Shrine,Below Cell,search,valid,
+304,C878BE,41440d80563800,8056,856,pickup,Final Key,Final Key Shrine,Main Chest,chest,valid,
+305,C878C5,e0830700684b02,0068,068,pickup,Small Medal,Hobbit Shrine,Behind Throne,search,valid,
+306,C878CC,408a0f00684c02,0068,068,pickup,Small Medal,Cape Olivia Shrine,Between Gates,search,valid,
+307,C878D3,00479900684d02,0068,068,pickup,Small Medal,Ramia Shrine,Bottom Stairs,search,valid,
+308,C878DA,41c60a00684f02,0068,068,pickup,Small Medal,Najimi Tower,Floor 3F 1,chest,valid,
+309,C878E1,c1c615805d5002,805d,85d,pickup,Wing Of Wyvern,Najimi Tower,Floor 3F 2,chest,valid,
+310,C878E8,01cf10803d5102,803d,83d,pickup,Wooden Helmet,Najimi Tower,Underground B1 Left,chest,valid,thief_key
+311,C878EF,81cf1080595202,8059,859,pickup,Agility Seed,Najimi Tower,Underground B1 Right,chest,valid,thief_key
+312,C878F6,ca8309806e5402,806e,86e,pickup,Tomboy Book,Najimi Tower,Thief Key Room,search,valid,
+313,C878FD,c1ca18005b5502,005b,05b,pickup,Wisdom Seed,Garuna Tower,Floor 1F,chest,valid,
+314,C87904,41470f00445602,0044,044,pickup,Zen Book,Garuna Tower,Floor 2F Secret Area,chest,valid,
+315,C8790B,81491400685802,0068,068,pickup,Small Medal,Garuna Tower,Floor 2F,chest,valid,
+316,C87912,01c306803e5902,803e,83e,pickup,Silver Barrette,Garuna Tower,Floor 6F,chest,valid,
+317,C87919,c1c50a00615a02,0061,061,pickup,Echo Flute,Arb Tower,Secret Area Top Left,chest,valid,
+318,C87920,c1450b00685b02,0068,068,pickup,Small Medal,Arb Tower,Secret Area Bottom Left,chest,valid,
+319,C87927,01460b805b5c02,805b,85b,pickup,Life Nut,Arb Tower,Secret Area Bottom Right,chest,valid,
+320,C8792E,41440f00686002,0068,068,pickup,Small Medal,Arb Tower,Top Floor S,chest,valid,
+321,C87935,c1430e004f5e02,004f,04f,pickup,Benevolent Ring,Arb Tower,Top Floor SW,chest,valid,
+322,C8793C,81490800356302,0035,035,pickup,Bronze Shield,Shampane Tower,Floor 3F,chest,valid,
+323,C87943,c14206803c6102,803c,83c,pickup,Leather Hat,Shampane Tower,Floor 6F,invalid,invalid,
+324,C8794A,70480e00686602,0068,068,pickup,Small Medal,Rubiss Tower,Floor 2F Top Top Right,chest,valid,thief_key
+325,C87951,10480e80456902,8045,845,pickup,Strength Ring,Rubiss Tower,Floor 2F Top Top Left,chest,valid,thief_key
+326,C87958,104816805b6a02,805b,85b,pickup,Life Nut,Rubiss Tower,Floor 2F Bottom Top Left,chest,valid,thief_key
+327,C8795F,504816004f6b02,004f,04f,pickup,Benevolent Ring,Rubiss Tower,Floor 2F Bottom Top Right,chest,valid,thief_key
+328,C87966,10c81600146c02,0014,014,pickup,Flamerang,Rubiss Tower,Floor 2F Bottom Bottom Left,chest,valid,thief_key
+329,C8796D,50c816805b6d02,805b,85b,pickup,Life Nut,Rubiss Tower,Floor 2F Bottom Bottom Right,chest,valid,thief_key
+330,C87974,50c71280225400,8022,822,pickup,Light Armor,Rubiss Tower,Floor 4F,chest,valid,thief_key
+331,C8797B,50c50600686e02,0068,068,pickup,Small Medal,Rubiss Tower,Floor 3F,chest,valid,thief_key
+332,C87982,00c81006726f02,0672,072,pickup,Pachisi Ticket,Rubiss Tower,Floor 3F,search,valid,thief_key
+333,C87989,014406803c6102,803c,83c,pickup,Leather Hat,Shampane Tower,Floor 6F,invalid,invalid,
+334,C87990,81471280147002,8014,814,pickup,Wrecking Flail,Bonus Dungeon,Dragon God Area Exterior,chest,no_keys,
+335,C87997,81c60a00687102,0068,068,pickup,Small Medal,Bonus Dungeon,Dragon God Area 1F,chest,no_keys,
+336,C8799E,c1c60a80487202,8048,848,pickup,Ruby Ring,Bonus Dungeon,Dragon God Area 1F,chest,no_keys,
+337,C879A5,81c60a00437302,0043,043,pickup,Lucky Shoes,Bonus Dungeon,Dragon God Area 2F,chest,no_keys,
+338,C879AC,c1c61500687402,0068,068,pickup,Small Medal,Bonus Dungeon,Dragon God Area 2F,chest,no_keys,
+339,C879B3,41440900688a02,0068,068,pickup,Small Medal,Pyramid,Floor 1F,chest,valid,
+340,C879BA,01c41d005b8c02,005b,05b,pickup,Wisdom Seed,Pyramid,Floor 2F,chest,valid,
+341,C879C1,014808005a7702,005a,05a,pickup,Stamina Seed,Pyramid,Magic Key Floor Left,chest,valid,
+342,C879C8,41480800563700,0056,056,pickup,Magic Key,Pyramid,Magic Key Floor Right,chest,valid,
+343,C879CF,c1c40700208402,0020,020,pickup,Flashy Suit,Pyramid,Top Floor,chest,valid,magic_key
+344,C879D6,80c20700688b02,0068,068,pickup,Small Medal,Pyramid,Top Exterior Left Side,search,valid,magic_key
+345,C879DD,41c41b80049102,8004,804,pickup,Poison Dagger,Ghost Ship,Floor B1 Room Bottom Right,chest,valid,thief_key
+346,C879E4,01c420005f4700,005f,05f,pickup,Lovely Memories,Ghost Ship,Bottom Main Chest,chest,valid,
+347,C879EB,41c41a00728e02,0072,072,pickup,Pachisi Ticket,Ghost Ship,Floor B1 Room Top Middle,chest,valid,thief_key
+348,C879F2,07c40f80479302,8047,847,pickup,Garter Belt,Ghost Ship,Floor B1 Top Middle Drawer,search,valid,
+349,C879F9,05c51a00689402,0068,068,pickup,Small Medal,Ghost Ship,Floor B1 Room Barrel,search,valid,thief_key
+350,C87A00,44451c00599502,0059,059,pickup,Strength Seed,Ghost Ship,Floor B1 Room Pot,search,valid,thief_key
+351,C87A07,c5c41a00689202,0068,068,pickup,Small Medal,Ghost Ship,Floor 1F Right Barrel ,search,valid,
+352,C87A0E,01440580039602,8003,803,pickup,Steel Sword,Pachisi Track Romaly,Reward 1,pachisi,no_keys,
+353,C87A15,e1df3f805b9802,805b,85b,pickup,Life Nut,Pachisi Track Romaly,Reward 2,pachisi,no_keys,
+354,C87A1C,e1df3f00729902,0072,072,pickup,Pachisi Ticket,Pachisi Track Romaly,Reward 3,pachisi,no_keys,
+355,C87A23,e1df3f00139a02,0013,013,pickup,Boomerang,Pachisi Track Romaly,Reward 4,pachisi,no_keys,
+356,C87A2A,e1df3f005c9b02,005c,05c,pickup,Medical Herb,Pachisi Track Romaly,Reward 5,pachisi,no_keys,
+357,C87A31,e1df3f00029c02,0002,002,pickup,Sacred Knife,Pachisi Track Romaly,Reward 6,pachisi,no_keys,
+358,C87A38,e1df3f803c9d02,803c,83c,pickup,Leather Hat,Pachisi Track Romaly,Reward 7,pachisi,no_keys,
+359,C87A3F,00050700729e02,0072,072,pickup,Pachisi Ticket,Pachisi Track Romaly,Pachisi Exterior,pachisi,no_keys,
+360,C87A46,e1df3f00599f02,0059,059,pickup,Strength Seed,Pachisi Track Ashalam,Reward 1,pachisi,no_keys,
+361,C87A4D,e1df3f803da002,803d,83d,pickup,Wooden Helmet,Pachisi Track Ashalam,Reward 2,pachisi,no_keys,
+362,C87A54,e1df3f0005a102,0005,005,pickup,Iron Claws,Pachisi Track Ashalam,Reward 3,pachisi,no_keys,
+363,C87A5B,e1df3f0072a202,0072,072,pickup,Pachisi Ticket,Pachisi Track Ashalam,Reward 4,pachisi,no_keys,
+364,C87A62,e1df3f0068a302,0068,068,pickup,Small Medal,Pachisi Track Ashalam,Reward 5,pachisi,no_keys,
+365,C87A69,e1df3f801ba402,801b,81b,pickup,Steel Needle,Pachisi Track Ashalam,Reward 6,pachisi,no_keys,
+366,C87A70,81450e0068a502,0068,068,pickup,Small Medal,Pachisi Track Ashalam,Reward 7,pachisi,no_keys,
+367,C87A77,c1450e8012a602,8012,812,pickup,Morning Star,Pachisi Track Ashalam,Reward 8,pachisi,no_keys,
+368,C87A7E,a082060068a702,0068,068,pickup,Small Medal,Pachisi Track Ashalam,Pachisi Exterior,pachisi,no_keys,
+369,C87A85,e1df3f0059a802,0059,059,pickup,Strength Seed,Pachisi Track Cape,Reward 1,pachisi,no_keys,
+370,C87A8C,e1df3f803ba902,803b,83b,pickup,Turban,Pachisi Track Cape,Reward 2,pachisi,no_keys,
+371,C87A93,e1df3f803eaa02,803e,83e,pickup,Silver Barrette,Pachisi Track Cape,Reward 3,pachisi,no_keys,
+372,C87A9A,e1df3f004dab02,004d,04d,pickup,Power Belt,Pachisi Track Cape,Reward 4,pachisi,no_keys,
+373,C87AA1,e1df3f0072ac02,0072,072,pickup,Pachisi Ticket,Pachisi Track Cape,Reward 5,pachisi,no_keys,
+374,C87AA8,e1df3f805aad02,805a,85a,pickup,Luck Seed,Pachisi Track Cape,Reward 6,pachisi,no_keys,
+375,C87AAF,e1df3f0072ae02,0072,072,pickup,Pachisi Ticket,Pachisi Track Cape,Reward 7,pachisi,no_keys,
+376,C87AB6,e1df3f0020af02,0020,020,pickup,Flashy Suit,Pachisi Track Cape,Reward 8,pachisi,no_keys,
+377,C87ABD,e1df3f0068b002,0068,068,pickup,Small Medal,Pachisi Track Cape,Reward 9,pachisi,no_keys,
+378,C87AC4,e1df3f8018b102,8018,818,pickup,Assassin Dagger,Pachisi Track Cape,Reward 10,pachisi,no_keys,
+379,C87ACB,e1df3f802cb202,802c,82c,pickup,Magical Skirt,Pachisi Track Cape,Reward 11,pachisi,no_keys,
+380,C87AD2,8144050030b302,0030,030,pickup,Party Dress,Pachisi Track Cape,Reward 12,pachisi,no_keys,
+381,C87AD9,41c607806ab402,806a,86a,pickup,Mystic Nut,Pachisi Track Cape,Reward 13,pachisi,no_keys,
+382,C87AE0,01480a001eb502,001e,01e,pickup,Dragon Tail,Pachisi Track Cape,Reward 14,pachisi,no_keys,
+383,C87AE7,41480a8059b602,8059,859,pickup,Agility Seed,Pachisi Track Cape,Reward 15,pachisi,no_keys,
+384,C87AEE,8044050068b702,0068,068,pickup,Small Medal,Pachisi Track Cape,Pachisi Exterior 1,pachisi,no_keys,
+385,C87AF5,40c6070072b802,0072,072,pickup,Pachisi Ticket,Pachisi Track Cape,Pachisi Exterior 2,pachisi,no_keys,
+386,C87AFC,00c60f0068b902,0068,068,pickup,Small Medal,Pachisi Track Cape,Pachisi Exterior 3,pachisi,no_keys,
+387,C87B03,e1df3f0068ba02,0068,068,pickup,Small Medal,Pachisi Track Kol,Reward 1,pachisi,no_keys,
+388,C87B0A,e1df3f803bbb02,803b,83b,pickup,Turban,Pachisi Track Kol,Reward 2,pachisi,no_keys,
+389,C87B11,e1df3f001ebc02,001e,01e,pickup,Dragon Tail,Pachisi Track Kol,Reward 3,pachisi,no_keys,
+390,C87B18,e1df3f005abd02,005a,05a,pickup,Stamina Seed,Pachisi Track Kol,Reward 4,pachisi,no_keys,
+391,C87B1F,e1df3f805bbe02,805b,85b,pickup,Life Nut,Pachisi Track Kol,Reward 5,pachisi,no_keys,
+392,C87B26,e1df3f0054bf02,0054,054,pickup,Life Stone,Pachisi Track Kol,Reward 6,pachisi,no_keys,
+393,C87B2D,e1df3f806ac002,806a,86a,pickup,Mystic Nut,Pachisi Track Kol,Reward 7,pachisi,no_keys,
+394,C87B34,e1df3f804fc102,804f,84f,pickup,Flee Ring,Pachisi Track Kol,Reward 8,pachisi,no_keys,
+395,C87B3B,e1df3f006dc202,006d,06d,pickup,Muscle Guidebook,Pachisi Track Kol,Reward 9,pachisi,no_keys,
+396,C87B42,e1df3f8030c302,8030,830,pickup,Dark Outfit,Pachisi Track Kol,Reward 10,pachisi,no_keys,
+397,C87B49,e1df3f8059c402,8059,859,pickup,Agility Seed,Pachisi Track Kol,Reward 11,pachisi,no_keys,
+398,C87B50,e1df3f0068c502,0068,068,pickup,Small Medal,Pachisi Track Kol,Reward 12,pachisi,no_keys,
+399,C87B57,e1df3f005ec602,005e,05e,pickup,Yggdrasil Leaf,Pachisi Track Kol,Reward 13,pachisi,no_keys,
+400,C87B5E,e1df3f805bc802,805b,85b,pickup,Life Nut,Pachisi Track Kol,Reward 14,pachisi,no_keys,
+401,C87B65,41c90c002dc902,002d,02d,pickup,Light Dress,Pachisi Track Kol,Reward 15,pachisi,no_keys,
+402,C87B6C,01c6150012ca02,0012,012,pickup,Gringham Whip,Pachisi Track Kol,Reward 16,pachisi,no_keys,
+403,C87B73,c1c20a0045cb02,0045,045,pickup,Life Ring,Pachisi Track Kol,Reward 17,pachisi,no_keys,
+404,C87B7A,80ca060072cc02,0072,072,pickup,Pachisi Ticket,Pachisi Track Kol,Reward 18,pachisi,no_keys,
+405,C87B81,00c7070072cd02,0072,072,pickup,Pachisi Ticket,Pachisi Track Kol,Reward 19,pachisi,no_keys,
+406,C87B88,2049100068ce02,0068,068,pickup,Small Medal,Pachisi Track Kol,Reward 20,pachisi,no_keys,
+407,C87B8F,2005050072cf02,0072,072,pickup,Pachisi Ticket,Pachisi Track Kol,Pachisi Exterior 1,pachisi,no_keys,
+408,C87B96,a083080072d002,0072,072,pickup,Pachisi Ticket,Pachisi Track Kol,Pachisi Exterior 2,pachisi,no_keys,
+409,C87B9D,a086080072d102,0072,072,pickup,Pachisi Ticket,Pachisi Track Kol,Pachisi Exterior 3,pachisi,no_keys,
+410,C87BA4,e1df3f805bd202,805b,85b,pickup,Life Nut,Pachisi Track Zipangu,Reward 1,pachisi,no_keys,
+411,C87BAB,e1df3f806ad302,806a,86a,pickup,Mystic Nut,Pachisi Track Zipangu,Reward 2,pachisi,no_keys,
+412,C87BB2,e1df3f803ad402,803a,83a,pickup,Misery Helmet,Pachisi Track Zipangu,Reward 3,pachisi,no_keys,
+413,C87BB9,e1df3f8040d502,8040,840,pickup,Silk Hat,Pachisi Track Zipangu,Reward 4,pachisi,no_keys,
+414,C87BC0,e1df3f0047d602,0047,047,pickup,Stone Wig,Pachisi Track Zipangu,Reward 5,pachisi,no_keys,
+415,C87BC7,e1df3f8050d702,8050,850,pickup,Tube Socks,Pachisi Track Zipangu,Reward 6,pachisi,no_keys,
+416,C87BCE,e1df3f0008d802,0008,008,pickup,Demon Axe,Pachisi Track Zipangu,Reward 7,pachisi,no_keys,
+417,C87BD5,e1df3f0059d902,0059,059,pickup,Strength Seed,Pachisi Track Zipangu,Reward 8,pachisi,no_keys,
+418,C87BDC,e1df3f004bda02,004b,04b,pickup,Pacifier,Pachisi Track Zipangu,Reward 9,pachisi,no_keys,
+419,C87BE3,e1df3f001adb02,001a,01a,pickup,Dragon Claw,Pachisi Track Zipangu,Reward 10,pachisi,no_keys,
+420,C87BEA,e1df3f8053dc02,8053,853,pickup,Change Staff,Pachisi Track Zipangu,Reward 11,pachisi,no_keys,
+421,C87BF1,e1df3f8042dd02,8042,842,pickup,Wizard Ring,Pachisi Track Zipangu,Reward 12,pachisi,no_keys,
+422,C87BF8,e1df3f0048de02,0048,048,pickup,Mohawk Wig,Pachisi Track Zipangu,Reward 13,pachisi,no_keys,
+423,C87BFF,e1df3f804adf02,804a,84a,pickup,Silver Rosary,Pachisi Track Zipangu,Reward 14,pachisi,no_keys,
+424,C87C06,e1df3f805ae002,805a,85a,pickup,Luck Seed,Pachisi Track Zipangu,Reward 15,pachisi,no_keys,
+425,C87C0D,e1df3f8050e102,8050,850,pickup,Tube Socks,Pachisi Track Zipangu,Reward 16,pachisi,no_keys,
+426,C87C14,e1df3f004de202,004d,04d,pickup,Power Belt,Pachisi Track Zipangu,Reward 17,pachisi,no_keys,
+427,C87C1B,e1df3f0059e302,0059,059,pickup,Strength Seed,Pachisi Track Zipangu,Reward 18,pachisi,no_keys,
+428,C87C22,e1df3f8042e402,8042,842,pickup,Wizard Ring,Pachisi Track Zipangu,Reward 19,pachisi,no_keys,
+429,C87C29,e1df3f804ce502,804c,84c,pickup,Speed Ring,Pachisi Track Zipangu,Reward 20,pachisi,no_keys,
+430,C87C30,e1df3f0032e602,0032,032,pickup,Ninja Suit,Pachisi Track Zipangu,Reward 21,pachisi,no_keys,
+431,C87C37,e1df3f8048e702,8048,848,pickup,Ruby Ring,Pachisi Track Zipangu,Reward 22,pachisi,no_keys,
+432,C87C3E,e1df3f0007e802,0007,007,pickup,Thor Sword,Pachisi Track Zipangu,Reward 23,pachisi,no_keys,
+433,C87C45,e1df3f0027e902,0027,027,pickup,Tight Bikini,Pachisi Track Zipangu,Reward 24,pachisi,no_keys,
+434,C87C4C,e1df3f005bea02,005b,05b,pickup,Wisdom Seed,Pachisi Track Zipangu,Reward 25,pachisi,no_keys,
+435,C87C53,e1df3f000aeb02,000a,00a,pickup,Sword Of Destruction,Pachisi Track Zipangu,Reward 26,pachisi,no_keys,
+436,C87C5A,e1df3f005aec02,005a,05a,pickup,Stamina Seed,Pachisi Track Zipangu,Reward 27,pachisi,no_keys,
+437,C87C61,e1df3f8037ed02,8037,837,pickup,Expel Shield,Pachisi Track Zipangu,Reward 28,pachisi,no_keys,
+438,C87C68,e1df3f8034ee02,8034,834,pickup,Sorrow Shield,Pachisi Track Zipangu,Reward 29,pachisi,no_keys,
+439,C87C6F,e1df3f0059ef02,0059,059,pickup,Strength Seed,Pachisi Track Zipangu,Reward 30,pachisi,no_keys,
+440,C87C76,e1df3f8043f002,8043,843,pickup,Starry Ring,Pachisi Track Zipangu,Reward 31,pachisi,no_keys,
+441,C87C7D,01c6060031f102,0031,031,pickup,Mystery Bolero,Pachisi Track Zipangu,Reward 32,pachisi,no_keys,
+442,C87C84,41c606006af202,006a,06a,pickup,Goddess Ring,Pachisi Track Zipangu,Reward 33,pachisi,no_keys,
+443,C87C8B,40c5090045f302,0045,045,pickup,Life Ring,Pachisi Track Zipangu,Pachisi Exterior 1,pachisi,no_keys,
+444,C87C92,00c7098046f402,8046,846,pickup,Gale Bandana,Pachisi Track Zipangu,Pachisi Exterior 2,pachisi,no_keys,
+445,CC9F5F,,,,event,Thief Key,Najimi Tower,Thief Key Elder,event,valid,
+446,CC9F71,,,,event,Magic Ball,Reeve,Reeve Elder,event,valid,thief_key
+447,"CC9FA4, CACB4C",,,,event,Dream Ruby,Underworld Lake,Underworld Lake Bottom,event,valid,
+448,CC9FB5,,,,event,Wake-Up Powder,Elf Village,Elf Queen,event,valid,
+449,CC9FC6,,,,event,Starry Ring,Isis Castle,Isis Basement,event,valid,
+450,CC9FD7,,,,event,Wizard Ring,Isis Castle,Isis Queen Room,event,valid,magic_key
+451,CC9FF9,,,,event,King's Letter,Portoga,Portoga Throne,event,valid,
+452,CCA02C,,,,event,Ortega's Helmet,Muor,Muor Family,event,valid,
+453,CCA05F,,,,event,Sailor's Bone,Sailor Bone Hut,Change Staff Man,event,valid,
+454,CCA0B4,,,,event,Green Orb,Tedanki,Tedanki Prisoner,event,valid,
+455,"CCA0E7, CB40D1",,,,event,Purple Orb,Zipangu,Orochi II,event,valid,
+456,CCA0F8,,,,event,Yellow Orb,Merchant Town,Merchant Town,event,valid,
+457,CCA13C,,,,event,Magic Bikini,Ashalam,Domdora Dancer Sidequest,event,valid,
+458,CCA15E,,,,event,Sacred Talisman,Rubiss Tower,Rubiss Statue,event,valid,
+459,CCA10F,,,,event,Silver Orb,Necrogond Shrine,Necrogond Attendant,event,valid,
