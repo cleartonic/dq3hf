@@ -15,9 +15,10 @@ with open(os.path.join(THIS_FILEPATH,'data.yml'),'r') as f:
     yaml_data = yaml.safe_load(f)
 
 df_chests = pd.read_csv(os.path.join(THIS_FILEPATH,'chest_id.csv'))
-df_chests = df_chests.iloc[:,:11]
+# df_chests = df_chests.iloc[:,:11]
 
 df_items = pd.read_csv(os.path.join(THIS_FILEPATH,'item_id.csv'), dtype='str')
+
 
 class Area():
     def __init__(self, area_name, area_data):
@@ -68,9 +69,8 @@ class Check():
         self.placed = True
         
         
-class KeyItem():
-    def __init__(self, name):
-        self.name = name
+        
+        
         
 class Collectible():
     def __init__(self, collectible_data):
@@ -85,13 +85,38 @@ class Collectible():
                 val = list(val.split(","))
                 val = [i.strip() for i in val]
             setattr(self, i, val)
+
             
+
+class KeyItem():
+    def __init__(self, name, ignore_data = False):
+        self.name = name
+        
+        if not ignore_data:
+            collectible_data = df_items[df_items['key_item_name']==name].iloc[0]
+            for i in collectible_data.index:
+                if collectible_data[i] != collectible_data[i]:
+                    val = None
+                else:
+                    val = collectible_data[i]
+                    
+                if i == 'name':
+                    i = 'proper_name'
+                    
+                if i == 'req' and val is not None:
+                    val = list(val.split(","))
+                    val = [i.strip() for i in val]
+                setattr(self, i, val)
+            
+        
+
                
 class CollectibleManager():
     def __init__(self, re):
         self.collectibles = []
         for i, r in df_items.iterrows():
             self.collectibles.append(Collectible(r))                
+      
         
         self.re = re
         self.history = {}
@@ -287,13 +312,23 @@ class World():
             if 'reward' in area.__dict__:
                 if area.reward not in self.key_names:
                     # logging.info("Adding reward %s for area %s" % (area.reward, area.name))
-                    self.keys.append(KeyItem(area.reward))
+                    self.keys.append(KeyItem(area.reward, ignore_data = True))
                     
         # this checks if the player has stones_of_sunlight and rain_staff, give them rainbow_drop
         
         if 'stones_of_sunlight' in self.key_names and 'rain_staff' in self.key_names and 'rainbow_drop' not in self.key_names:
             # logging.info("Adding rainbow_drop to key_items, stones and rain staff identified")
             self.keys.append(KeyItem('rainbow_drop'))
+            
+        # this checks if the player has can access black pepper via vanilla methods
+        
+        if 'Portoga' in self.area_names\
+        and 'Baharata' in self.area_names\
+        and 'Kazave' in self.area_names\
+        and ('magic_key' in self.key_names or 'final_key' in self.key_names)\
+        and 'black_pepper' not in self.key_names:
+            # logging.info("Adding black_pepper to key_items, areas & keys identified")
+            self.keys.append(KeyItem('black_pepper'))
 
 
     def gather_latest_reqs(self, passed_keys):
@@ -339,7 +374,9 @@ class World():
         #####################
         if self.seed_config['key_item_placement_method'] == 'dynamic':
 
-            placed_key_items = []
+            
+            # this gets init with the key items we don't want to place
+            placed_key_items = [KeyItem('black_pepper'),KeyItem('rainbow_drop')]
             
             latest_key_item_reqs_start = self.gather_latest_reqs(placed_key_items)
             
@@ -348,6 +385,7 @@ class World():
             
             def assign_keys(latest_key_item_reqs, bypass_gather=False):
                 while latest_key_item_reqs:
+                    # logging.info([i.name for i in latest_key_item_reqs])
                     key = latest_key_item_reqs.pop()
                     # logging.info("Checking key %s" % key.name)
                     # logging.info("Placing key item %s, len of latest_checks %s" % (key.name, len(self.latest_checks)))
@@ -430,14 +468,15 @@ class World():
     def report_placed_keys(self):
 
         if self.valid_seed:
-            items = [(i.full_name, i.placed_collectible.name.upper().replace("_"," ")) for i in self.checks if i.placed]
+            items = [(i.full_name, i.placed_collectible.name.upper().replace("_"," ")) for i in self.checks if i.placed and type(i.placed_collectible) == KeyItem]
             d = dict(zip(["{:<20}".format(i[1]) for i in items],[i[0] for i in items]))
     
             order = [   'THIEF KEY           ',
                         'MAGIC BALL          ',
                         'MAGIC KEY           ',
                         'KING LETTER         ',
-                        'BLACK PEPPER        ',
+                        'DREAM RUBY          ',
+                        'WAKE UP POWDER      ',
                         'THIRSTY PITCHER     ',
                         'FINAL KEY           ',
                         'SAILOR BONE         ',
@@ -452,6 +491,7 @@ class World():
                         'SILVER ORB          ',
                         'FAIRY FLUTE         ',
                         'RAIN STAFF          ',
+                        'SACRED TALISMAN     ',
                         'STONES OF SUNLIGHT  ',
                         'LIGHT ORB           ']
             
@@ -497,7 +537,7 @@ class World():
             self.add_area(self.am.get_area_by_name(a))
 
     def generate_seed(self):
-        key_items = [KeyItem(i) for i in ['thief_key','magic_key','magic_ball','final_key','black_pepper','king_letter','lovely_memories','gaia_sword','sailor_bone','thirsty_pitcher','blue_orb','green_orb','red_orb','silver_orb','yellow_orb','purple_orb','light_orb','stones_of_sunlight','rain_staff','ra_mirror','fairy_flute']]
+        key_items = [KeyItem(i) for i in ['thief_key','magic_key','magic_ball','final_key','king_letter','lovely_memories','gaia_sword','sailor_bone','thirsty_pitcher','sacred_talisman','blue_orb','green_orb','red_orb','silver_orb','yellow_orb','purple_orb','light_orb','stones_of_sunlight','rain_staff','ra_mirror','fairy_flute','dream_ruby','wake_up_powder']]
         
         if not self.valid_seed or not self.attempted_generation:
             self.attempted_generation = True
@@ -544,14 +584,14 @@ class World():
         
 
         
-SEED_NUM = 770689
-# SEED_NUM = random.randint(1,1000000)
+# SEED_NUM = 733016
+SEED_NUM = random.randint(1,1000000)
 logging.info("Seed number: %s" % SEED_NUM)
 random.seed(SEED_NUM)
 
 
 seed_config = {'starting_areas' : ['Aliahan'], 
-               'place_keys_in_chests_only' : False,
+               'place_keys_in_chests_only' : True,
                'shuffle_key_item_placement' : True,
                'seed_generation_attempt_count' : 25,
                'key_item_placement_method': 'dynamic'}
@@ -562,12 +602,61 @@ w.generate_seed()
 logging.info("\n\n\n")
 
 
+def b2i(byte):
+    return int(byte,base=16)
+def i2b(integer):
+    return hex(integer).replace("0x","").upper()
     
-    
-   
+output_str = 'hirom\n\n'
 
+######## PICKUPS
+for check in [i for i in w.checks if i.check_type == 'pickup']:
     
+    addr = i2b(b2i(check.address) + 3)
     
+    new_data = check.placed_collectible.data_1_l + check.item_data[1:2] + check.placed_collectible.data_2
+    
+    new_data = "$%s, $%s" % (new_data[0:2],new_data[2:4])
+    
+    output_str += ';%s\n;%s\norg $%s\ndb %s\n\n' % (check.full_name, check.placed_collectible.name,addr, new_data)
+    pass
+
+
+######## EVENTS
+for check in [i for i in w.checks if i.check_type == 'event']:
+    
+        
+    addresses = check.address.split(",")
+    
+    for addr in addresses:
+        addr = addr.strip()
+        new_data = "$%s" % (check.placed_collectible.bag_id)
+        output_str += ';%s\n;%s\norg $%s\ndb %s\n\n' % (check.full_name, check.placed_collectible.name,addr, new_data)
+    pass
+
+
+
+######## SMALL MEDALS
+
+output_str += '\n\n\n;SMALL MEDALS\norg $C31350\n'
+medal_cost = 1
+for tier in range(1,7):
+    collectibles = [i for i in w.cm.collectibles if i.tier == str(tier)]
+    choices = random.sample(collectibles, 2)
+    for choice in choices:
+        cost_byte = "0%s" % i2b(medal_cost)            
+        output_str += "db $%s, $%s\n" % (cost_byte, choice.bag_id)
+        medal_cost += 1
+output_str += "\n"
+    
+
+
+
+
+
+
+with open('asar/patch_r.asm','w') as f:
+    f.write(output_str)
     
     
     

@@ -1,2 +1,4 @@
 *.csv#
 done/*
+patch.asm
+asar/*

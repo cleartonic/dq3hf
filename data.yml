@@ -37,7 +37,7 @@ areas:
     Romaly:        
         connections:
             Cave of Temptation Romaly Side:
-                reqs: magic_key
+                reqs: thief_key
             Kazave:
             Ashalam:
             Pachisi Track Romaly:
@@ -138,7 +138,7 @@ areas:
         connections:
             Ashalam:
             Bahn Tunnel Baharata Side:
-                reqs: king_letter
+                reqs: king_letter, thief_key
                 
     Bahn Tunnel Baharata Side:
         connections:
@@ -377,7 +377,7 @@ areas:
             Kol:
             Marsh Cave:
             Zoma Castle:
-                reqs: rain_staff, stones_of_sunlight
+                reqs: rain_staff, stones_of_sunlight, sacred_talisman
                 
     Zoma Castle:
         connections:
