@@ -225,3 +225,12 @@ jml $C2A754
 ; Disable Dharma level checking
 org $C3E500
 cpx #$0001
+
+
+
+
+
+; misc fixes
+; Sabrina in Portoga weird issue w/ #7e3541
+org $cb0140
+jml $CB0148

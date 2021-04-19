@@ -1,3 +1,5 @@
 *.csv#
 done/*
 asar/patch_r.asm
+temp/
+output/

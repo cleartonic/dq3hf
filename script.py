@@ -1,6 +1,15 @@
-import yaml, os, json, math
-import logging, random
+import yaml, os, json, subprocess, logging, random, shutil
 from operator import itemgetter
+
+
+
+from PyQt5.QtWidgets import QLabel, QFrame, QLineEdit, QPushButton, QCheckBox, QApplication, QMainWindow, \
+                            QFileDialog, QDialog, QScrollArea, QMessageBox, QWidget, QTextEdit
+from PyQt5 import QtCore, QtGui
+from PyQt5.QtGui import QPixmap, QIntValidator, QPalette, QColor
+from PyQt5.QtCore import QThread, pyqtSignal, QTimer
+
+
 
 
 
@@ -9,6 +18,7 @@ logging.basicConfig(level=logging.DEBUG,
                     handlers=[logging.StreamHandler()])
 
 THIS_FILEPATH = os.path.dirname(__file__)
+TEMP_DIR = os.path.join(THIS_FILEPATH,'tmp')
 
 with open(os.path.join(THIS_FILEPATH,'data','data.yml'),'r') as f:
     yaml_data = yaml.safe_load(f)
@@ -17,12 +27,59 @@ with open(os.path.join('data','checks.json'),'r') as f:
     check_dict = json.load(f)
 with open(os.path.join('data','items.json'),'r') as f:
     items_dict = json.load(f)
+with open(os.path.join('data','shops.json'),'r') as f:
+    shops_dict = json.load(f)
+
 
 
 def b2i(byte):
     return int(byte,base=16)
 def i2b(integer):
     return hex(integer).replace("0x","").upper()
+def mean(numbers):
+    return float(sum(numbers)) / max(len(numbers), 1)
+
+
+if not os.path.exists(os.path.join(THIS_FILEPATH,"output")):
+    os.mkdir(os.path.join(THIS_FILEPATH,"output"))
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Area():
@@ -135,13 +192,15 @@ class CollectibleManager():
             if c.type != 'key_item':
                 self.history[c.name] = 0
         
+        
+        
     @property
     def history_average(self):
         if not self.history:
             return 0
         else:
             try:
-                return math.average(list(self.history.values()))
+                return mean(list(self.history.values()))
             except:
                 logging.info("Error on history_average, returning 0")
                 return 0
@@ -166,17 +225,114 @@ class CollectibleManager():
         check.place_collectible(chosen_collectible)
         self.history[chosen_collectible.name] = self.history[chosen_collectible.name] + 1
         
+    def choose_shop_collectibles(self, tier, k):
+        choices = [i for i in self.collectibles if i.valid == 'valid' and  i.shop_ignore != 'ignore' and i.type != 'key_item' and i.type != 'misc' and tier-1 < int(i.tier) < tier+1]
+        
+        if len(choices) < k:
+            # re roll once more tiers
+            choices = [i for i in self.collectibles if i.valid == 'valid' and i.type != 'key_item' and i.type != 'misc' and tier-2 < int(i.tier) < tier+2]
+            if len(choices) < k:
+                k = len(choices)
+                choices = [i for i in self.collectibles if i.valid == 'valid' and i.type != 'key_item' and i.type != 'misc' and tier-2 < int(i.tier) < tier+2]
+        return self.re.sample(choices,k)
+        
+        
+    def generate_price_changes(self):
+        
+        output_str = '\n;Price Changes\n'
+        for c in self.collectibles:
+            if c.cost_new:
+                cost_hex = i2b(int(c.cost_new))
+                output_str += 'org $%s\ndb $%s, $%s\n'  % (c.cost_addr, cost_hex[2:4], cost_hex[0:2])
+        return output_str
+        
 
-    
+        
+class Shop():
+    def __init__(self, shop_data):
+        self.name = shop_data['name']
+        for i in shop_data.keys():
+            if shop_data[i] != shop_data[i]:
+                val = None
+            else:
+                val = shop_data[i]
+                
+            if i == 'req' and val is not None:
+                val = list(val.split(","))
+                val = [i.strip() for i in val]
+            setattr(self, i, val)
+
+class ShopManager():
+    def __init__(self, re, cm):
+        self.shops = []
+        self.cm = cm
+        
+        #index system
+        for v in shops_dict.values():
+            self.shops.append(Shop(v))
+        self.re = re
+
+    def generate_shops(self):
+        
+        shop_data = {}
+        for shop in self.shops:
+            if shop.valid == 'valid':
+                temp_shop = {'items': {}}
+                # logging.info("Processing shop %s" % shop.name)
+                temp_shop_data = shop.data[2:]
+                shop_items = [i for i in [temp_shop_data[i:i+2] for i in range(0, len(temp_shop_data), 2)] if i != '00']
+                choices = self.cm.choose_shop_collectibles(int(shop.tier),len(shop_items))
+                for c in choices:
+                    temp_shop['items'][c.name] = c.bag_id
+                
+                if shop.name == 'Kol Item 2':
+                    temp_shop['items']['King Sword'] = 'E9'
+                if shop.name == 'Sioux Item':
+                    # delete last item, replace
+                    new_dict = {}
+                    for k in list(temp_shop['items'].keys())[:-2]:
+                        new_dict[k] = temp_shop['items'][k]
+                    temp_shop['items'] = new_dict
+                    temp_shop['items']['Invisible Herb'] = 'A9'
+                    temp_shop['items']['Moth Powder'] = 'C6'
+                if shop.name == 'Lancel Item':
+                    temp_shop['items']['Invisible Herb'] = 'A9'
+
+                    
+                temp_shop['addr'] = i2b(b2i(shop.addr) + 1)
+                shop_data[shop.name] = temp_shop
+        
+        output_str = '; SHOP DATA'
+        shop_log = "\n========== Shops:==========\n"
+        
+        for shop, data in shop_data.items():
+            output_str += ';%s\norg $%s\ndb $%s\n' % (shop, data['addr'], ', $'.join(data['items'].values()))
+            
+            shop_log += '%s:\n' % shop.upper()
+            for item in data['items'].keys():
+                shop_log += '%s\n' % item
+            shop_log += '\n'
+        
+        
+
+        
+        self.shop_asm = output_str
+        self.shop_log = shop_log
+                  
+
+                    
+
+
 class World():
-    def __init__(self, random, seed_config, seed_num):
+    def __init__(self, random, seed_config):
         self.areas = []
-        self.seed_num = seed_num
+        self.seed_num = seed_config['seed_num']
         self.keys = []
         self.latest_checks = []
         self.valid_seed = True
         self.am = AreaManager()
         self.cm = CollectibleManager(random)
+        self.sm = ShopManager(random, self.cm)
         self.re = random
         self.seed_config = seed_config
         self.attempted_generation = False
@@ -516,7 +672,7 @@ class World():
                   11:'6',
                   12:'6',}
         item_list = [i for i in range(1,13)]
-        random.shuffle(item_list)
+        self.re.shuffle(item_list)
         for medal_num in item_list:
             
             tier = medal_lookup[medal_num]
@@ -546,7 +702,7 @@ class World():
         
         
         output_str += '\n\n\n;SMALL MEDALS\norg $C31350\n'
-        medal_log = '\nSmall Medal Rewards:\n'
+        medal_log = '\n==========Small Medal Rewards:==========\n'
         
         medal_keys = sorted(list(medal_data.keys()))
         for medal_cost in medal_keys:
@@ -594,7 +750,7 @@ class World():
             
             final = ["%s%s" % (i, d[i]) for i in order]          
 
-            items_str +=  "\nKEY ITEM CHECKS:\n"
+            items_str +=  "\n==========Key Item Checks:==========\n"
             for i in final:
                 items_str +=  "%s\n" % i
         return items_str
@@ -609,7 +765,7 @@ class World():
             
 
 
-            items_str += "\nALL CHECKS:\n"
+            items_str += "\n==========All Checks:==========\n"
             for a, b, c in items:
                 items_str +=  "%s%s\n" % ("{:80}".format(a),b)
                 
@@ -619,7 +775,7 @@ class World():
     def report_placed_medal_items(self):
         medal_str = self.medal_log  
         placed_names = [i.full_name for i in self.checks if i.placed_collectible.bag_id == 'D0']
-        medal_str += "\nSmall Medal Locations:\n"
+        medal_str += "\n==========Small Medal Locations:==========\n"
         for i in placed_names:
             medal_str += '%s\n' % i
         return medal_str
@@ -628,14 +784,22 @@ class World():
     def generate_spoiler(self):
         spoiler_str = 'SPOILER LOG:\nSeed: %s\n' % self.seed_num
         
+        spoiler_str += '\n==========Configurations:==========\n'
+        for k, v in self.seed_config.items():
+            spoiler_str += "%s%s\n" % ("{:<30}".format(k), v)
+        
+        spoiler_str += '\n'
+        
         spoiler_str += self.report_placed_items()
-        spoiler_str += self.report_placed_keys()     
         spoiler_str += self.report_placed_medal_items()     
+        spoiler_str += self.sm.shop_log
+        spoiler_str += self.report_placed_keys()     
         
         self.spoiler_log = spoiler_str
+        with open(os.path.join(THIS_FILEPATH,'output','dq3_%s.log' % self.seed_num),'w') as f:
+            f.write(spoiler_str)
         with open(os.path.join(THIS_FILEPATH,'asar','spoiler.log'),'w') as f:
             f.write(spoiler_str)
-            
         
     def place_items(self):
 
@@ -683,8 +847,12 @@ class World():
             pass
         
         output_str += self.medal_asm
+        output_str += self.sm.shop_asm
+        output_str += self.cm.generate_price_changes()
 
         with open(os.path.join(THIS_FILEPATH,'asar','patch_r.asm'),'w') as f:
+            f.write(output_str)
+        with open(os.path.join(self.temp_,'asar','patch_r.asm'),'w') as f:
             f.write(output_str)
             
         
@@ -719,6 +887,7 @@ class World():
             # begin item placement
             self.place_items()
             self.place_medal_rewards()
+            self.sm.generate_shops()
             
             
             # reporting            
@@ -739,29 +908,143 @@ class World():
     
         
 
+if False:        
+    # SEED_NUM = 966503
+    SEED_NUM = random.randint(1,1000000)
+    logging.info("Seed number: %s" % SEED_NUM)
+    random.seed(SEED_NUM)
+    
+    
+    seed_config = {'starting_areas' : ['Aliahan','Samanosa'], 
+                   'place_keys_in_chests_only' : True,
+                   'shuffle_key_item_placement' : True,
+                   'seed_generation_attempt_count' : 25,
+                   'key_item_placement_method': 'dynamic',
+                   'small_medal_count' : 15,
+                   'seed_num' : SEED_NUM}
+    y = World(random, seed_config)
+    
+    try:
+        y.generate_seed()
+        logging.info("\n\n\n")
+        logging.info(y.spoiler_log)
+    
+    except Exception as e:
+        logging.info("Seed resulted in error. Seed was not generated: %s" % e)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+class MainWindow(object):
+    SCREEN_HEIGHT = 600
+    SCREEN_WIDTH = 600
+    def __init__(self):
+        self.app = QApplication([])
+        self.window = QMainWindow()
+        self.window.setFixedSize(self.SCREEN_WIDTH,self.SCREEN_HEIGHT)
+        self.window.setWindowTitle('DQ3R')
+        self.icon = QtGui.QIcon()
+        self.icon.addPixmap(QtGui.QPixmap("ico.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.window.setWindowIcon(self.icon)
+
+
+        self.title_container = QLabel(self.window)
+        self.title_container.setGeometry(QtCore.QRect(0, 0, self.SCREEN_WIDTH, 30))
+        # self.title_container = self.set_white(self.title_container)
         
-# SEED_NUM = 733016
-SEED_NUM = random.randint(1,1000000)
-logging.info("Seed number: %s" % SEED_NUM)
-random.seed(SEED_NUM)
-
-
-seed_config = {'starting_areas' : ['Aliahan'], 
-               'place_keys_in_chests_only' : True,
-               'shuffle_key_item_placement' : True,
-               'seed_generation_attempt_count' : 25,
-               'key_item_placement_method': 'dynamic',
-               'small_medal_count' : 15}
-y = World(random, seed_config, SEED_NUM)
-
-y.generate_seed()
-
-logging.info("\n\n\n")
-logging.info(y.spoiler_log)
+        self.title_label = QLabel("DQ3R",self.window)
+        self.title_label.setGeometry(QtCore.QRect(0, 0, self.SCREEN_WIDTH, 30))
+        self.title_label.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.title_label_border = QFrame(self.window)
+        self.title_label_border.setGeometry(QtCore.QRect(0, 0, self.SCREEN_WIDTH, 30))
+        self.title_label_border.setStyleSheet("border:2px solid rgb(0, 0, 0); ")
 
 
 
 
+        self.rom_label = QLabel("Input ROM path:",self.window)
+        self.rom_label.setGeometry(QtCore.QRect(10, 40, 120, 30))
+        self.rom_label.setToolTip('Choose ROM path:')
+        
+        self.rom_label_input = QLineEdit("",self.window)
+        self.rom_label_input.setGeometry(QtCore.QRect(140, 40, 360, 30))
+        self.rom_label_input.setToolTip('Choose ROM path:')
+        self.rom_label_input.setText("")
+
+        self.rom_button = QPushButton("Browse",self.window)
+        self.rom_button.setGeometry(QtCore.QRect(510, 40, 80, 30))
+        self.rom_button.clicked.connect(self.rom_input_click)
+
+
+
+        self.seed_label = QLabel("Seed:",self.window)
+        self.seed_label.setGeometry(QtCore.QRect(10, 80, 120, 30))
+        self.seed_label.setToolTip('Choose a seed number. Blank will generate a new random one.')
+        
+        self.seed_label_input = QLineEdit("",self.window)
+        self.seed_label_input.setGeometry(QtCore.QRect(140, 80, 360, 30))
+        self.seed_label_input.setToolTip('Choose a seed number. Blank will generate a new random one.')
+        self.seed_label_input.setText("")
+        self.onlyInt = QIntValidator()
+        self.seed_label_input.setValidator(self.onlyInt)        
+        
+
+
+        self.key_item_chests_checkbox = QCheckBox("Place Key Items in chests only",self.window)
+        self.key_item_chests_checkbox.setGeometry(QtCore.QRect(10, 120, 350, 30))
+        self.key_item_chests_checkbox.setToolTip('Checked: Key Items will only be placed in chests. Searchable locations (visible and invisible) and NPC events will not have keys.\nUnchecked: Key Items can be placed anywhere. All checks have logical requirements.')
+        self.key_item_chests_checkbox.setChecked(True)
+
+
+        self.small_medal_count_label = QLabel("Small Medal count:",self.window)
+        self.small_medal_count_label.setGeometry(QtCore.QRect(380, 120, 200, 30))
+        self.small_medal_count_label.setToolTip('Number of Small Medals to place in the world. Only 12 Small Medals are required for all rewards.\nMinimum amount is 0, and maximum amount is 50.')  
+
+        self.small_medal_count_input = QLineEdit("15",self.window)
+        self.small_medal_count_input.setGeometry(QtCore.QRect(540, 120, 40, 30))
+        self.small_medal_count_input.setValidator(self.onlyInt)        
+
+        
+        self.generate_button = QPushButton("Generate",self.window)
+        self.generate_button.setGeometry(QtCore.QRect(10, 240, 580, 30))
+        self.generate_button.clicked.connect(self.generate)
+
+    
+
+
+
+
+
+
+        self.log_header_label = QLabel("Console log:",self.window)
+        self.log_header_label.setGeometry(QtCore.QRect(10, 280, 90, 30))
+
+        self.log_output = QTextEdit(self.window)
+        self.log_output.setGeometry(QtCore.QRect(10, 320, 580, 200))
+        # self.log_output = self.set_white(self.log_output)
+        self.log_output.verticalScrollBar().setValue(self.log_output.verticalScrollBar().minimum())
+        
+        self.log_output_thread = LogThread(self.window)
+        self.log_output_thread.log.connect(self.update_log_text)
+        # self.log_output_thread.started.connect(lambda: self.update_log('start'))
+        
+        
+        self.log_clear_button = QPushButton("Clear Log",self.window)
+        self.log_clear_button.setGeometry(QtCore.QRect(10, 540, 100, 30))
+        self.log_clear_button.clicked.connect(self.clear_log)        
 
 
 
@@ -774,6 +1057,148 @@ logging.info(y.spoiler_log)
 
 
 
+        # Final settings
+        self.app.setStyle('Fusion')
+        self.app.setFont(QtGui.QFont("Segoe UI", 12))
+        
+        palette = QPalette()
+        palette.setColor(QPalette.Window, QColor(53, 53, 53))
+        palette.setColor(QPalette.WindowText, QColor(255, 255, 255))
+        palette.setColor(QPalette.Base, QColor(25, 25, 25))
+        palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
+        palette.setColor(QPalette.ToolTipBase, QColor(255, 255, 255))
+        palette.setColor(QPalette.ToolTipText, QColor(255, 255, 255))
+        palette.setColor(QPalette.Text, QColor(255, 255, 255))
+        palette.setColor(QPalette.Button, QColor(53, 53, 53))
+        palette.setColor(QPalette.ButtonText, QColor(255, 255, 255))
+        palette.setColor(QPalette.BrightText, QColor(120, 120, 0))
+        palette.setColor(QPalette.Link, QColor(42, 130, 218))
+        palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
+        palette.setColor(QPalette.HighlightedText, QColor(0, 0, 0))
+        self.app.setPalette(palette)
+
+
+    def update_log(self, text):
+        self.log_output_thread.setText(text)
+        self.log_output_thread.start()
+        
+    def update_log_text(self, val):
+        self.log_output.append(str(val))
+        
+    def clear_log(self, message):
+        self.log_output.setText("")
+
+
+    def rom_input_click(self):
+        dialog = QFileDialog()
+        new_file = dialog.getOpenFileName(None,"Select video","",filter="sfc (*.sfc);;smc (*.smc)")
+        self.rom_label_input.setText(new_file[0])
+
+    def generate(self):
+        # parse configs into dict
+
+    
+        if not os.path.exists(TEMP_DIR):
+            os.mkdir(TEMP_DIR)
+        
+        try:
+    
+    
+            try:        
+                medal_parse = int(self.small_medal_count_input.text())
+                if medal_parse < 0:
+                    medal_parse = 0
+                if medal_parse > 50:
+                    medal_parse = 50
+            except:
+                medal_parse = 12
+            
+    
+            if self.seed_label_input.text():
+                SEED_NUM = int(self.seed_label_input.text())
+            else:
+                SEED_NUM = random.randint(1,1000000)
+    
+    
+            seed_config = {'starting_areas' : ['Aliahan'], 
+                            'place_keys_in_chests_only' : self.key_item_chests_checkbox.isChecked(),
+                            'shuffle_key_item_placement' : True,
+                            'seed_generation_attempt_count' : 25,
+                            'key_item_placement_method': 'dynamic',
+                            'small_medal_count' : medal_parse,
+                            'seed_num' : SEED_NUM}
+    
+            self.update_log_text("Beginning seed generation...")        
+            self.update_log_text("Seed number %s..." % SEED_NUM)
+            
+            logging.info("Seed number: %s" % SEED_NUM)
+            random.seed(SEED_NUM)
+            y = World(random, seed_config)
+            
+            try:
+                y.generate_seed()
+                logging.info("\n\n\n")
+                logging.info(y.spoiler_log)
+            
+                self.update_log_text("Finished generation!")
+            
+            except Exception as e:
+                logging.info("Seed resulted in error. Seed was not generated: %s" % e)
+                self.update_log("Seed resulted in error. Seed was not generated: %s" % e)
+
+        except Exception as e:
+            logging.info("Program error %s" % e)
+            self.update_log("Program error %s" % e)
+
+        if not os.path.exists(TEMP_DIR):
+            os.rm(TEMP_DIR)        
+                
+                
+        
+
+        
+class LogThread(QThread):
+    log = pyqtSignal(str)
+
+    def __init__(self, parent=None):
+        super(LogThread, self).__init__(parent)
+        self._text = ''
+
+    def setText(self, text):
+            self._text = text
+
+    def run(self):
+        self.log.emit(str(self._text))
+
+        
+        
+        
 
 
 
+# if __name__ == '__main__':
+#     main_window = MainWindow()
+#     main_window.window.show()
+#     # main_window.app.setStyleSheet(qdarkstyle.load_stylesheet_pyside())
+#     main_window.app.exec_()
+#     # del main_window
+
+
+
+    
+temp_dir = os.path.join(THIS_FILEPATH,'tmp')
+
+    
+TEMP_SEED = random.randint(1,1000000)
+ROM_PATH = "E:\pmac_junk_rev_1\emulators\DQIII\ROM\dq3_en_patch.sfc"
+NEW_ROM_PATH = os.path.join(THIS_FILEPATH,'temp', "dq3_%s.sfc" % TEMP_SEED)
+shutil.copy(ROM_PATH, NEW_ROM_PATH)
+
+sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", "asar/patch.asm", "%s" % NEW_ROM_PATH]
+    
+subprocess.call(sh_calls)
+    
+    
+    
+    
+    

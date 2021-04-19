@@ -1,0 +1,51 @@
+idx,addr,name,data,valid,tier
+1,C30908,Reeve Item,8277b8b9babb0000,valid,1
+2,C30910,Reeve Weapon,0036030d3e3f5579,valid,1
+3,C30918,Portoga Item,82b8b9babbbf0000,valid,2
+4,C30920,Portoga Weapon,0007062241665c00,valid,2
+5,C30928,Merchant Form 2 Item,82b8790000000000,valid,3
+6,C30930,Merchant Form 3 Item,82b8babb79000000,valid,3
+7,C30938,Merchant Form 4 Weapon,00183b212b5e0000,valid,4
+8,C30940,Merchant Form 5 Weapon,003b202b5e6e5400,valid,4
+9,C30948,Merchant Form 4/5 Item,82b8babbc6c7a900,valid,4
+10,C30950,Noaniels Item,02070844babbbfc7,valid,2
+11,C30958,Ashalam Weapon Barter,00083206595c7300,valid,2
+12,C30960,Ashalam Night Weapon,00040d05230a0600,valid,2
+13,C30968,Ashalam Item,82b9bf0000000000,valid,2
+14,C30970,Ashalam Weapon,004c416a6c467c00,valid,2
+15,C30978,Ashalam Barter,82b8b9babbc79800,valid,2
+16,C30980,Baharata Weapon,00250c16426d7f00,valid,3
+17,C30988,Baharata Item,82b8b9babbbfc700,valid,3
+18,C30990,Lancel Item,82babba900000000,valid,3
+19,C30998,Lancel Weapon,00221a334449437a,valid,3
+20,C309A0,Rimuldar Weapon,00192d446e717e00,valid,5
+21,C309A8,Domdora Item,82b8b9babbbfdf00,valid,5
+22,C309B0,Domdora Weapon,00200f4952674e00,valid,5
+23,C309B8,Isis Item 1,8277b8b9babbbf00,valid,3
+24,C309C0,Isis Weapon,00073206415d6673,valid,3
+25,C309C8,Isis Item 2,8277b8b9babbbf00,valid,3
+26,C309D0,Kazave Weapon,00050a2341486a6c,valid,2
+27,C309D8,Kazave Item,827bb8b9babbbf8c,valid,2
+28,C309E0,Elf Village Item,82548525309cd600,valid,6
+29,C309E8,Tedanki Weapon,0025220c59494383,valid,4
+30,C309F0,Muor Item,82b8b9babbbfc600,valid,4
+31,C309F8,Muor Weapon,0037210c445c6d00,valid,4
+32,C30A00,Sioux Item,82b8b9bfc6a9907d,valid,3
+33,C30A08,Sioux Weapon,0002093a56406d00,valid,3
+34,C30A10,Kol Weapon,00183b33534b6b2f,valid,5
+35,C30A18,Kol Item 1,08b8babbbf9d0000,valid,5
+36,C30A20,Kol Item 2,02b8babbbf1e9d00,valid,5
+37,C30A28,Aliahan Item,82b8b9bb70000000,invalid,1
+38,C30A30,Aliahan Weapon,000102033d4d3f65,valid,1
+39,C30A38,Romaly Item,824679b8b9babbbf,valid,2
+40,C30A40,Romaly Weapon,00040d053f504c6a,valid,2
+41,C30A48,Samanosa Item,82b8b9babbbfc600,invalid,4
+42,C30A50,Samanosa Weapon,00213318436e7f7a,invalid,4
+43,C30A58,Ludatorm Weapon,00203354526e6b82,invalid,5
+44,C30A60,Ludatorm Item,82b8b9babbbfa900,invalid,5
+45,C30A68,Pachisi Track 1,0607576600000000,invalid,4
+46,C30A70,Pachisi Track 2,0659073800000000,invalid,4
+47,C30A78,Pachisi Track 3,0628998300000000,invalid,5
+48,C30A80,Pachisi Track 4,06535b0e00000000,invalid,5
+49,C30A88,Pachisi Track 5A,065a9ce400000000,invalid,6
+50,C30A90,Pachisi Track 5B,0685a8db00000000,invalid,6
