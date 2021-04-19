@@ -1,8 +1,5 @@
 import yaml, os, json, subprocess, logging, random, shutil
 from operator import itemgetter
-
-
-
 from PyQt5.QtWidgets import QLabel, QFrame, QLineEdit, QPushButton, QCheckBox, QApplication, QMainWindow, \
                             QFileDialog, QDialog, QScrollArea, QMessageBox, QWidget, QTextEdit
 from PyQt5 import QtCore, QtGui
@@ -20,6 +17,17 @@ logging.basicConfig(level=logging.DEBUG,
 THIS_FILEPATH = os.path.dirname(__file__)
 TEMP_DIR = os.path.join(THIS_FILEPATH,'tmp')
 
+
+
+DEV_OVERRIDE = True
+try:
+    with open(os.path.join(THIS_FILEPATH,'dev','path.txt'),'r') as f:
+        DEV_ROM_PATH = f.read()
+except:
+    DEV_ROM_PATH = ''
+
+
+
 with open(os.path.join(THIS_FILEPATH,'data','data.yml'),'r') as f:
     yaml_data = yaml.safe_load(f)
 
@@ -30,18 +38,10 @@ with open(os.path.join('data','items.json'),'r') as f:
 with open(os.path.join('data','shops.json'),'r') as f:
     shops_dict = json.load(f)
 
-
-
-def b2i(byte):
-    return int(byte,base=16)
-def i2b(integer):
-    return hex(integer).replace("0x","").upper()
-def mean(numbers):
-    return float(sum(numbers)) / max(len(numbers), 1)
-
-
 if not os.path.exists(os.path.join(THIS_FILEPATH,"output")):
     os.mkdir(os.path.join(THIS_FILEPATH,"output"))
+if not os.path.exists(os.path.join(THIS_FILEPATH,"tmp")):
+    os.mkdir(os.path.join(THIS_FILEPATH,"tmp"))
     
 
 
@@ -79,6 +79,15 @@ if not os.path.exists(os.path.join(THIS_FILEPATH,"output")):
 
 
 
+
+
+
+def b2i(byte):
+    return int(byte,base=16)
+def i2b(integer):
+    return hex(integer).replace("0x","").upper()
+def mean(numbers):
+    return float(sum(numbers)) / max(len(numbers), 1)
 
 
 
@@ -337,6 +346,10 @@ class World():
         self.seed_config = seed_config
         self.attempted_generation = False
         
+        self.shuffle_key_item_placement = True
+        self.seed_generation_attempt_count = 25
+        self.key_item_placement_method = 'dynamic'
+        
     @property
     def key_names(self):
         return [i.name for i in self.keys]
@@ -429,8 +442,6 @@ class World():
 
 
                     if connection != "None":
-                        # if area.name == 'Sea' and "Olivia" in connection:
-                        #     breakpoint()                            
                         if not configs:
                             # logging.info("Area %s has no reqs, attempting add" % connection)
                             add_area_to_check(connection)                
@@ -510,7 +521,6 @@ class World():
         latest_reqs = []
         for a in self.areas:
             
-            # breakpoint()
             # first gather reqs for area's connections
             for c in a.connections:
                 if a.connections[c]:
@@ -532,20 +542,19 @@ class World():
         
         
         new_keys = [i for i in all_keys if i not in passed_keys]
-        # breakpoint()
         return [KeyItem(i) for i in new_keys]
         
     def place_key_items(self, passed_key_items):
         
         # key items first
-        if self.seed_config['shuffle_key_item_placement']:
+        if self.shuffle_key_item_placement:
             self.re.shuffle(passed_key_items)
             
             
         #####################
         # DYNAMIC (PLACEMENT PRIORITIZES KEY ITEMS THAT ARE REQUIRED TO OPEN THE WORLD)
         #####################
-        if self.seed_config['key_item_placement_method'] == 'dynamic':
+        if self.key_item_placement_method == 'dynamic':
 
             
             # this gets init with the key items we don't want to place
@@ -554,7 +563,6 @@ class World():
             latest_key_item_reqs_start = self.gather_latest_reqs(placed_key_items)
             
             # logging.info("First: %s" % len(latest_key_item_reqs_start))
-            # breakpoint()
             
             def assign_keys(latest_key_item_reqs, bypass_gather=False):
                 while latest_key_item_reqs:
@@ -590,14 +598,12 @@ class World():
 
             assign_keys(latest_key_item_reqs_start)
 
-            # breakpoint()
             # this is saying, place all the key items that hadnt yet been placed
             latest_key_item_reqs_final = [i.name for i in passed_key_items if i.name not in [i.name for i in placed_key_items]]
             # logging.info("Placing missing keys %s" % latest_key_item_reqs_final)
 
             latest_key_item_reqs_final = [KeyItem(i) for i in latest_key_item_reqs_final]
             
-            # breakpoint()
             assign_keys(latest_key_item_reqs_final, bypass_gather=True)
             
 
@@ -608,7 +614,7 @@ class World():
         #####################
 
 
-        elif self.seed_config['key_item_placement_method'] == 'basic':
+        elif self.key_item_placement_method == 'basic':
                 
                 
                 
@@ -852,7 +858,7 @@ class World():
 
         with open(os.path.join(THIS_FILEPATH,'asar','patch_r.asm'),'w') as f:
             f.write(output_str)
-        with open(os.path.join(self.temp_,'asar','patch_r.asm'),'w') as f:
+        with open(os.path.join(TEMP_DIR,'patch_r.asm'),'w') as f:
             f.write(output_str)
             
         
@@ -870,7 +876,7 @@ class World():
             self.place_key_items(key_items)
 
             attempts = 2
-            while not self.valid_seed and attempts < self.seed_config['seed_generation_attempt_count']:
+            while not self.valid_seed and attempts < self.seed_generation_attempt_count:
                 logging.info("Seed generation attempt %s" % attempts)
                 self.reset_seed()
                 self.assign_starting_areas()
@@ -915,11 +921,8 @@ if False:
     random.seed(SEED_NUM)
     
     
-    seed_config = {'starting_areas' : ['Aliahan','Samanosa'], 
+    seed_config = {'starting_areas' : ['Aliahan'], 
                    'place_keys_in_chests_only' : True,
-                   'shuffle_key_item_placement' : True,
-                   'seed_generation_attempt_count' : 25,
-                   'key_item_placement_method': 'dynamic',
                    'small_medal_count' : 15,
                    'seed_num' : SEED_NUM}
     y = World(random, seed_config)
@@ -1092,70 +1095,92 @@ class MainWindow(object):
     def rom_input_click(self):
         dialog = QFileDialog()
         new_file = dialog.getOpenFileName(None,"Select video","",filter="sfc (*.sfc);;smc (*.smc)")
-        self.rom_label_input.setText(new_file[0])
+        if not new_file[0]:
+            self.update_log_text("No file chosen. Generation will not occur until a file is chosen.")            
+        else:
+            self.rom_label_input.setText(new_file[0])
 
     def generate(self):
         # parse configs into dict
 
-    
-        if not os.path.exists(TEMP_DIR):
-            os.mkdir(TEMP_DIR)
-        
-        try:
-    
-    
-            try:        
-                medal_parse = int(self.small_medal_count_input.text())
-                if medal_parse < 0:
-                    medal_parse = 0
-                if medal_parse > 50:
-                    medal_parse = 50
-            except:
-                medal_parse = 12
-            
-    
-            if self.seed_label_input.text():
-                SEED_NUM = int(self.seed_label_input.text())
-            else:
-                SEED_NUM = random.randint(1,1000000)
-    
-    
-            seed_config = {'starting_areas' : ['Aliahan'], 
-                            'place_keys_in_chests_only' : self.key_item_chests_checkbox.isChecked(),
-                            'shuffle_key_item_placement' : True,
-                            'seed_generation_attempt_count' : 25,
-                            'key_item_placement_method': 'dynamic',
-                            'small_medal_count' : medal_parse,
-                            'seed_num' : SEED_NUM}
-    
-            self.update_log_text("Beginning seed generation...")        
-            self.update_log_text("Seed number %s..." % SEED_NUM)
-            
-            logging.info("Seed number: %s" % SEED_NUM)
-            random.seed(SEED_NUM)
-            y = World(random, seed_config)
+        if self.rom_label_input.text() != '' or DEV_OVERRIDE:
+            if DEV_OVERRIDE:
+                self.rom_label_input.setText(DEV_ROM_PATH)
             
             try:
-                y.generate_seed()
-                logging.info("\n\n\n")
-                logging.info(y.spoiler_log)
-            
-                self.update_log_text("Finished generation!")
-            
-            except Exception as e:
-                logging.info("Seed resulted in error. Seed was not generated: %s" % e)
-                self.update_log("Seed resulted in error. Seed was not generated: %s" % e)
-
-        except Exception as e:
-            logging.info("Program error %s" % e)
-            self.update_log("Program error %s" % e)
-
-        if not os.path.exists(TEMP_DIR):
-            os.rm(TEMP_DIR)        
-                
+                try:        
+                    medal_parse = int(self.small_medal_count_input.text())
+                    if medal_parse < 0:
+                        medal_parse = 0
+                    if medal_parse > 50:
+                        medal_parse = 50
+                except:
+                    medal_parse = 12
                 
         
+                if self.seed_label_input.text():
+                    SEED_NUM = int(self.seed_label_input.text())
+                else:
+                    SEED_NUM = random.randint(1,1000000)
+        
+        
+                seed_config = {'starting_areas' : ['Aliahan'], 
+                                'place_keys_in_chests_only' : self.key_item_chests_checkbox.isChecked(),
+                                'small_medal_count' : medal_parse,
+                                'seed_num' : SEED_NUM}
+        
+                self.update_log_text("Beginning seed generation...")        
+                self.update_log_text("Seed number %s..." % SEED_NUM)
+                
+                logging.info("Seed number: %s" % SEED_NUM)
+                random.seed(SEED_NUM)
+                self.world = World(random, seed_config)
+                
+                try:
+                    self.world.generate_seed()
+                    logging.info("\n\n\n")
+                    logging.info(self.world.spoiler_log)
+                
+                    self.update_log_text("Finished seed creation, patching ROM...")
+                    
+                    self.patch_rom()                    
+                    
+                
+                except Exception as e:
+                    logging.info("Seed resulted in error. Seed was not generated: %s" % e)
+                    self.update_log("Seed resulted in error. Seed was not generated: %s" % e)
+    
+            except Exception as e:
+                logging.info("Program error %s" % e)
+                self.update_log("Program error %s" % e)
+    
+        else:
+            self.update_log_text("No file chosen. Generation will not occur until a file is chosen.")            
+                
+    def patch_rom(self):
+        
+        
+        try:
+            new_rom_path = os.path.join(THIS_FILEPATH,'tmp', "dq3_%s.sfc" % self.world.seed_num)
+            shutil.copy(self.rom_label_input.text(), new_rom_path)
+            
+            sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", os.path.join("tmp","patch_r.asm"), new_rom_path]
 
+            subprocess.call(sh_calls)
+    
+            shutil.move(new_rom_path, os.path.join(THIS_FILEPATH, 'output',os.path.basename(new_rom_path)))
+            try:
+                os.remove(os.path.join(THIS_FILEPATH,'tmp','patch_r.asm'))
+            except Exception as e:
+                logging.info("Could not remove files from tmp dir: %s" % e)
+            
+            logging.info("File %s successfully patched & created! " % (new_rom_path))
+            self.update_log_text("File %s successfully patched & created! " % (new_rom_path))
+        except Exception as e:
+            logging.info("File %s was NOT successfully patched & created: %s " % (new_rom_path, e))
+            self.update_log_text("File %s was NOT successfully patched & created: %s " % (new_rom_path, e))
+        
+        
         
 class LogThread(QThread):
     log = pyqtSignal(str)
@@ -1176,29 +1201,22 @@ class LogThread(QThread):
 
 
 
-# if __name__ == '__main__':
-#     main_window = MainWindow()
-#     main_window.window.show()
-#     # main_window.app.setStyleSheet(qdarkstyle.load_stylesheet_pyside())
-#     main_window.app.exec_()
-#     # del main_window
+if __name__ == '__main__':
+    main_window = MainWindow()
+    main_window.window.show()
+    # main_window.app.setStyleSheet(qdarkstyle.load_stylesheet_pyside())
+    main_window.app.exec_()
+    # del main_window
 
 
 
+if False:    
+    temp_dir = os.path.join(THIS_FILEPATH,'tmp')
     
-temp_dir = os.path.join(THIS_FILEPATH,'tmp')
+        
 
-    
-TEMP_SEED = random.randint(1,1000000)
-ROM_PATH = "E:\pmac_junk_rev_1\emulators\DQIII\ROM\dq3_en_patch.sfc"
-NEW_ROM_PATH = os.path.join(THIS_FILEPATH,'temp', "dq3_%s.sfc" % TEMP_SEED)
-shutil.copy(ROM_PATH, NEW_ROM_PATH)
-
-sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", "asar/patch.asm", "%s" % NEW_ROM_PATH]
-    
-subprocess.call(sh_calls)
-    
-    
-    
-    
-    
+        
+        
+        
+        
+        

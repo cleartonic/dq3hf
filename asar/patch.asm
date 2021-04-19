@@ -1,4 +1,4 @@
 hirom
 
-incsrc patch_r.asm
+incsrc ../tmp/patch_r.asm
 incsrc misc.asm

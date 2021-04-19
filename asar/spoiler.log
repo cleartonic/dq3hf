@@ -1,840 +1,837 @@
 SPOILER LOG:
-Seed: 138242
+Seed: 261245
 
 ==========Configurations:==========
 starting_areas                ['Aliahan']
 place_keys_in_chests_only     True
-shuffle_key_item_placement    True
-seed_generation_attempt_count 25
-key_item_placement_method     dynamic
 small_medal_count             15
-seed_num                      138242
+seed_num                      261245
 
 
 ==========All Checks:==========
-1:   Reeve:                           Elder House 1F Pot                        PLUSH SUIT
-2:   Reeve:                           Elder House 2F Drawer                     NAUGHTY BOOK
-3:   Reeve:                           Field                                     MOHAWK WIG
-4:   Reeve:                           House Bookshelf                           SILVER BARRETTE
-5:   Portoga:                         Inn Drawer                                MAGIC ROBE
-6:   Portoga:                         Stable                                    MISERY HELMET
-7:   Portoga:                         Hidden Passage Right Bookshelf            SILVER SHIELD
-8:   Portoga:                         Hidden Passage Pot                        STRENGTH SEED
-9:   Portoga:                         House Sack                                STEEL WHIP
-10:  Portoga:                         Castle Vault Middle                       YELLOW ORB
-11:  Portoga:                         Castle Vault Right                        AGILITY SEED
-12:  Portoga:                         Castle Vault Left                         CHANGE STAFF
-13:  Merchant Town:                   Form 3 Throne Right                       WING OF WYVERN
-14:  Merchant Town:                   Form 3 Throne Left                        DOUBLE-EDGED SWORD
-15:  Merchant Town:                   Form 2 Pool                               HORNED HAT
-16:  Merchant Town:                   Form 3 Inn Drawer                         JUSTICE ABACUS
-17:  Merchant Town:                   Form 4 Inn Drawer                         WAR HAMMER
-18:  Merchant Town:                   Form 3 Theater Left Drawer                ANGEL ROBE
-19:  Merchant Town:                   Form 3 Theater Right Drawer               DRAGON TAIL
-20:  Merchant Town:                   Form 4 Theater Left Drawer                SLEEP STAFF
-21:  Merchant Town:                   House Drawer                              HARD HEART
-22:  Noaniels:                        Town Wall                                 BATTLE AXE
-23:  Noaniels:                        House E Pot                               CHEATER GUIDE
-24:  Noaniels:                        Inn 2F Left Room Drawer                   SLIME EARRINGS
-25:  Noaniels:                        Inn 2F Right Room Right Drawer            POWER BELT
-26:  Noaniels:                        House W 1F Pot                            WATER DRESS
-27:  Noaniels:                        House W 2F Bookshelf                      LEATHER DRESS
-28:  Ashalam:                         Inn Drawer                                LIFE STONE
-29:  Ashalam:                         House 2F Bookshelf                        LADY MANUAL
-30:  Ashalam:                         House 2F Pool                             GOLDEN TIARA
-31:  Ashalam:                         House 1F Drawer                           STEEL NEEDLE
-32:  Baharata:                        House 1F Drawer                           TIGHT BIKINI
-33:  Baharata:                        House 1 2F Right Drawer                   BLADERANG
-34:  Baharata:                        House 2 2F Right Room Drawer              PACIFIER
-35:  Lancel:                          Interior Corridor                         MYTHRIL HELMET
-36:  Lancel:                          Exterior Corridor                         AGILITY SEED
-37:  Lancel:                          House Drawer                              ORTEGA'S HELMET
-38:  Mercado:                         W Room                                    STEEL NEEDLE
-39:  Mercado:                         SW Foundation                             SMALL MEDAL
-40:  Mercado:                         SE Table                                  NAUGHTY BOOK
-41:  Mercado:                         Secret Area NE                            SPINY WHIP
-42:  Mercado:                         House 2F Bookshelves 1st                  BOOMERANG
-43:  Mercado:                         House 2F Bookshelves 2nd                  LEATHER HAT
-44:  Mercado:                         House 2F Bookshelves 3rd                  FLEE RING
-45:  Mercado:                         House 2F Bookshelves 4th                  LADY MANUAL
-46:  Mercado:                         House 2F Bookshelves 5th                  SMALL MEDAL
-47:  Mercado:                         House 2F Left Drawer                      STAMINA SEED
-48:  Mercado:                         House 2F Right Drawer                     HERO SHIELD
-49:  Mercado:                         Inn Drawer                                DRAGON SHIELD
-50:  Rimuldar:                        House S                                   SILVER BARRETTE
-51:  Rimuldar:                        House NW Left Drawer                      SQUIRT GUN
-52:  Rimuldar:                        House NW Right Drawer                     IRON SHIELD
-53:  Rimuldar:                        Inn Drawer                                BLACK HOOD
-54:  Rimuldar:                        House NE Pot                              DEMON AXE
-55:  Rimuldar:                        House NE Right Drawer                     TRAVELER CLOTHES
+1:   Reeve:                           Elder House 1F Pot                        CHANGE STAFF
+2:   Reeve:                           Elder House 2F Drawer                     SLICK SUIT
+3:   Reeve:                           Field                                     SACRED KNIFE
+4:   Reeve:                           House Bookshelf                           HARD HEART
+5:   Portoga:                         Inn Drawer                                SPINY WHIP
+6:   Portoga:                         Stable                                    HOLY WATER
+7:   Portoga:                         Hidden Passage Right Bookshelf            MAGIC ARMOR
+8:   Portoga:                         Hidden Passage Pot                        CHEATER GUIDE
+9:   Portoga:                         House Sack                                SLEEP STAFF
+10:  Portoga:                         Castle Vault Middle                       LADY MANUAL
+11:  Portoga:                         Castle Vault Right                        LOVELY MEMORIES
+12:  Portoga:                         Castle Vault Left                         LEATHER HAT
+13:  Merchant Town:                   Form 3 Throne Right                       STEEL SWORD
+14:  Merchant Town:                   Form 3 Throne Left                        ZEN BOOK
+15:  Merchant Town:                   Form 2 Pool                               CRYSTAL BALL
+16:  Merchant Town:                   Form 3 Inn Drawer                         BENEVOLENT RING
+17:  Merchant Town:                   Form 4 Inn Drawer                         GRINGHAM WHIP
+18:  Merchant Town:                   Form 3 Theater Left Drawer                SCALE SHIELD
+19:  Merchant Town:                   Form 3 Theater Right Drawer               LIGHT DRESS
+20:  Merchant Town:                   Form 4 Theater Left Drawer                SPEED RING
+21:  Merchant Town:                   House Drawer                              OROCHI SWORD
+22:  Noaniels:                        Town Wall                                 IRON CLAWS
+23:  Noaniels:                        House E Pot                               STRENGTH RING
+24:  Noaniels:                        Inn 2F Left Room Drawer                   POISON DAGGER
+25:  Noaniels:                        Inn 2F Right Room Right Drawer            WAR HAMMER
+26:  Noaniels:                        House W 1F Pot                            TIGHT BIKINI
+27:  Noaniels:                        House W 2F Bookshelf                      NINJA SUIT
+28:  Ashalam:                         Inn Drawer                                FLAMERANG
+29:  Ashalam:                         House 2F Bookshelf                        RUBY RING
+30:  Ashalam:                         House 2F Pool                             RUNE STAFF
+31:  Ashalam:                         House 1F Drawer                           HORNED HAT
+32:  Baharata:                        House 1F Drawer                           SMALL MEDAL
+33:  Baharata:                        House 1 2F Right Drawer                   LEATHER SHIELD
+34:  Baharata:                        House 2 2F Right Room Drawer              SMALL MEDAL
+35:  Lancel:                          Interior Corridor                         LIFE RING
+36:  Lancel:                          Exterior Corridor                         SAGE STAFF
+37:  Lancel:                          House Drawer                              WAR HAMMER
+38:  Mercado:                         W Room                                    TURBAN
+39:  Mercado:                         SW Foundation                             INVISIBLE HERB
+40:  Mercado:                         SE Table                                  MAGICAL SKIRT
+41:  Mercado:                         Secret Area NE                            BOLT STAFF
+42:  Mercado:                         House 2F Bookshelves 1st                  POT LID SHIELD
+43:  Mercado:                         House 2F Bookshelves 2nd                  FORCE STAFF
+44:  Mercado:                         House 2F Bookshelves 3rd                  HARD HEART
+45:  Mercado:                         House 2F Bookshelves 4th                  SMART BOOK
+46:  Mercado:                         House 2F Bookshelves 5th                  CHANGE STAFF
+47:  Mercado:                         House 2F Left Drawer                      SMART GLASSES
+48:  Mercado:                         House 2F Right Drawer                     SMALL MEDAL
+49:  Mercado:                         Inn Drawer                                FLASHY SUIT
+50:  Rimuldar:                        House S                                   MEDICAL HERB
+51:  Rimuldar:                        House NW Left Drawer                      FULL MOON HERB
+52:  Rimuldar:                        House NW Right Drawer                     ORTEGA'S HELMET
+53:  Rimuldar:                        Inn Drawer                                JUSTICE ABACUS
+54:  Rimuldar:                        House NE Pot                              CLOTHES
+55:  Rimuldar:                        House NE Right Drawer                     SILVER HARP
 56:  Rimuldar:                        House Top Pot                             SILVER SHIELD
-57:  Rimuldar:                        House Bottom Pot                          BRONZE SHIELD
-58:  Rimuldar:                        House Left Drawer                         CHAIN WHIP
-59:  Rimuldar:                        House Right Drawer                        SAGE'S STONE
-60:  Domdora:                         Stable Exterior                           SMALL MEDAL
-61:  Domdora:                         Stable Interior                           WIZARD STAFF
-62:  Domdora:                         House Bookshelf Left                      SAGE STAFF
-63:  Domdora:                         House Bookshelf Right                     HARD HEART
-64:  Domdora:                         House 1 2F Drawer                         STEEL SWORD
-65:  Domdora:                         House 2 2F Drawer                         PACHISI TICKET
-66:  Domdora:                         Well                                      BLACK COAT
-67:  Isis Town:                       Shop SE Pot                               BUNNY EARS
-68:  Isis Town:                       Outside Well                              COPPER SWORD
-69:  Isis Town:                       Graveyard Middle Cross                    TURBAN
-70:  Isis Town:                       Nighttime House 1F Chest                  LEATHER ARMOR
-71:  Isis Town:                       House 2F Left Drawer                      GREAT HELM
-72:  Isis Town:                       Nighttime House 2F Bookshelf              LIFE RING
-73:  Isis Town:                       Well                                      STONES OF SUNLIGHT
-74:  Luzami:                          Graveyard                                 PLUSH SUIT
-75:  Luzami:                          Foundation NE                             GOLDEN CROWN
-76:  Luzami:                          Telescope                                 ROCKSTAR RING
-77:  Luzami:                          North House Left Bookshelf                DRAGON KILLER
-78:  Luzami:                          North House Right Bookshelf               MYSTIC NUT
-79:  Kazave:                          Nighttime House Top                       SMALL MEDAL
-80:  Kazave:                          Nighttime House Bottom                    SAGE'S STONE
-81:  Kazave:                          Graveyard Right Cross                     BRONZE KNIFE
-82:  Kazave:                          Nighttime House Right Drawer              CHAIN WHIP
-83:  Kazave:                          Inn Right Drawer                          WAR HAMMER
-84:  Kazave:                          Floor 2F Right Drawer                     BASTARD SWORD
-85:  Kazave:                          Floor 2F Top Barrel                       SILVER ROSARY
-86:  Elf Village:                     Throne Exterior NW                        MEDICAL HERB
-87:  Tedanki:                         Poison Bog                                DRAGON ROBE
-88:  Tedanki:                         Church Interior                           TOMBOY BOOK
-89:  Tedanki:                         Floor 2F                                  GIANT SHEARS
-90:  Tedanki:                         Floor 2F Drawer                           STRENGTH RING
-91:  Tedanki:                         Crypt                                     SWORD OF DESTRUCTION
-92:  Muor:                            Exterior Corridor                         CLOTHES
-93:  Muor:                            Inn Drawer                                KINDLY BOOK
-94:  Muor:                            Church                                    IRON SPEAR
-95:  Muor:                            NE House 2F Bottom Pot                    POT LID SHIELD
+57:  Rimuldar:                        House Bottom Pot                          ASSASSIN DAGGER
+58:  Rimuldar:                        House Left Drawer                         DRAGON MAIL
+59:  Rimuldar:                        House Right Drawer                        SMALL MEDAL
+60:  Domdora:                         Stable Exterior                           MAGIC HAT
+61:  Domdora:                         Stable Interior                           STRENGTH SEED
+62:  Domdora:                         House Bookshelf Left                      FIGHTING SUIT
+63:  Domdora:                         House Bookshelf Right                     STEEL NEEDLE
+64:  Domdora:                         House 1 2F Drawer                         TOMBOY BOOK
+65:  Domdora:                         House 2 2F Drawer                         AGILITY SEED
+66:  Domdora:                         Well                                      DRAGON ROBE
+67:  Isis Town:                       Shop SE Pot                               IRON SHIELD
+68:  Isis Town:                       Outside Well                              LIFE NUT
+69:  Isis Town:                       Graveyard Middle Cross                    MISERY HELMET
+70:  Isis Town:                       Nighttime House 1F Chest                  SILVER BARRETTE
+71:  Isis Town:                       House 2F Left Drawer                      FUR HOOD
+72:  Isis Town:                       Nighttime House 2F Bookshelf              RABBIT'S FOOT
+73:  Isis Town:                       Well                                      RAIN STAFF
+74:  Luzami:                          Graveyard                                 SILK HAT
+75:  Luzami:                          Foundation NE                             DARKNESS LAMP
+76:  Luzami:                          Telescope                                 THOR SWORD
+77:  Luzami:                          North House Left Bookshelf                SAGE STAFF
+78:  Luzami:                          North House Right Bookshelf               CLOAK OF EVASION
+79:  Kazave:                          Nighttime House Top                       IRON SPEAR
+80:  Kazave:                          Nighttime House Bottom                    WAKE UP POWDER
+81:  Kazave:                          Graveyard Right Cross                     YGGDRASIL LEAF
+82:  Kazave:                          Nighttime House Right Drawer              GOLD NECKLACE
+83:  Kazave:                          Inn Right Drawer                          IRON HELMET
+84:  Kazave:                          Floor 2F Right Drawer                     SPEED RING
+85:  Kazave:                          Floor 2F Top Barrel                       BATTLE AXE
+86:  Elf Village:                     Throne Exterior NW                        CYPRESS STICK
+87:  Tedanki:                         Poison Bog                                LEATHER DRESS
+88:  Tedanki:                         Church Interior                           POWER KNUCKLE
+89:  Tedanki:                         Floor 2F                                  SACRED TALISMAN
+90:  Tedanki:                         Floor 2F Drawer                           MAGIC ROBE
+91:  Tedanki:                         Crypt                                     IRON SPEAR
+92:  Muor:                            Exterior Corridor                         SMALL MEDAL
+93:  Muor:                            Inn Drawer                                TUBE SOCKS
+94:  Muor:                            Church                                    FROST BLADE
+95:  Muor:                            NE House 2F Bottom Pot                    SILVER ROSARY
 96:  Muor:                            NE House 2F Top Pot                       TOMBOY BOOK
-97:  Zipangu:                         NE House Drawer                           YGGDRASIL LEAF
-98:  Zipangu:                         S House Drawer                            MAGIC HAT
-99:  Zipangu:                         W House Bottom Pot                        SLIME EARRINGS
-100: Zipangu:                         W House Sack                              STEEL ARMOR
-101: Zipangu:                         Underground Bottom Left Pot               WATER DRESS
-102: Zipangu:                         Underground Top Right Pot                 POT LID SHIELD
-103: Zipangu:                         Interior NW Top Right Pot                 CLOTHES
-104: Zipangu:                         Interior NE Left Top Pot                  TURTLE SHELL
-105: Zipangu:                         Interior NE Right Middle Pot              SMALL MEDAL
-106: Zipangu:                         Interior NE Left Drawer                   FORCE STAFF
-107: Zipangu:                         Interior NE Right Drawer                  BENEVOLENT RING
-108: Zipangu:                         Well Pachisi Area                         HERO GUIDE
-109: Pirate Hideout:                  Storage Top Left Pot                      GARTER BELT
-110: Pirate Hideout:                  Storage Top Right Pot                     ORICHALCUM
-111: Pirate Hideout:                  Storage Bottom Middle Barrel              DEVIL'S ARMOR
-112: Pirate Hideout:                  Room NW Drawer                            SHELL ARMOR
-113: Pirate Hideout:                  Secret Area Top Left                      LOVELY MEMORIES
-114: Pirate Hideout:                  Secret Area Bottom Left                   PURPLE ORB
-115: Pirate Hideout:                  Secret Area Right                         BLUE ORB
-116: Pirate Hideout:                  Prison                                    DRAGON MAIL
-117: Sioux:                           Outside Well Below                        HORNED HAT
-118: Sioux:                           Outside Well Above                        SAGE STAFF
-119: Sioux:                           House S Right Pot                         SILK ROBE
-120: Sioux:                           House N Pot                               SPIDER WEB
-121: Sioux:                           Well Drawer                               SMART GLASSES
-122: Sailor Bone Hut:                 Left Drawer                               GREAT HELM
-123: Sailor Bone Hut:                 Right Drawer                              TRAINING SUIT
-124: Kol:                             Below Bath                                HOLY WATER
-125: Kol:                             Upper Trees                               MUSCLE GUIDEBOOK
-126: Kol:                             Above Bath                                IRON AXE
-127: Kol:                             Tavern Center                             LUCKY SHOES
-128: Kol:                             House W Left Drawer                       ANGRY TATTOO
-129: Kol:                             House W Right Drawer                      LIFE RING
-130: Kol:                             Upstairs Shop Left Sack                   RABBIT'S FOOT
-131: Kol:                             Upstairs Shop Right Sack                  BRAVE BOOK
-132: Kol:                             Well Pachisi Area                         SMALL MEDAL
-133: Aliahan:                         Hero’s House 1F                           LUCK SEED
-134: Aliahan:                         Hero’s House 2F                           MORNING STAR
-135: Aliahan:                         House 2F                                  MAGIC ARMOR
-136: Aliahan:                         Vault Top Right                           IRON APRON
-137: Aliahan:                         Vault Bottom Left                         BOXER SHORTS
-138: Aliahan:                         Vault Middle Bottom                       HOLY WATER
-139: Aliahan:                         Vault Bottom Right                        STEEL SWORD
-140: Aliahan:                         Right Barrel                              SHELL ARMOR
-141: Aliahan:                         Left Barrel                               SORROW SHIELD
-142: Aliahan:                         Kitchen Drawer                            MAGIC HAT
-143: Aliahan:                         Castle 2F Drawer                          LEATHER HAT
-144: Aliahan:                         Prison Right Cell                         WRECKING FLAIL
-145: Romaly:                          Castle Exterior                           ANGRY TATTOO
-146: Romaly:                          Nighttime Right Trees                     PARTY DRESS
-147: Romaly:                          Inn Drawer                                DRAGON ROBE
-148: Romaly:                          House Drawer                              DRAGON MAIL
-149: Romaly:                          House Pot                                 FORCE STAFF
-150: Romaly:                          Church Drawer                             GARTER BELT
-151: Romaly:                          Church Bookshelf                          MAGIC APRON
-152: Romaly:                          House Drawer                              THUNDER SWORD
-153: Romaly:                          Castle 1F Courtyard                       GOLDEN BEAK
-154: Romaly:                          Castle 1F Flowers                         EXPEL SHIELD
-155: Romaly:                          Castle Leftside 4F Ground                 ANGEL ROBE
-156: Romaly:                          Castle Rightside 4F Drawer                OGRE SHIELD
+97:  Zipangu:                         NE House Drawer                           SILK ROBE
+98:  Zipangu:                         S House Drawer                            IRON APRON
+99:  Zipangu:                         W House Bottom Pot                        FALCON SWORD
+100: Zipangu:                         W House Sack                              MOTH POWDER
+101: Zipangu:                         Underground Bottom Left Pot               TUBE SOCKS
+102: Zipangu:                         Underground Top Right Pot                 SMALL MEDAL
+103: Zipangu:                         Interior NW Top Right Pot                 DRAGON TAIL
+104: Zipangu:                         Interior NE Left Top Pot                  NAUGHTY BOOK
+105: Zipangu:                         Interior NE Right Middle Pot              FLEE RING
+106: Zipangu:                         Interior NE Left Drawer                   KINDLY BOOK
+107: Zipangu:                         Interior NE Right Drawer                  DRAGON CLAW
+108: Zipangu:                         Well Pachisi Area                         WIZARD STAFF
+109: Pirate Hideout:                  Storage Top Left Pot                      OGRE SHIELD
+110: Pirate Hideout:                  Storage Top Right Pot                     DEVIL'S ARMOR
+111: Pirate Hideout:                  Storage Bottom Middle Barrel              GOLDEN TIARA
+112: Pirate Hideout:                  Room NW Drawer                            CYPRESS STICK
+113: Pirate Hideout:                  Secret Area Top Left                      PURPLE ORB
+114: Pirate Hideout:                  Secret Area Bottom Left                   YELLOW ORB
+115: Pirate Hideout:                  Secret Area Right                         GREEN ORB
+116: Pirate Hideout:                  Prison                                    STRENGTH RING
+117: Sioux:                           Outside Well Below                        WOODEN HELMET
+118: Sioux:                           Outside Well Above                        SWORD OF DESTRUCTION
+119: Sioux:                           House S Right Pot                         IRON MASK
+120: Sioux:                           House N Pot                               ANGEL ROBE
+121: Sioux:                           Well Drawer                               MOTH POWDER
+122: Sailor Bone Hut:                 Left Drawer                               BOXER SHORTS
+123: Sailor Bone Hut:                 Right Drawer                              EXPEL SHIELD
+124: Kol:                             Below Bath                                STARRY RING
+125: Kol:                             Upper Trees                               DEVIL'S ARMOR
+126: Kol:                             Above Bath                                LIGHT ARMOR
+127: Kol:                             Tavern Center                             GODDESS RING
+128: Kol:                             House W Left Drawer                       GALE BANDANA
+129: Kol:                             House W Right Drawer                      TRAGIC TALE
+130: Kol:                             Upstairs Shop Left Sack                   GOLDEN BEAK
+131: Kol:                             Upstairs Shop Right Sack                  ECHO FLUTE
+132: Kol:                             Well Pachisi Area                         MUSCLE GUIDEBOOK
+133: Aliahan:                         Hero’s House 1F                           WIZARD STAFF
+134: Aliahan:                         Hero’s House 2F                           PLUSH SUIT
+135: Aliahan:                         House 2F                                  TRAINING SUIT
+136: Aliahan:                         Vault Top Right                           GIANT SHEARS
+137: Aliahan:                         Vault Bottom Left                         RED ORB
+138: Aliahan:                         Vault Middle Bottom                       GOLD PASS
+139: Aliahan:                         Vault Bottom Right                        DRAGON SHIELD
+140: Aliahan:                         Right Barrel                              MYTHRIL HELMET
+141: Aliahan:                         Left Barrel                               SILK ROBE
+142: Aliahan:                         Kitchen Drawer                            ALL-KNOWING MASK
+143: Aliahan:                         Castle 2F Drawer                          GREAT HELM
+144: Aliahan:                         Prison Right Cell                         SACRED BIKINI
+145: Romaly:                          Castle Exterior                           DOUBLE-EDGED SWORD
+146: Romaly:                          Nighttime Right Trees                     SORROW SHIELD
+147: Romaly:                          Inn Drawer                                COPPER SWORD
+148: Romaly:                          House Drawer                              BRONZE SHIELD
+149: Romaly:                          House Pot                                 BOLT STAFF
+150: Romaly:                          Church Drawer                             STEEL WHIP
+151: Romaly:                          Church Bookshelf                          THOR SWORD
+152: Romaly:                          House Drawer                              MAGIC SHIELD
+153: Romaly:                          Castle 1F Courtyard                       BOXER SHORTS
+154: Romaly:                          Castle 1F Flowers                         DEMON AXE
+155: Romaly:                          Castle Leftside 4F Ground                 MEDICAL HERB
+156: Romaly:                          Castle Rightside 4F Drawer                SCALE SHIELD
 157: Romaly:                          Castle Rightside 4F Bookshelf             GODDESS RING
-158: Romaly:                          Castle B1 Left                            WIZARD STAFF
-159: Romaly:                          Castle B1 Right                           SACRED KNIFE
-160: Edinbear:                        Castle Exterior Rightside                 ZOMBIE KILLER
-161: Edinbear:                        Castle Exterior Leftside                  DEMON AXE
-162: Edinbear:                        Castle B1 Puzzle                          JUSTICE ABACUS
-163: Edinbear:                        Castle 1F NE Room Bookshelf               CRYSTAL BALL
-164: Edinbear:                        Castle 1F NE Room Left                    FULL MOON HERB
-165: Edinbear:                        Castle 1F NE Room Right                   SMALL MEDAL
-166: Isis Castle:                     Floor 1F Vault Leftside Top Left          LIGHT ARMOR
-167: Isis Castle:                     Floor 1F Vault Leftside Bottom Left       DOUBLE-EDGED SWORD
-168: Isis Castle:                     Floor 1F Vault Leftside Bottom Right      BOOMERANG
-169: Isis Castle:                     Floor 1F Vault Rightside Top Left         MYSTIC NUT
-170: Isis Castle:                     Floor 1F Vault Rightside Top Right        DARK OUTFIT
-171: Isis Castle:                     Floor 1F Vault Rightside Bottom Left      BRAVE BOOK
-172: Isis Castle:                     Floor 1F Room Left Drawer                 PACHISI TICKET
-173: Isis Castle:                     Floor 1F Room Right Drawer                MUSCLE GUIDEBOOK
-174: Baramos Castle:                  Chest Area Top                            SILVER ROSARY
-175: Baramos Castle:                  Chest Area Middle                         RAIN STAFF
-176: Baramos Castle:                  Chest Area Bottom                         ANTIDOTE HERB
-177: Baramos Castle:                  Throne Room                               IRON HELMET
-178: Baramos Castle:                  B1 Cell                                   MOTH POWDER
-179: Dragon Queen Castle:             North Light                               SMALL MEDAL
-180: Dharma:                          Statue                                    BENEVOLENT RING
-181: Samanosa:                        King Room                                 DREAM RUBY
-182: Samanosa:                        Outside Inn Barrel                        VIVIFY STAFF
-183: Samanosa:                        Graveyard Top Row                         RUBY RING
-184: Samanosa:                        Graveyard Middle Row                      SILK HAT
-185: Samanosa:                        Graveyard Bottom Row                      SMALL MEDAL
-186: Samanosa:                        House Left Pot                            STAFF OF JUDGEMENT
-187: Samanosa:                        Castle Exterior Leftside                  TERRA ARMOR
-188: Samanosa:                        Castle Kitchen Pot                        SQUIRT GUN
-189: Samanosa:                        Castle Garden                             SMART BOOK
-190: Samanosa:                        King Room Bookshelf                       IRON MASK
-191: Samanosa:                        King Room Right Drawer                    GOLD PASS
-192: Samanosa:                        Underground Prison Pot                    CHAIN MAIL
-193: Samanosa:                        Underground Prison Near Bed               FIGHTING SUIT
-194: Ludatorm:                        Town Flowerbed                            SMALL MEDAL
-195: Ludatorm:                        Town Northeast Trees                      MAGIC SHIELD
-196: Ludatorm:                        House Pot                                 SMALL MEDAL
-197: Ludatorm:                        Upstairs House N Left Bookshelf           STONE WIG
-198: Ludatorm:                        Upstairs House N Right Bookshelf          SCALE SHIELD
-199: Ludatorm:                        Upstairs House SW Right Drawer            COPPER SWORD
-200: Ludatorm:                        Castle Vault Left                         CLUB
-201: Ludatorm:                        Castle Exterior Northeast                 LUCK SEED
-202: Ludatorm:                        Castle Exterior Rightside                 BUNNY EARS
-203: Ludatorm:                        Castle Kitchen Pot                        ANTIDOTE HERB
-204: Ludatorm:                        Castle 2F Left Drawer                     CHAIN SICKLE
-205: Ludatorm:                        Castle 2F Right Drawer                    TIGHT BIKINI
-206: Ludatorm:                        Castle Vault Barrel                       STAFF OF JUDGEMENT
-207: Zoma Castle:                     Floor 1F SW Barrier                       GOLDEN BEAK
-208: Zoma Castle:                     Floor 1F Throne                           FLASHY SUIT
-209: Zoma Castle:                     Floor B1                                  LEATHER KILT
-210: Zoma Castle:                     Floor B2 Left Left                        MAGIC ROBE
-211: Zoma Castle:                     Floor B2 Left Right                       SMALL MEDAL
-212: Zoma Castle:                     Floor B2 Middle Left                      LIGHT DRESS
-213: Zoma Castle:                     Floor B2 Middle Right                     FLAMERANG
-214: Zoma Castle:                     Floor B2 Right Left                       MOHAWK WIG
-215: Promontory Cave:                 Underground B1 NE                         THIEF KEY
-216: Promontory Cave:                 Underground B1 SW                         SWORD OF DESTRUCTION
-217: Bahn Tunnel Ashalam Side:        Floor 1F Left                             TURTLE SHELL
-218: Bahn Tunnel Ashalam Side:        Floor 1F Right                            YGGDRASIL LEAF
-219: Bahn Tunnel Ashalam Side:        Well Wall                                 BEAST CLAW
-220: Necrogond Cave:                  Floor B1 E                                TERRA ARMOR
-221: Necrogond Cave:                  Floor B1 SE                               GOLD NECKLACE
-222: Cave of Temptation Romaly Side:  Floor B1 1                                KING LETTER
-223: Cave of Temptation Romaly Side:  Floor B1 2                                HERO RING
-224: Underworld Lake:                 Floor 1F                                  POWER KNUCKLE
-225: Underworld Lake:                 Floor B1                                  MAGIC KEY
-226: Underworld Lake:                 Floor B2 1                                STARRY RING
-227: Underworld Lake:                 Floor B2 2                                DRAGON CLAW
-228: Underworld Lake:                 Floor B2 3                                FROST BLADE
-229: Underworld Lake:                 Floor B2 4                                RA MIRROR
-230: Underworld Lake:                 Floor B3                                  ORTEGA'S HELMET
-231: Necrogond Cave:                  Floor B1                                  SPEED RING
-232: Necrogond Cave:                  Floor B3                                  SILK ROBE
-233: Kandar Cave:                     Floor 1F 1                                MYTHRIL HELMET
-234: Kandar Cave:                     Floor 1F 2                                MAGIC MAP
-235: Kandar Cave:                     B1 Area Top Left                          RUNE STAFF
-236: Kandar Cave:                     B1 Area Top Right                         DEFY BOOK
-237: Kandar Cave:                     B1 Area Bottom Left                       POISON DAGGER
-238: Kandar Cave:                     B1 Area Bottom Right                      FLEE RING
-239: Kandar Cave:                     B1 Cells Left Mat                         GIANT HAMMER
-240: Kandar Cave:                     B1 Cells Right Mat                        ALL-KNOWING MASK
-241: Kandar Cave:                     B1 Room Left                              SPIDER WEB
-242: Zipangu Cave:                    Floor 1F                                  SILK HAT
-243: Gaia Navel:                      Floor 1F SE                               HERO RING
-244: Gaia Navel:                      Floor 1F NE                               CHANGE STAFF
-245: Gaia Navel:                      Floor B1                                  BLADERANG
-246: Gaia Navel:                      Floor B2 Left                             SAILOR BONE
-247: Gaia Navel:                      Floor B2 Right                            MAGIC MAP
-248: Ra Mirror Cave:                  Floor B1 1                                TRAGIC TALE
-249: Ra Mirror Cave:                  Floor B1 2                                SACRED TALISMAN
-250: Ra Mirror Cave:                  Floor B1 3                                SILVER HARP
-251: Ra Mirror Cave:                  Floor B1 4                                BLACK COAT
-252: Ra Mirror Cave:                  Floor B1 5                                TRAINING SUIT
-253: Ra Mirror Cave:                  Floor B1 6                                TRAVELER CLOTHES
-254: Ra Mirror Cave:                  Floor B1 7                                SWORD OF SEDUCTION
-255: Ra Mirror Cave:                  Floor B1 8                                THIRSTY PITCHER
-256: Ra Mirror Cave:                  Floor B2 1                                ASSASSIN DAGGER
-257: Ra Mirror Cave:                  Floor B2 2                                SACRED BIKINI
-258: Loto Cave:                       Floor B3 1                                IRON CLAWS
-259: Loto Cave:                       Floor B3 2                                PARTY DRESS
-260: Marsh Cave:                      Floor B1 Drawer                           GOLD NECKLACE
-261: Marsh Cave:                      Floor B1 Bottom Wall                      MEDICAL HERB
-262: Mountain Cave:                   Floor B1                                  HOLY SPEAR
-263: Mountain Cave:                   Floor B2 1                                OGRE SHIELD
-264: Mountain Cave:                   Floor B2 2                                BATTLE AXE
-265: Mountain Cave:                   Floor B2 3                                WIZARD RING
-266: Bonus Dungeon:                   Necrogond Area B1                         LUCKY BOOK
-267: Bonus Dungeon:                   Necrogond Area B1                         LIGHT ARMOR
-268: Bonus Dungeon:                   Necrogond Area B2                         MAGIC BIKINI
-269: Bonus Dungeon:                   Pyramid Area                              FALCON SWORD
-270: Bonus Dungeon:                   Cleric Area                               SLEEP STAFF
-271: Bonus Dungeon:                   Underworld Area 1                         GALE BANDANA
-272: Bonus Dungeon:                   Underworld Area 2                         STEEL WHIP
-273: Bonus Dungeon:                   Necrogond Area 1F Top                     ECHO FLUTE
-274: Bonus Dungeon:                   Necrogond Area 1F Bottom                  WOODEN HELMET
-275: Bonus Dungeon:                   Samanosa Prison Area Left                 ASSASSIN DAGGER
-276: Bonus Dungeon:                   Samanosa Prison Area Right                FROST BLADE
-277: Bonus Dungeon:                   Arena Area                                SMART BOOK
-278: Bonus Dungeon:                   Reeve Area Left Pot                       CRYSTAL BALL
-279: Bonus Dungeon:                   Reeve Area Right Pot                      BRONZE KNIFE
-280: Shrine of Temptation:            Left Pot                                  HOLY SPEAR
-281: Shrine of Temptation:            Right Pot                                 RABBIT'S FOOT
-282: Shrine Prison:                   Simon Cell                                SMALL MEDAL
-283: Shrine Prison:                   Left Cell                                 STAFF OF REFLECTION
-284: Desert Shrine:                   Right Bookcase                            IRON SHIELD
-285: Desert Shrine:                   Left Pot                                  SLICK SUIT
-286: Desert Shrine:                   Left Drawer                               GIANT SHEARS
-287: Necrogond Shrine:                Left Cross                                FUR HOOD
-288: Necrogond Shrine:                Middle Cross                              LEATHER ARMOR
-289: Necrogond Shrine:                Right Cross                               DRAGON CLAW
-290: East Dharma Shrine:              Left Drawer                               GALE BANDANA
-291: East Dharma Shrine:              Right Drawer                              OROCHI SWORD
-292: West Edinbear Shrine:            Above Pool                                BLADE ARMOR
-293: Garin Shrine:                    Underground B1                            CHAIN MAIL
-294: Garin Shrine:                    Left Drawer                               EXPEL SHIELD
-295: Garin Shrine:                    Right Drawer                              SACRED KNIFE
-296: Dark World Harbor:               Pier NE                                   LEATHER DRESS
-297: Dark World Harbor:               Left Trees                                MIST STAFF
-298: Dark World Harbor:               Right Drawer                              SORROW SHIELD
-299: Rubiss Shrine:                   Flowers 2F NE                             BLADE ARMOR
-300: Rubiss Shrine:                   Carpet                                    FULL MOON HERB
-301: Rain Staff Shrine:               Left Cross                                SLICK SUIT
-302: Portoga Shrine Portoga Side:     Warp Area                                 FUR HOOD
-303: Final Key Shrine:                Below Cell                                IRON ARMOR
+158: Romaly:                          Castle B1 Left                            PACIFIER
+159: Romaly:                          Castle B1 Right                           BLUE ORB
+160: Edinbear:                        Castle Exterior Rightside                 BLACK HOOD
+161: Edinbear:                        Castle Exterior Leftside                  POWER KNUCKLE
+162: Edinbear:                        Castle B1 Puzzle                          PACHISI TICKET
+163: Edinbear:                        Castle 1F NE Room Bookshelf               BENEVOLENT RING
+164: Edinbear:                        Castle 1F NE Room Left                    FLASHY SUIT
+165: Edinbear:                        Castle 1F NE Room Right                   DRAGON KILLER
+166: Isis Castle:                     Floor 1F Vault Leftside Top Left          STEEL NEEDLE
+167: Isis Castle:                     Floor 1F Vault Leftside Bottom Left       ASSASSIN DAGGER
+168: Isis Castle:                     Floor 1F Vault Leftside Bottom Right      AGILITY SEED
+169: Isis Castle:                     Floor 1F Vault Rightside Top Left         STARRY RING
+170: Isis Castle:                     Floor 1F Vault Rightside Top Right        DRAGON CLAW
+171: Isis Castle:                     Floor 1F Vault Rightside Bottom Left      BUNNY EARS
+172: Isis Castle:                     Floor 1F Room Left Drawer                 STEEL ARMOR
+173: Isis Castle:                     Floor 1F Room Right Drawer                IRON ABACUS
+174: Baramos Castle:                  Chest Area Top                            STAMINA SEED
+175: Baramos Castle:                  Chest Area Middle                         STAFF OF REFLECTION
+176: Baramos Castle:                  Chest Area Bottom                         GOLD NECKLACE
+177: Baramos Castle:                  Throne Room                               MUSCLE GUIDEBOOK
+178: Baramos Castle:                  B1 Cell                                   BRAVE BOOK
+179: Dragon Queen Castle:             North Light                               BRONZE KNIFE
+180: Dharma:                          Statue                                    WIZARD RING
+181: Samanosa:                        King Room                                 JUSTICE ABACUS
+182: Samanosa:                        Outside Inn Barrel                        MYSTERY BOLERO
+183: Samanosa:                        Graveyard Top Row                         MIST STAFF
+184: Samanosa:                        Graveyard Middle Row                      SMALL MEDAL
+185: Samanosa:                        Graveyard Bottom Row                      GRINGHAM WHIP
+186: Samanosa:                        House Left Pot                            SLIME EARRINGS
+187: Samanosa:                        Castle Exterior Leftside                  IRON ARMOR
+188: Samanosa:                        Castle Kitchen Pot                        DRAGON TAIL
+189: Samanosa:                        Castle Garden                             TURTLE SHELL
+190: Samanosa:                        King Room Bookshelf                       MAGIC HAT
+191: Samanosa:                        King Room Right Drawer                    LUCKY BOOK
+192: Samanosa:                        Underground Prison Pot                    MAGIC ABACUS
+193: Samanosa:                        Underground Prison Near Bed               POT LID SHIELD
+194: Ludatorm:                        Town Flowerbed                            RUNE STAFF
+195: Ludatorm:                        Town Northeast Trees                      ALL-KNOWING MASK
+196: Ludatorm:                        House Pot                                 SWORD OF DESTRUCTION
+197: Ludatorm:                        Upstairs House N Left Bookshelf           SMALL MEDAL
+198: Ludatorm:                        Upstairs House N Right Bookshelf          HOLY SPEAR
+199: Ludatorm:                        Upstairs House SW Right Drawer            WATER DRESS
+200: Ludatorm:                        Castle Vault Left                         MYSTIC NUT
+201: Ludatorm:                        Castle Exterior Northeast                 ORICHALCUM
+202: Ludatorm:                        Castle Exterior Rightside                 JOKE BOOK
+203: Ludatorm:                        Castle Kitchen Pot                        TRAINING SUIT
+204: Ludatorm:                        Castle 2F Left Drawer                     MAGIC SHIELD
+205: Ludatorm:                        Castle 2F Right Drawer                    STEEL WHIP
+206: Ludatorm:                        Castle Vault Barrel                       HERO SHIELD
+207: Zoma Castle:                     Floor 1F SW Barrier                       MAGIC ARMOR
+208: Zoma Castle:                     Floor 1F Throne                           FUR HOOD
+209: Zoma Castle:                     Floor B1                                  THUNDER SWORD
+210: Zoma Castle:                     Floor B2 Left Left                        BLADERANG
+211: Zoma Castle:                     Floor B2 Left Right                       TERRA ARMOR
+212: Zoma Castle:                     Floor B2 Middle Left                      LEATHER KILT
+213: Zoma Castle:                     Floor B2 Middle Right                     SACRED KNIFE
+214: Zoma Castle:                     Floor B2 Right Left                       BLADE ARMOR
+215: Promontory Cave:                 Underground B1 NE                         BRONZE KNIFE
+216: Promontory Cave:                 Underground B1 SW                         MAGIC KEY
+217: Bahn Tunnel Ashalam Side:        Floor 1F Left                             FAIRY FLUTE
+218: Bahn Tunnel Ashalam Side:        Floor 1F Right                            SAILOR BONE
+219: Bahn Tunnel Ashalam Side:        Well Wall                                 SQUIRT GUN
+220: Necrogond Cave:                  Floor B1 E                                HORNED HAT
+221: Necrogond Cave:                  Floor B1 SE                               DRAGON SHIELD
+222: Cave of Temptation Romaly Side:  Floor B1 1                                LEATHER KILT
+223: Cave of Temptation Romaly Side:  Floor B1 2                                JOKE BOOK
+224: Underworld Lake:                 Floor 1F                                  RA MIRROR
+225: Underworld Lake:                 Floor B1                                  MOHAWK WIG
+226: Underworld Lake:                 Floor B2 1                                DARK OUTFIT
+227: Underworld Lake:                 Floor B2 2                                ZEN BOOK
+228: Underworld Lake:                 Floor B2 3                                IRON APRON
+229: Underworld Lake:                 Floor B2 4                                MAGIC APRON
+230: Underworld Lake:                 Floor B3                                  BLACK COAT
+231: Necrogond Cave:                  Floor B1                                  STONE WIG
+232: Necrogond Cave:                  Floor B3                                  SMALL MEDAL
+233: Kandar Cave:                     Floor 1F 1                                FAIRY MAP
+234: Kandar Cave:                     Floor 1F 2                                ORICHALCUM
+235: Kandar Cave:                     B1 Area Top Left                          GALE BANDANA
+236: Kandar Cave:                     B1 Area Top Right                         LUCK SEED
+237: Kandar Cave:                     B1 Area Bottom Left                       STAMINA SEED
+238: Kandar Cave:                     B1 Area Bottom Right                      LIFE STONE
+239: Kandar Cave:                     B1 Cells Left Mat                         FIGHTING SUIT
+240: Kandar Cave:                     B1 Cells Right Mat                        ECHO FLUTE
+241: Kandar Cave:                     B1 Room Left                              SHELL ARMOR
+242: Zipangu Cave:                    Floor 1F                                  MAGIC APRON
+243: Gaia Navel:                      Floor 1F SE                               MAGIC ABACUS
+244: Gaia Navel:                      Floor 1F NE                               SMALL MEDAL
+245: Gaia Navel:                      Floor B1                                  WOODEN HELMET
+246: Gaia Navel:                      Floor B2 Left                             KINDLY BOOK
+247: Gaia Navel:                      Floor B2 Right                            KING LETTER
+248: Ra Mirror Cave:                  Floor B1 1                                TRAVELER CLOTHES
+249: Ra Mirror Cave:                  Floor B1 2                                LIGHT DRESS
+250: Ra Mirror Cave:                  Floor B1 3                                SPIDER WEB
+251: Ra Mirror Cave:                  Floor B1 4                                GOLDEN BEAK
+252: Ra Mirror Cave:                  Floor B1 5                                FLEE RING
+253: Ra Mirror Cave:                  Floor B1 6                                TURBAN
+254: Ra Mirror Cave:                  Floor B1 7                                IRON AXE
+255: Ra Mirror Cave:                  Floor B1 8                                LIGHT ARMOR
+256: Ra Mirror Cave:                  Floor B2 1                                STONES OF SUNLIGHT
+257: Ra Mirror Cave:                  Floor B2 2                                CHAIN MAIL
+258: Loto Cave:                       Floor B3 1                                MYSTERY BOLERO
+259: Loto Cave:                       Floor B3 2                                ANGEL ROBE
+260: Marsh Cave:                      Floor B1 Drawer                           LEATHER SHIELD
+261: Marsh Cave:                      Floor B1 Bottom Wall                      LEATHER ARMOR
+262: Mountain Cave:                   Floor B1                                  PLUSH SUIT
+263: Mountain Cave:                   Floor B2 1                                CHEATER GUIDE
+264: Mountain Cave:                   Floor B2 2                                DRAGON KILLER
+265: Mountain Cave:                   Floor B2 3                                SMALL MEDAL
+266: Bonus Dungeon:                   Necrogond Area B1                         GOLD PASS
+267: Bonus Dungeon:                   Necrogond Area B1                         SLEEP STAFF
+268: Bonus Dungeon:                   Necrogond Area B2                         BATTLE AXE
+269: Bonus Dungeon:                   Pyramid Area                              GIANT HAMMER
+270: Bonus Dungeon:                   Cleric Area                               LADY MANUAL
+271: Bonus Dungeon:                   Underworld Area 1                         HEAL SHIELD
+272: Bonus Dungeon:                   Underworld Area 2                         LEATHER HAT
+273: Bonus Dungeon:                   Necrogond Area 1F Top                     LIFE STONE
+274: Bonus Dungeon:                   Necrogond Area 1F Bottom                  FAIRY MAP
+275: Bonus Dungeon:                   Samanosa Prison Area Left                 OGRE SHIELD
+276: Bonus Dungeon:                   Samanosa Prison Area Right                MAGIC BIKINI
+277: Bonus Dungeon:                   Arena Area                                PACIFIER
+278: Bonus Dungeon:                   Reeve Area Left Pot                       CHAIN SICKLE
+279: Bonus Dungeon:                   Reeve Area Right Pot                      ANTIDOTE HERB
+280: Shrine of Temptation:            Left Pot                                  CRYSTAL BALL
+281: Shrine of Temptation:            Right Pot                                 TERRA ARMOR
+282: Shrine Prison:                   Simon Cell                                SLIME EARRINGS
+283: Shrine Prison:                   Left Cell                                 WIMPY BOOK
+284: Desert Shrine:                   Right Bookcase                            LEATHER DRESS
+285: Desert Shrine:                   Left Pot                                  WRECKING FLAIL
+286: Desert Shrine:                   Left Drawer                               CLUB
+287: Necrogond Shrine:                Left Cross                                DEMON AXE
+288: Necrogond Shrine:                Middle Cross                              SPIDER WEB
+289: Necrogond Shrine:                Right Cross                               BASTARD SWORD
+290: East Dharma Shrine:              Left Drawer                               MAGIC ROBE
+291: East Dharma Shrine:              Right Drawer                              BASTARD SWORD
+292: West Edinbear Shrine:            Above Pool                                ROCKSTAR RING
+293: Garin Shrine:                    Underground B1                            SMALL MEDAL
+294: Garin Shrine:                    Left Drawer                               SILVER BARRETTE
+295: Garin Shrine:                    Right Drawer                              GOLDEN TIARA
+296: Dark World Harbor:               Pier NE                                   CHAIN MAIL
+297: Dark World Harbor:               Left Trees                                COPPER SWORD
+298: Dark World Harbor:               Right Drawer                              FLAMERANG
+299: Rubiss Shrine:                   Flowers 2F NE                             NINJA SUIT
+300: Rubiss Shrine:                   Carpet                                    POISON DAGGER
+301: Rain Staff Shrine:               Left Cross                                TRAVELER CLOTHES
+302: Portoga Shrine Portoga Side:     Warp Area                                 FULL MOON HERB
+303: Final Key Shrine:                Below Cell                                IRON MASK
 304: Final Key Shrine:                Main Chest                                LIGHT ORB
-305: Hobbit Shrine:                   Behind Throne                             IRON APRON
-306: Cape Olivia Shrine:              Between Gates                             MIST STAFF
-307: Ramia Shrine:                    Bottom Stairs                             CLOAK OF EVASION
-308: Najimi Tower:                    Floor 3F 1                                MAGIC BALL
-309: Najimi Tower:                    Floor 3F 2                                WING OF WYVERN
-310: Najimi Tower:                    Underground B1 Left                       FINAL KEY
-311: Najimi Tower:                    Underground B1 Right                      ZEN BOOK
-312: Najimi Tower:                    Thief Key Room                            IRON CLAWS
-313: Garuna Tower:                    Floor 1F                                  HERO GUIDE
-314: Garuna Tower:                    Floor 2F Secret Area                      DARKNESS LAMP
-315: Garuna Tower:                    Floor 2F                                  RED ORB
-316: Garuna Tower:                    Floor 6F                                  STRENGTH RING
-317: Arb Tower:                       Secret Area Top Left                      PACIFIER
-318: Arb Tower:                       Secret Area Bottom Left                   FAIRY FLUTE
-319: Arb Tower:                       Secret Area Bottom Right                  GODDESS RING
-320: Arb Tower:                       Top Floor S                               GAIA SWORD
-321: Arb Tower:                       Top Floor SW                              CHEATER GUIDE
-322: Shampane Tower:                  Floor 3F                                  DRAGON SHIELD
-323: Shampane Tower:                  Floor 6F                                  GOLDEN CROWN
-324: Rubiss Tower:                    Floor 2F Top Top Right                    MISERY HELMET
-325: Rubiss Tower:                    Floor 2F Top Top Left                     GOLDEN TIARA
-326: Rubiss Tower:                    Floor 2F Bottom Top Left                  NINJA SUIT
-327: Rubiss Tower:                    Floor 2F Bottom Top Right                 DARKNESS LAMP
-328: Rubiss Tower:                    Floor 2F Bottom Bottom Left               IRON MASK
-329: Rubiss Tower:                    Floor 2F Bottom Bottom Right              WRECKING FLAIL
-330: Rubiss Tower:                    Floor 4F                                  WAKE UP POWDER
-331: Rubiss Tower:                    Floor 3F                                  BOXER SHORTS
-332: Rubiss Tower:                    Floor 3F                                  TRAGIC TALE
-333: Shampane Tower:                  Floor 6F                                  ORICHALCUM
-334: Bonus Dungeon:                   Dragon God Area Exterior                  TUBE SOCKS
-335: Bonus Dungeon:                   Dragon God Area 1F                        LEATHER KILT
-336: Bonus Dungeon:                   Dragon God Area 1F                        STAFF OF REFLECTION
-337: Bonus Dungeon:                   Dragon God Area 2F                        GOLD PASS
-338: Bonus Dungeon:                   Dragon God Area 2F                        FIGHTING SUIT
-339: Pyramid:                         Floor 1F                                  LIFE NUT
-340: Pyramid:                         Floor 2F                                  STEEL ARMOR
-341: Pyramid:                         Magic Key Floor Left                      SILVER ORB
-342: Pyramid:                         Magic Key Floor Right                     CLUB
-343: Pyramid:                         Top Floor                                 GREEN ORB
-344: Pyramid:                         Top Exterior Left Side                    LEATHER SHIELD
-345: Ghost Ship:                      Floor B1 Room Bottom Right                IRON SPEAR
-346: Ghost Ship:                      Bottom Main Chest                         ALL-KNOWING MASK
-347: Ghost Ship:                      Floor B1 Room Top Middle                  BOLT STAFF
-348: Ghost Ship:                      Floor B1 Top Middle Drawer                KINDLY BOOK
-349: Ghost Ship:                      Floor B1 Room Barrel                      CYPRESS STICK
-350: Ghost Ship:                      Floor B1 Room Pot                         WIMPY BOOK
-351: Ghost Ship:                      Floor 1F Right Barrel                     STARRY RING
-352: Pachisi Track Romaly:            Reward 1                                  NINJA SUIT
-353: Pachisi Track Romaly:            Reward 2                                  MAGIC BIKINI
-354: Pachisi Track Romaly:            Reward 3                                  CLOAK OF EVASION
-355: Pachisi Track Romaly:            Reward 4                                  WISDOM SEED
-356: Pachisi Track Romaly:            Reward 5                                  HEAL SHIELD
-357: Pachisi Track Romaly:            Reward 6                                  CHAIN SICKLE
-358: Pachisi Track Romaly:            Reward 7                                  FALCON SWORD
-359: Pachisi Track Romaly:            Pachisi Exterior                          MAGICAL SKIRT
-360: Pachisi Track Ashalam:           Reward 1                                  LIGHT DRESS
-361: Pachisi Track Ashalam:           Reward 2                                  STAMINA SEED
-362: Pachisi Track Ashalam:           Reward 3                                  IRON ARMOR
-363: Pachisi Track Ashalam:           Reward 4                                  WIMPY BOOK
-364: Pachisi Track Ashalam:           Reward 5                                  MAGIC ABACUS
-365: Pachisi Track Ashalam:           Reward 6                                  SPEED RING
-366: Pachisi Track Ashalam:           Reward 7                                  INVISIBLE HERB
-367: Pachisi Track Ashalam:           Reward 8                                  DEVIL'S ARMOR
-368: Pachisi Track Ashalam:           Pachisi Exterior                          MAGIC SHIELD
-369: Pachisi Track Cape:              Reward 1                                  SMART GLASSES
-370: Pachisi Track Cape:              Reward 2                                  LUCKY SHOES
-371: Pachisi Track Cape:              Reward 3                                  FLASHY SUIT
-372: Pachisi Track Cape:              Reward 4                                  BLACK HOOD
-373: Pachisi Track Cape:              Reward 5                                  JOKE BOOK
-374: Pachisi Track Cape:              Reward 6                                  BRONZE SHIELD
-375: Pachisi Track Cape:              Reward 7                                  FAIRY MAP
-376: Pachisi Track Cape:              Reward 8                                  HERO SHIELD
-377: Pachisi Track Cape:              Reward 9                                  BOLT STAFF
-378: Pachisi Track Cape:              Reward 10                                 IRON AXE
-379: Pachisi Track Cape:              Reward 11                                 MOTH POWDER
-380: Pachisi Track Cape:              Reward 12                                 ECHO FLUTE
-381: Pachisi Track Cape:              Reward 13                                 DRAGON TAIL
-382: Pachisi Track Cape:              Reward 14                                 ROCKSTAR RING
-383: Pachisi Track Cape:              Reward 15                                 STONE WIG
-384: Pachisi Track Cape:              Pachisi Exterior 1                        MYSTERY BOLERO
-385: Pachisi Track Cape:              Pachisi Exterior 2                        TUBE SOCKS
-386: Pachisi Track Cape:              Pachisi Exterior 3                        SPINY WHIP
-387: Pachisi Track Kol:               Reward 1                                  THUNDER SWORD
-388: Pachisi Track Kol:               Reward 2                                  MAGIC ARMOR
-389: Pachisi Track Kol:               Reward 3                                  THOR SWORD
-390: Pachisi Track Kol:               Reward 4                                  WISDOM SEED
-391: Pachisi Track Kol:               Reward 5                                  RUBY RING
-392: Pachisi Track Kol:               Reward 6                                  ZOMBIE KILLER
-393: Pachisi Track Kol:               Reward 7                                  DEFY BOOK
-394: Pachisi Track Kol:               Reward 8                                  DARK OUTFIT
-395: Pachisi Track Kol:               Reward 9                                  FAIRY MAP
-396: Pachisi Track Kol:               Reward 10                                 IRON HELMET
-397: Pachisi Track Kol:               Reward 11                                 LIFE NUT
-398: Pachisi Track Kol:               Reward 12                                 HEAL SHIELD
-399: Pachisi Track Kol:               Reward 13                                 POWER BELT
-400: Pachisi Track Kol:               Reward 14                                 RUNE STAFF
-401: Pachisi Track Kol:               Reward 15                                 MAGICAL SKIRT
-402: Pachisi Track Kol:               Reward 16                                 POWER KNUCKLE
-403: Pachisi Track Kol:               Reward 17                                 SACRED BIKINI
-404: Pachisi Track Kol:               Reward 18                                 JOKE BOOK
-405: Pachisi Track Kol:               Reward 19                                 POISON DAGGER
-406: Pachisi Track Kol:               Reward 20                                 LIFE STONE
-407: Pachisi Track Kol:               Pachisi Exterior 1                        IRON ABACUS
-408: Pachisi Track Kol:               Pachisi Exterior 2                        MAGIC APRON
-409: Pachisi Track Kol:               Pachisi Exterior 3                        OROCHI SWORD
-410: Pachisi Track Zipangu:           Reward 1                                  BEAST CLAW
-411: Pachisi Track Zipangu:           Reward 2                                  INVISIBLE HERB
-412: Pachisi Track Zipangu:           Reward 3                                  THOR SWORD
-413: Pachisi Track Zipangu:           Reward 4                                  GRINGHAM WHIP
-414: Pachisi Track Zipangu:           Reward 5                                  GRINGHAM WHIP
-415: Pachisi Track Zipangu:           Reward 6                                  MAGIC ABACUS
-416: Pachisi Track Zipangu:           Reward 7                                  GIANT HAMMER
-417: Pachisi Track Zipangu:           Reward 8                                  MORNING STAR
-418: Pachisi Track Zipangu:           Reward 9                                  SHELL ARMOR
-419: Pachisi Track Zipangu:           Reward 10                                 MAGIC ABACUS
-420: Pachisi Track Zipangu:           Reward 11                                 FIGHTING SUIT
-421: Pachisi Track Zipangu:           Reward 12                                 LEATHER KILT
-422: Pachisi Track Zipangu:           Reward 13                                 GALE BANDANA
-423: Pachisi Track Zipangu:           Reward 14                                 ROCKSTAR RING
-424: Pachisi Track Zipangu:           Reward 15                                 THOR SWORD
-425: Pachisi Track Zipangu:           Reward 16                                 MOTH POWDER
-426: Pachisi Track Zipangu:           Reward 17                                 WIMPY BOOK
-427: Pachisi Track Zipangu:           Reward 18                                 TRAVELER CLOTHES
-428: Pachisi Track Zipangu:           Reward 19                                 SILVER BARRETTE
-429: Pachisi Track Zipangu:           Reward 20                                 BOXER SHORTS
-430: Pachisi Track Zipangu:           Reward 21                                 HERO GUIDE
-431: Pachisi Track Zipangu:           Reward 22                                 CHAIN WHIP
-432: Pachisi Track Zipangu:           Reward 23                                 SILVER HARP
-433: Pachisi Track Zipangu:           Reward 24                                 RUNE STAFF
-434: Pachisi Track Zipangu:           Reward 25                                 BOLT STAFF
-435: Pachisi Track Zipangu:           Reward 26                                 WRECKING FLAIL
-436: Pachisi Track Zipangu:           Reward 27                                 NAUGHTY BOOK
-437: Pachisi Track Zipangu:           Reward 28                                 TERRA ARMOR
-438: Pachisi Track Zipangu:           Reward 29                                 ORICHALCUM
-439: Pachisi Track Zipangu:           Reward 30                                 POWER BELT
-440: Pachisi Track Zipangu:           Reward 31                                 DRAGON TAIL
-441: Pachisi Track Zipangu:           Reward 32                                 BOOMERANG
-442: Pachisi Track Zipangu:           Reward 33                                 FALCON SWORD
-443: Pachisi Track Zipangu:           Pachisi Exterior 1                        STONE WIG
-444: Pachisi Track Zipangu:           Pachisi Exterior 2                        MISERY HELMET
-445: Najimi Tower:                    Thief Key Elder                           WOODEN HELMET
-446: Reeve:                           Reeve Elder                               IRON ABACUS
-447: Underworld Lake:                 Underworld Lake Bottom                    LUCKY BOOK
-448: Elf Village:                     Elf Queen                                 SMALL MEDAL
-449: Isis Castle:                     Isis Basement                             DRAGON KILLER
-450: Isis Castle:                     Isis Queen Room                           CYPRESS STICK
-451: Portoga:                         Portoga Throne                            WIZARD RING
-452: Muor:                            Muor Family                               FLAMERANG
-453: Sailor Bone Hut:                 Change Staff Man                          STRENGTH SEED
-454: Tedanki:                         Tedanki Prisoner                          SWORD OF SEDUCTION
-455: Zipangu:                         Orochi II                                 SILVER HARP
-456: Merchant Town:                   Merchant Town                             SMALL MEDAL
-457: Ashalam:                         Domdora Dancer Sidequest                  SCALE SHIELD
-458: Rubiss Tower:                    Rubiss Statue                             LEATHER SHIELD
-459: Necrogond Shrine:                Necrogond Attendant                       BASTARD SWORD
+305: Hobbit Shrine:                   Behind Throne                             FROST BLADE
+306: Cape Olivia Shrine:              Between Gates                             DRAGON MAIL
+307: Ramia Shrine:                    Bottom Stairs                             IRON SHIELD
+308: Najimi Tower:                    Floor 3F 1                                THIEF KEY
+309: Najimi Tower:                    Floor 3F 2                                FINAL KEY
+310: Najimi Tower:                    Underground B1 Left                       SILVER HARP
+311: Najimi Tower:                    Underground B1 Right                      MAGIC BALL
+312: Najimi Tower:                    Thief Key Room                            CLOAK OF EVASION
+313: Garuna Tower:                    Floor 1F                                  DREAM RUBY
+314: Garuna Tower:                    Floor 2F Secret Area                      STEEL SWORD
+315: Garuna Tower:                    Floor 2F                                  SILVER ORB
+316: Garuna Tower:                    Floor 6F                                  WATER DRESS
+317: Arb Tower:                       Secret Area Top Left                      VIVIFY STAFF
+318: Arb Tower:                       Secret Area Bottom Left                   IRON CLAWS
+319: Arb Tower:                       Secret Area Bottom Right                  ANGRY TATTOO
+320: Arb Tower:                       Top Floor S                               RABBIT'S FOOT
+321: Arb Tower:                       Top Floor SW                              SMALL MEDAL
+322: Shampane Tower:                  Floor 3F                                  GAIA SWORD
+323: Shampane Tower:                  Floor 6F                                  STRENGTH SEED
+324: Rubiss Tower:                    Floor 2F Top Top Right                    YGGDRASIL LEAF
+325: Rubiss Tower:                    Floor 2F Top Top Left                     SMALL MEDAL
+326: Rubiss Tower:                    Floor 2F Bottom Top Left                  IRON ABACUS
+327: Rubiss Tower:                    Floor 2F Bottom Top Right                 LUCKY SHOES
+328: Rubiss Tower:                    Floor 2F Bottom Bottom Left               SACRED BIKINI
+329: Rubiss Tower:                    Floor 2F Bottom Bottom Right              GREAT HELM
+330: Rubiss Tower:                    Floor 4F                                  BEAST CLAW
+331: Rubiss Tower:                    Floor 3F                                  BOOMERANG
+332: Rubiss Tower:                    Floor 3F                                  POWER BELT
+333: Shampane Tower:                  Floor 6F                                  HERO SHIELD
+334: Bonus Dungeon:                   Dragon God Area Exterior                  HOLY WATER
+335: Bonus Dungeon:                   Dragon God Area 1F                        ZOMBIE KILLER
+336: Bonus Dungeon:                   Dragon God Area 1F                        SILVER ROSARY
+337: Bonus Dungeon:                   Dragon God Area 2F                        SORROW SHIELD
+338: Bonus Dungeon:                   Dragon God Area 2F                        IRON ARMOR
+339: Pyramid:                         Floor 1F                                  THUNDER SWORD
+340: Pyramid:                         Floor 2F                                  THIRSTY PITCHER
+341: Pyramid:                         Magic Key Floor Left                      BEAST CLAW
+342: Pyramid:                         Magic Key Floor Right                     SMALL MEDAL
+343: Pyramid:                         Top Floor                                 PARTY DRESS
+344: Pyramid:                         Top Exterior Left Side                    ANGRY TATTOO
+345: Ghost Ship:                      Floor B1 Room Bottom Right                PARTY DRESS
+346: Ghost Ship:                      Bottom Main Chest                         SWORD OF SEDUCTION
+347: Ghost Ship:                      Floor B1 Room Top Middle                  BLACK HOOD
+348: Ghost Ship:                      Floor B1 Top Middle Drawer                MORNING STAR
+349: Ghost Ship:                      Floor B1 Room Barrel                      SAGE'S STONE
+350: Ghost Ship:                      Floor B1 Room Pot                         SPINY WHIP
+351: Ghost Ship:                      Floor 1F Right Barrel                     DEFY BOOK
+352: Pachisi Track Romaly:            Reward 1                                  HOLY SPEAR
+353: Pachisi Track Romaly:            Reward 2                                  OROCHI SWORD
+354: Pachisi Track Romaly:            Reward 3                                  BLADE ARMOR
+355: Pachisi Track Romaly:            Reward 4                                  SMART GLASSES
+356: Pachisi Track Romaly:            Reward 5                                  WING OF WYVERN
+357: Pachisi Track Romaly:            Reward 6                                  MORNING STAR
+358: Pachisi Track Romaly:            Reward 7                                  STONE WIG
+359: Pachisi Track Romaly:            Pachisi Exterior                          FALCON SWORD
+360: Pachisi Track Ashalam:           Reward 1                                  WISDOM SEED
+361: Pachisi Track Ashalam:           Reward 2                                  CHAIN SICKLE
+362: Pachisi Track Ashalam:           Reward 3                                  ORTEGA'S HELMET
+363: Pachisi Track Ashalam:           Reward 4                                  DEFY BOOK
+364: Pachisi Track Ashalam:           Reward 5                                  POWER BELT
+365: Pachisi Track Ashalam:           Reward 6                                  HERO RING
+366: Pachisi Track Ashalam:           Reward 7                                  SILK HAT
+367: Pachisi Track Ashalam:           Reward 8                                  MAGIC MAP
+368: Pachisi Track Ashalam:           Pachisi Exterior                          STAFF OF REFLECTION
+369: Pachisi Track Cape:              Reward 1                                  GARTER BELT
+370: Pachisi Track Cape:              Reward 2                                  VIVIFY STAFF
+371: Pachisi Track Cape:              Reward 3                                  GIANT HAMMER
+372: Pachisi Track Cape:              Reward 4                                  GOLDEN CROWN
+373: Pachisi Track Cape:              Reward 5                                  STAFF OF JUDGEMENT
+374: Pachisi Track Cape:              Reward 6                                  LIFE RING
+375: Pachisi Track Cape:              Reward 7                                  BOOMERANG
+376: Pachisi Track Cape:              Reward 8                                  NAUGHTY BOOK
+377: Pachisi Track Cape:              Reward 9                                  INVISIBLE HERB
+378: Pachisi Track Cape:              Reward 10                                 ANTIDOTE HERB
+379: Pachisi Track Cape:              Reward 11                                 ZOMBIE KILLER
+380: Pachisi Track Cape:              Reward 12                                 DARKNESS LAMP
+381: Pachisi Track Cape:              Reward 13                                 SILVER SHIELD
+382: Pachisi Track Cape:              Reward 14                                 HEAL SHIELD
+383: Pachisi Track Cape:              Reward 15                                 LUCKY SHOES
+384: Pachisi Track Cape:              Pachisi Exterior 1                        HERO GUIDE
+385: Pachisi Track Cape:              Pachisi Exterior 2                        MYSTIC NUT
+386: Pachisi Track Cape:              Pachisi Exterior 3                        MAGICAL SKIRT
+387: Pachisi Track Kol:               Reward 1                                  GARTER BELT
+388: Pachisi Track Kol:               Reward 2                                  MAGIC MAP
+389: Pachisi Track Kol:               Reward 3                                  LIFE NUT
+390: Pachisi Track Kol:               Reward 4                                  RUBY RING
+391: Pachisi Track Kol:               Reward 5                                  CHAIN WHIP
+392: Pachisi Track Kol:               Reward 6                                  ROCKSTAR RING
+393: Pachisi Track Kol:               Reward 7                                  MOHAWK WIG
+394: Pachisi Track Kol:               Reward 8                                  DRAGON ROBE
+395: Pachisi Track Kol:               Reward 9                                  WIZARD RING
+396: Pachisi Track Kol:               Reward 10                                 STAFF OF JUDGEMENT
+397: Pachisi Track Kol:               Reward 11                                 PACHISI TICKET
+398: Pachisi Track Kol:               Reward 12                                 HERO GUIDE
+399: Pachisi Track Kol:               Reward 13                                 HERO RING
+400: Pachisi Track Kol:               Reward 14                                 IRON AXE
+401: Pachisi Track Kol:               Reward 15                                 GOLDEN CROWN
+402: Pachisi Track Kol:               Reward 16                                 DARK OUTFIT
+403: Pachisi Track Kol:               Reward 17                                 SHELL ARMOR
+404: Pachisi Track Kol:               Reward 18                                 GIANT SHEARS
+405: Pachisi Track Kol:               Reward 19                                 BRONZE SHIELD
+406: Pachisi Track Kol:               Reward 20                                 TURTLE SHELL
+407: Pachisi Track Kol:               Pachisi Exterior 1                        FORCE STAFF
+408: Pachisi Track Kol:               Pachisi Exterior 2                        CLUB
+409: Pachisi Track Kol:               Pachisi Exterior 3                        WISDOM SEED
+410: Pachisi Track Zipangu:           Reward 1                                  BLADERANG
+411: Pachisi Track Zipangu:           Reward 2                                  MYTHRIL HELMET
+412: Pachisi Track Zipangu:           Reward 3                                  LUCKY BOOK
+413: Pachisi Track Zipangu:           Reward 4                                  IRON HELMET
+414: Pachisi Track Zipangu:           Reward 5                                  MISERY HELMET
+415: Pachisi Track Zipangu:           Reward 6                                  STEEL ARMOR
+416: Pachisi Track Zipangu:           Reward 7                                  WIMPY BOOK
+417: Pachisi Track Zipangu:           Reward 8                                  DOUBLE-EDGED SWORD
+418: Pachisi Track Zipangu:           Reward 9                                  DRAGON TAIL
+419: Pachisi Track Zipangu:           Reward 10                                 LEATHER HAT
+420: Pachisi Track Zipangu:           Reward 11                                 ANGRY TATTOO
+421: Pachisi Track Zipangu:           Reward 12                                 BRONZE KNIFE
+422: Pachisi Track Zipangu:           Reward 13                                 WATER DRESS
+423: Pachisi Track Zipangu:           Reward 14                                 WOODEN HELMET
+424: Pachisi Track Zipangu:           Reward 15                                 BATTLE AXE
+425: Pachisi Track Zipangu:           Reward 16                                 HOLY SPEAR
+426: Pachisi Track Zipangu:           Reward 17                                 IRON ARMOR
+427: Pachisi Track Zipangu:           Reward 18                                 SMART GLASSES
+428: Pachisi Track Zipangu:           Reward 19                                 STAFF OF JUDGEMENT
+429: Pachisi Track Zipangu:           Reward 20                                 STONE WIG
+430: Pachisi Track Zipangu:           Reward 21                                 SHELL ARMOR
+431: Pachisi Track Zipangu:           Reward 22                                 SLICK SUIT
+432: Pachisi Track Zipangu:           Reward 23                                 SILVER ROSARY
+433: Pachisi Track Zipangu:           Reward 24                                 MAGIC MAP
+434: Pachisi Track Zipangu:           Reward 25                                 BOXER SHORTS
+435: Pachisi Track Zipangu:           Reward 26                                 IRON SHIELD
+436: Pachisi Track Zipangu:           Reward 27                                 GARTER BELT
+437: Pachisi Track Zipangu:           Reward 28                                 WIZARD STAFF
+438: Pachisi Track Zipangu:           Reward 29                                 POT LID SHIELD
+439: Pachisi Track Zipangu:           Reward 30                                 CHAIN WHIP
+440: Pachisi Track Zipangu:           Reward 31                                 SLICK SUIT
+441: Pachisi Track Zipangu:           Reward 32                                 ANGEL ROBE
+442: Pachisi Track Zipangu:           Reward 33                                 SAGE STAFF
+443: Pachisi Track Zipangu:           Pachisi Exterior 1                        POWER KNUCKLE
+444: Pachisi Track Zipangu:           Pachisi Exterior 2                        DEMON AXE
+445: Najimi Tower:                    Thief Key Elder                           CHAIN WHIP
+446: Reeve:                           Reeve Elder                               CLOTHES
+447: Underworld Lake:                 Underworld Lake Bottom                    BRAVE BOOK
+448: Elf Village:                     Elf Queen                                 SAGE'S STONE
+449: Isis Castle:                     Isis Basement                             SMART BOOK
+450: Isis Castle:                     Isis Queen Room                           SWORD OF SEDUCTION
+451: Portoga:                         Portoga Throne                            LEATHER ARMOR
+452: Muor:                            Muor Family                               TRAGIC TALE
+453: Sailor Bone Hut:                 Change Staff Man                          WING OF WYVERN
+454: Tedanki:                         Tedanki Prisoner                          BUNNY EARS
+455: Zipangu:                         Orochi II                                 TIGHT BIKINI
+456: Merchant Town:                   Merchant Town                             WRECKING FLAIL
+457: Ashalam:                         Domdora Dancer Sidequest                  MAGIC BIKINI
+458: Rubiss Tower:                    Rubiss Statue                             MIST STAFF
+459: Necrogond Shrine:                Necrogond Attendant                       BLACK COAT
 
 ==========Small Medal Rewards:==========
-1:   Gold Necklace
-2:   Strength Ring
-3:   Magic Bikini
-4:   Fairy Flute
-5:   Dragon Killer
-6:   Lucky Shoes
-7:   Green Orb
-8:   Purple Orb
-9:   Starry Ring
-10:  Goddess Ring
-11:  Sage's Stone
-12:  Wrecking Flail
+1:   War Hammer
+2:   Dragon Shield
+3:   Cloak Of Evasion
+4:   Thief Key
+5:   Assassin Dagger
+6:   Bolt Staff
+7:   Dragon Claw
+8:   Blue Orb
+9:   Hero Shield
+10:  Light Orb
+11:  Yggdrasil Leaf
+12:  Sage's Stone
 
 ==========Small Medal Locations:==========
-79:  Kazave:                          Nighttime House Top
-448: Elf Village:                     Elf Queen
-185: Samanosa:                        Graveyard Bottom Row
-165: Edinbear:                        Castle 1F NE Room Right
-456: Merchant Town:                   Merchant Town
-282: Shrine Prison:                   Simon Cell
-105: Zipangu:                         Interior NE Right Middle Pot
-179: Dragon Queen Castle:             North Light
-194: Ludatorm:                        Town Flowerbed
-196: Ludatorm:                        House Pot
-60:  Domdora:                         Stable Exterior
-39:  Mercado:                         SW Foundation
-46:  Mercado:                         House 2F Bookshelves 5th
-132: Kol:                             Well Pachisi Area
-211: Zoma Castle:                     Floor B2 Left Right 
+342: Pyramid:                         Magic Key Floor Right
+184: Samanosa:                        Graveyard Middle Row
+32:  Baharata:                        House 1F Drawer
+34:  Baharata:                        House 2 2F Right Room Drawer
+92:  Muor:                            Exterior Corridor
+244: Gaia Navel:                      Floor 1F NE 
+321: Arb Tower:                       Top Floor SW
+232: Necrogond Cave:                  Floor B3
+102: Zipangu:                         Underground Top Right Pot
+197: Ludatorm:                        Upstairs House N Left Bookshelf
+293: Garin Shrine:                    Underground B1
+265: Mountain Cave:                   Floor B2 3
+48:  Mercado:                         House 2F Right Drawer
+59:  Rimuldar:                        House Right Drawer
+325: Rubiss Tower:                    Floor 2F Top Top Left
 
 ========== Shops:==========
 REEVE ITEM:
-Antidote Herb
+Spider Web
 Training Suit
-Shell Armor
-Bronze Shield
-Leather Hat
+Leather Dress
+Pot Lid Shield
+Turban
 
 REEVE WEAPON:
-Spider Web
-Pot Lid Shield
-Invisible Herb
-Golden Crown
-Sacred Knife
-Silk Robe
-Wooden Helmet
+Pacifier
+Moth Powder
+Cypress Stick
+Leather Armor
+Shell Armor
+Leather Hat
+Club
 
 PORTOGA ITEM:
-Steel Whip
-Angry Tattoo
-Black Hood
-Chain Mail
-Iron Spear
+Silk Hat
+Magic Apron
+Horned Hat
+Iron Helmet
+Mythril Helmet
 
 PORTOGA WEAPON:
-Traveler Clothes
-Iron Armor
-Bladerang
-Iron Spear
-Black Hood
+Chain Mail
+Garter Belt
+Scale Shield
 Life Stone
+Silver Rosary
+Bladerang
 
 MERCHANT FORM 2 ITEM:
+Slick Suit
 Ruby Ring
-Flashy Suit
 
 MERCHANT FORM 3 ITEM:
-Giant Hammer
-Wizard Ring
-Tight Bikini
-Golden Beak
+Rabbit's Foot
+Great Helm
+Holy Spear
+Morning Star
 
 MERCHANT FORM 4 WEAPON:
-Sword Of Seduction
-Flamerang
-Ogre Shield
+Speed Ring
 Lucky Shoes
-Ortega's Helmet
+Assassin Dagger
+Expel Shield
+Ogre Shield
 
 MERCHANT FORM 5 WEAPON:
 Falcon Sword
-Sword Of Seduction
-Ogre Shield
 Dark Outfit
-Lucky Shoes
-Speed Ring
+Ortega's Helmet
+Bolt Staff
+Assassin Dagger
+Gale Bandana
 
 MERCHANT FORM 4/5 ITEM:
-Flamerang
 Misery Helmet
-Orochi Sword
-Lucky Shoes
-Frost Blade
-Expel Shield
+Falcon Sword
+Black Coat
+Speed Ring
+Demon Axe
+Bolt Staff
 
 NOANIELS ITEM:
-Iron Helmet
-Silver Rosary
-Bladerang
-Scale Shield
-Horned Hat
-Giant Shears
-Spiny Whip
+Iron Armor
+Fighting Suit
+Silver Barrette
+Angry Tattoo
+Chain Sickle
+Silk Hat
+Iron Claws
 
 ASHALAM WEAPON BARTER:
-Mohawk Wig
-Iron Spear
-Poison Dagger
-Angry Tattoo
-Iron Claws
-Fur Hood
+Magic Abacus
+Hard Heart
+Bunny Ears
+Silver Rosary
+Angel Robe
+Bladerang
 
 ASHALAM NIGHT WEAPON:
-Silver Rosary
-Battle Axe
 Stone Wig
-Magic Apron
-Fighting Suit
-Wizard Staff
+Spiny Whip
+Life Stone
+Magic Robe
+Iron Mask
+Giant Shears
 
 ASHALAM ITEM:
-Poison Dagger
-Steel Needle
+Steel Whip
+Spiny Whip
 
 ASHALAM WEAPON:
-Iron Armor
-Poison Dagger
-Bunny Ears
-Iron Helmet
-Black Hood
-Silver Barrette
+Chain Mail
+Mythril Helmet
+Traveler Clothes
+Hard Heart
+Mohawk Wig
+Smart Glasses
 
 ASHALAM BARTER:
-Spiny Whip
-Battle Axe
-Silver Shield
-Hard Heart
+Steel Whip
 Black Hood
-Fur Hood
+Iron Abacus
+Wizard Staff
+Silver Barrette
+Mohawk Wig
 
 BAHARATA WEAPON:
-Terra Armor
-Steel Armor
-Gold Necklace
-Ruby Ring
-Heal Shield
+Rune Staff
+Magic Bikini
 Slick Suit
+Zombie Killer
+Tight Bikini
+Ruby Ring
 
 BAHARATA ITEM:
-Double-Edged Sword
-Holy Spear
-Rabbit's Foot
-Giant Hammer
-Great Helm
-Slime Earrings
+Slick Suit
+Morning Star
+Ruby Ring
+Flashy Suit
+Plush Suit
+Golden Beak
 
 LANCEL ITEM:
-Magic Hat
-Hero Ring
+Golden Beak
 Gold Necklace
+Steel Armor
 Invisible Herb
 
 LANCEL WEAPON:
-Devil's Armor
 Terra Armor
-Wizard Ring
-Bastard Sword
-Magic Bikini
-Ruby Ring
-Sword Of Destruction
+Gold Necklace
+Flashy Suit
+Dragon Shield
+Holy Spear
+Slick Suit
+Cloak Of Evasion
 
 RIMULDAR WEAPON:
-Vivify Staff
-Light Dress
 Beast Claw
-Dragon Claw
-Sleep Staff
-Mystery Bolero
-
-DOMDORA ITEM:
-Starry Ring
-Sage Staff
 Vivify Staff
 Thor Sword
-Beast Claw
+Hero Shield
+Sleep Staff
+Sage Staff
+
+DOMDORA ITEM:
+Zen Book
+Flee Ring
+Vivify Staff
+Light Dress
 Mystery Bolero
+Starry Ring
 
 DOMDORA WEAPON:
 Light Armor
-Thor Sword
-Vivify Staff
-Hero Shield
+Dragon Claw
 Dragon Robe
+Hero Shield
+Mystery Bolero
 Dragon Tail
 
 ISIS ITEM 1:
-Steel Armor
-Great Helm
-Gold Necklace
-Bastard Sword
-War Hammer
-Magic Armor
+Ruby Ring
+Devil's Armor
+Justice Abacus
+Sword Of Destruction
+Sorrow Shield
+Staff Of Judgement
 
 ISIS WEAPON:
-Golden Tiara
-Double-Edged Sword
-Holy Spear
-War Hammer
-Giant Hammer
+Slime Earrings
+Flashy Suit
+Hero Ring
 Benevolent Ring
-Rabbit's Foot
+Water Dress
+Rockstar Ring
+Dragon Mail
 
 ISIS ITEM 2:
-Mist Staff
-Power Belt
-Rune Staff
-Plush Suit
-Zombie Killer
-Hero Ring
+Sword Of Destruction
+Magic Bikini
+Staff Of Reflection
+Great Helm
+Sorrow Shield
+Gold Necklace
 
 KAZAVE WEAPON:
+Steel Whip
+Iron Armor
 Giant Shears
-Magic Abacus
-Turtle Shell
-Scale Shield
-Smart Glasses
-Battle Axe
-Poison Dagger
+Magic Robe
+Black Hood
+Spiny Whip
+Bladerang
 
 KAZAVE ITEM:
-Tube Socks
-Wizard Staff
-Spiny Whip
-Steel Whip
-Scale Shield
-Fur Hood
-Hard Heart
+Iron Apron
+Chain Mail
+Traveler Clothes
+Silver Shield
+Life Stone
+Mythril Helmet
+Silk Hat
 
 ELF VILLAGE ITEM:
 Flee Ring
-Sacred Bikini
-Light Dress
+Vivify Staff
+Beast Claw
+Yggdrasil Leaf
 Goddess Ring
-Light Armor
-Hero Shield
+Dragon Robe
 
 TEDANKI WEAPON:
-Orochi Sword
-Falcon Sword
-Dragon Killer
-Gale Bandana
+Ogre Shield
 Flamerang
+Ortega's Helmet
+Lucky Shoes
 Assassin Dagger
-Expel Shield
+Dark Outfit
+Thunder Sword
 
 MUOR ITEM:
-Assassin Dagger
 Orochi Sword
+Assassin Dagger
 Frost Blade
-Misery Helmet
-Expel Shield
+Dark Outfit
 Gale Bandana
+Sword Of Seduction
 
 MUOR WEAPON:
-Ortega's Helmet
 Speed Ring
-Misery Helmet
-Black Coat
+Assassin Dagger
 Lucky Shoes
-Frost Blade
+Demon Axe
+Flamerang
+Sword Of Seduction
 
 SIOUX ITEM:
-Magic Hat
-Steel Armor
-Great Helm
-Tight Bikini
-Sorrow Shield
+Water Dress
+Wizard Ring
+Holy Spear
+Bastard Sword
+Ruby Ring
 Invisible Herb
 Moth Powder
 
 SIOUX WEAPON:
-Sorrow Shield
-Justice Abacus
-Steel Armor
-Holy Spear
-Magic Hat
-Slime Earrings
+Golden Beak
+Wizard Ring
+Heal Shield
+Golden Tiara
+Strength Ring
+Double-Edged Sword
 
 KOL WEAPON:
-Dragon Claw
-Dragon Robe
-Vivify Staff
-Beast Claw
-Mystery Bolero
+Flee Ring
+Zen Book
+Hero Shield
 Sage Staff
-Light Dress
+Sacred Bikini
+Dragon Robe
+Dragon Claw
 
 KOL ITEM 1:
-Thor Sword
-Hero Shield
-Dragon Tail
-Dragon Claw
-Beast Claw
+Light Armor
+Vivify Staff
+Starry Ring
+Zen Book
+Dragon Robe
 
 KOL ITEM 2:
-Starry Ring
-Vivify Staff
-Light Dress
-Hero Shield
+Thor Sword
 Sage Staff
+Dragon Robe
+Light Dress
+Light Armor
 Dragon Claw
 King Sword
 
 ALIAHAN WEAPON:
-Invisible Herb
-Antidote Herb
 Training Suit
-Bronze Shield
-Medical Herb
-Leather Kilt
-Cypress Stick
+Wing Of Wyvern
+Leather Shield
+Club
+Shell Armor
+Bronze Knife
+Pot Lid Shield
 
 ROMALY ITEM:
-Silver Barrette
-Bladerang
-Magic Apron
-Steel Sword
+Poison Dagger
+Stone Wig
 Angel Robe
-Hard Heart
-Chain Sickle
+Fur Hood
+Iron Abacus
+Iron Apron
+Turtle Shell
 
 ROMALY WEAPON:
-Iron Spear
-Iron Axe
-Scale Shield
-Steel Sword
-Fighting Suit
-Wizard Staff
+Fur Hood
+Garter Belt
+Iron Abacus
+Chain Mail
+Giant Shears
 Hard Heart
+Iron Claws
 
 
 ==========Key Item Checks:==========
-THIEF KEY           215: Promontory Cave:                 Underground B1 NE 
-MAGIC BALL          308: Najimi Tower:                    Floor 3F 1
-MAGIC KEY           225: Underworld Lake:                 Floor B1 
-KING LETTER         222: Cave of Temptation Romaly Side:  Floor B1 1
-DREAM RUBY          181: Samanosa:                        King Room
-WAKE UP POWDER      330: Rubiss Tower:                    Floor 4F
-THIRSTY PITCHER     255: Ra Mirror Cave:                  Floor B1 8
-FINAL KEY           310: Najimi Tower:                    Underground B1 Left
-SAILOR BONE         246: Gaia Navel:                      Floor B2 Left 
-LOVELY MEMORIES     113: Pirate Hideout:                  Secret Area Top Left
-RA MIRROR           229: Underworld Lake:                 Floor B2 4
-GAIA SWORD          320: Arb Tower:                       Top Floor S
-RED ORB             315: Garuna Tower:                    Floor 2F
-GREEN ORB           343: Pyramid:                         Top Floor
-PURPLE ORB          114: Pirate Hideout:                  Secret Area Bottom Left
-YELLOW ORB          10:  Portoga:                         Castle Vault Middle
-BLUE ORB            115: Pirate Hideout:                  Secret Area Right
-SILVER ORB          341: Pyramid:                         Magic Key Floor Left
-FAIRY FLUTE         318: Arb Tower:                       Secret Area Bottom Left
-RAIN STAFF          175: Baramos Castle:                  Chest Area Middle
-SACRED TALISMAN     249: Ra Mirror Cave:                  Floor B1 2
-STONES OF SUNLIGHT  73:  Isis Town:                       Well
+THIEF KEY           308: Najimi Tower:                    Floor 3F 1
+MAGIC BALL          311: Najimi Tower:                    Underground B1 Right
+MAGIC KEY           216: Promontory Cave:                 Underground B1 SW 
+KING LETTER         247: Gaia Navel:                      Floor B2 Right 
+DREAM RUBY          313: Garuna Tower:                    Floor 1F
+WAKE UP POWDER      80:  Kazave:                          Nighttime House Bottom
+THIRSTY PITCHER     340: Pyramid:                         Floor 2F
+FINAL KEY           309: Najimi Tower:                    Floor 3F 2
+SAILOR BONE         218: Bahn Tunnel Ashalam Side:        Floor 1F Right 
+LOVELY MEMORIES     11:  Portoga:                         Castle Vault Right
+RA MIRROR           224: Underworld Lake:                 Floor 1F 
+GAIA SWORD          322: Shampane Tower:                  Floor 3F
+RED ORB             137: Aliahan:                         Vault Bottom Left
+GREEN ORB           115: Pirate Hideout:                  Secret Area Right
+PURPLE ORB          113: Pirate Hideout:                  Secret Area Top Left
+YELLOW ORB          114: Pirate Hideout:                  Secret Area Bottom Left
+BLUE ORB            159: Romaly:                          Castle B1 Right
+SILVER ORB          315: Garuna Tower:                    Floor 2F
+FAIRY FLUTE         217: Bahn Tunnel Ashalam Side:        Floor 1F Left 
+RAIN STAFF          73:  Isis Town:                       Well
+SACRED TALISMAN     89:  Tedanki:                         Floor 2F
+STONES OF SUNLIGHT  256: Ra Mirror Cave:                  Floor B2 1
 LIGHT ORB           304: Final Key Shrine:                Main Chest
