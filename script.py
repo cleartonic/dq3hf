@@ -1,12 +1,16 @@
-import yaml, os, json, subprocess, logging, random, shutil
+import yaml, os, json, subprocess, logging, random, shutil, sys
 from operator import itemgetter
-from PyQt5.QtWidgets import QLabel, QFrame, QLineEdit, QPushButton, QCheckBox, QApplication, QMainWindow, \
+from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QFrame, QLineEdit, QPushButton, QCheckBox, QApplication, QMainWindow, \
                             QFileDialog, QDialog, QScrollArea, QMessageBox, QWidget, QTextEdit
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtGui import QPixmap, QIntValidator, QPalette, QColor
 from PyQt5.QtCore import QThread, pyqtSignal, QTimer
 
-
+try:
+    from PyQt5 import sip
+except ImportError:
+    import sip
 
 
 
@@ -14,12 +18,12 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(message)s',
                     handlers=[logging.StreamHandler()])
 
-THIS_FILEPATH = os.path.dirname(__file__)
+THIS_FILEPATH = os.path.realpath(os.path.dirname(sys.argv[0]))
 TEMP_DIR = os.path.join(THIS_FILEPATH,'tmp')
 
 
 
-DEV_OVERRIDE = True
+DEV_OVERRIDE = False
 try:
     with open(os.path.join(THIS_FILEPATH,'dev','path.txt'),'r') as f:
         DEV_ROM_PATH = f.read()
@@ -804,8 +808,9 @@ class World():
         self.spoiler_log = spoiler_str
         with open(os.path.join(THIS_FILEPATH,'output','dq3_%s.log' % self.seed_num),'w') as f:
             f.write(spoiler_str)
-        with open(os.path.join(THIS_FILEPATH,'asar','spoiler.log'),'w') as f:
-            f.write(spoiler_str)
+        if DEV_OVERRIDE:
+            with open(os.path.join(THIS_FILEPATH,'asar','spoiler.log'),'w') as f:
+                f.write(spoiler_str)
         
     def place_items(self):
 
@@ -856,8 +861,9 @@ class World():
         output_str += self.sm.shop_asm
         output_str += self.cm.generate_price_changes()
 
-        with open(os.path.join(THIS_FILEPATH,'asar','patch_r.asm'),'w') as f:
-            f.write(output_str)
+        if DEV_OVERRIDE:
+            with open(os.path.join(THIS_FILEPATH,'asar','patch_r.asm'),'w') as f:
+                f.write(output_str)
         with open(os.path.join(TEMP_DIR,'patch_r.asm'),'w') as f:
             f.write(output_str)
             
@@ -1047,7 +1053,13 @@ class MainWindow(object):
         
         self.log_clear_button = QPushButton("Clear Log",self.window)
         self.log_clear_button.setGeometry(QtCore.QRect(10, 540, 100, 30))
-        self.log_clear_button.clicked.connect(self.clear_log)        
+        self.log_clear_button.clicked.connect(self.clear_log)  
+        
+        
+        
+        self.open_dir_button = QPushButton("Open Output Folder",self.window)
+        self.open_dir_button.setGeometry(QtCore.QRect(410, 540, 180, 30))
+        self.open_dir_button.clicked.connect(self.open_output_folder)  
 
 
 
@@ -1090,6 +1102,9 @@ class MainWindow(object):
         
     def clear_log(self, message):
         self.log_output.setText("")
+        
+    def open_output_folder(self):
+        os.startfile(os.path.join(THIS_FILEPATH,'output'))
 
 
     def rom_input_click(self):
@@ -1161,14 +1176,18 @@ class MainWindow(object):
         
         
         try:
+            
             new_rom_path = os.path.join(THIS_FILEPATH,'tmp', "dq3_%s.sfc" % self.world.seed_num)
+#            logging.info(new_rom_path)
+#            logging.info(self.rom_label_input.text())
             shutil.copy(self.rom_label_input.text(), new_rom_path)
             
             sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", os.path.join("tmp","patch_r.asm"), new_rom_path]
 
             subprocess.call(sh_calls)
-    
-            shutil.move(new_rom_path, os.path.join(THIS_FILEPATH, 'output',os.path.basename(new_rom_path)))
+            new_new_rom_path = os.path.join(THIS_FILEPATH, 'output',os.path.basename(new_rom_path))
+#            logging.info(new_rom_path)
+            shutil.move(new_rom_path, new_new_rom_path)
             try:
                 os.remove(os.path.join(THIS_FILEPATH,'tmp','patch_r.asm'))
             except Exception as e:
