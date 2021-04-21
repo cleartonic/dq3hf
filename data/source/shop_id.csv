@@ -39,10 +39,10 @@ idx,addr,name,data,valid,tier
 38,C30A30,Aliahan Weapon,000102033d4d3f65,valid,1
 39,C30A38,Romaly Item,824679b8b9babbbf,valid,2
 40,C30A40,Romaly Weapon,00040d053f504c6a,valid,2
-41,C30A48,Samanosa Item,82b8b9babbbfc600,invalid,4
-42,C30A50,Samanosa Weapon,00213318436e7f7a,invalid,4
-43,C30A58,Ludatorm Weapon,00203354526e6b82,invalid,5
-44,C30A60,Ludatorm Item,82b8b9babbbfa900,invalid,5
+41,C30A48,Samanosa Item,82b8b9babbbfc600,valid,4
+42,C30A50,Samanosa Weapon,00213318436e7f7a,valid,4
+43,C30A58,Ludatorm Weapon,00203354526e6b82,valid,5
+44,C30A60,Ludatorm Item,82b8b9babbbfa900,valid,5
 45,C30A68,Pachisi Track 1,0607576600000000,invalid,4
 46,C30A70,Pachisi Track 2,0659073800000000,invalid,4
 47,C30A78,Pachisi Track 3,0628998300000000,invalid,5

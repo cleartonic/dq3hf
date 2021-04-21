@@ -3,3 +3,16 @@ done/*
 asar/patch_r.asm
 temp/
 output/
+dev/*
+build/*
+dist/*
+venv/*
+*.spec
+build.sh
+__pycache__
+site/*
+asar/patch2.asm
+asar/patch2.sh
+asar/patch_j.sh
+tmp/
+img/
