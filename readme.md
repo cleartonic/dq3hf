@@ -6,11 +6,17 @@ You can read more about this randomizer mod at <a href="https://cleartonic.net/d
 
 ## How to play
 
-Download the latest release at this repository's [releases page](https://github.com/cleartonic/dq3hf/releases/).
+Download the latest release at this repository's [releases page](https://github.com/cleartonic/dq3hf/releases/).  
+
+This mod supports both the Japanese original game, and the [English fan translation](https://www.romhacking.net/translations/1323/)  
+
+Use the hover tooltips while using the program for an explanation for each setting.  
+
+
 
 ![](http://cleartonic.net/dq3hf/img/github_1.png)
 
-Use the hover tooltips while using the program for an explanation for each setting. 
+
 
 ## Credits
 Created by [@cleartonic](https://twitter.com/cleartonic)  
