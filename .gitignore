@@ -17,3 +17,10 @@ asar/patch_j.sh
 tmp/
 img/
 releases/
+asar/spoiler.log
+asar/patch2.asm
+asar/patch2.sh
+asar/en_patch.asm
+asar/patch.sh
+asar/patch_j.sh
+asar/patch_r.sh
