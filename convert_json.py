@@ -32,3 +32,9 @@ with open(os.path.join('data','shops.json'),'w') as f:
     json.dump(shops_dict, f)
 
 
+df_warps = pd.read_csv(os.path.join(THIS_FILEPATH,'data','source','warp_id.csv'), dtype='str')
+warps_dict = df_warps.T.to_dict()
+with open(os.path.join('data','warps.json'),'w') as f:
+    json.dump(warps_dict, f)
+
+

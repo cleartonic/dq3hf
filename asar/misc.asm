@@ -190,13 +190,46 @@ org $C0F500
 phy
 phx
 pha
-
 ; times 4
 
 clc 
 ; this checks if x4 would overflow, if so, increase too much
 sep #$30
+
+; first check 0 
+lda $C0F578
+cmp #$01
+beq FinishEXPMult
+
+; check 2x mult
+lda $C0F578
+cmp #$02
+bne EXPMult4 ; if not 01 or 02, it's 04
+
+
+; Mult 2
 lda $23DD
+cmp #$80
+bcc EXPCase11
+inc $23DE
+
+EXPCase11:
+
+rep #$30
+asl $23DC
+JMP FinishEXPMult
+
+; Mult 4
+EXPMult4:
+
+lda $23DD
+cmp #$80
+bcc EXPCase2
+inc $23DE
+inc $23DE
+jmp EXPCase1
+
+EXPCase2:
 cmp #$40
 bcc EXPCase1
 inc $23DE
@@ -206,8 +239,13 @@ EXPCase1:
 rep #$30
 asl $23DC
 asl $23DC
+JMP FinishEXPMult
 
 
+
+
+FinishEXPMult:
+rep #$30
 pla
 plx
 ply
@@ -234,3 +272,26 @@ cpx #$0001
 ; Sabrina in Portoga weird issue w/ #7e3541
 org $cb0140
 jml $CB0148
+
+; misc fixes
+; Sabrina in Portoga weird issue w/ #7e3541
+org $cb0152
+lda #$0004
+
+
+; Startup routine
+org $C4452b
+jml $C0F580
+
+; loading in starting locations
+org $C0F580
+lda $C0F570
+sta $7E3680
+lda $C0F571
+sta $7E3681
+
+lda #$0003
+jsl $C44777
+jml $C44532
+
+

@@ -1,6 +1,6 @@
 import yaml, os, json, subprocess, logging, random, shutil, sys
 from operator import itemgetter
-from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QLabel, QComboBox
 from PyQt5.QtWidgets import QFrame, QLineEdit, QPushButton, QCheckBox, QApplication, QMainWindow, \
                             QFileDialog, QDialog, QScrollArea, QMessageBox, QWidget, QTextEdit
 from PyQt5 import QtCore, QtGui
@@ -24,7 +24,7 @@ TEMP_DIR = os.path.join(THIS_FILEPATH,'tmp')
 
 
 
-DEV_OVERRIDE = False
+DEV_OVERRIDE = True
 try:
     with open(os.path.join(THIS_FILEPATH,'dev','path.txt'),'r') as f:
         DEV_ROM_PATH = f.read()
@@ -117,6 +117,39 @@ class MainWindow(object):
         self.shop_tiering_checkbox.setToolTip('Checked: Shops are placed with wares of increasing value throughout the game.\nUnchecked: All shops have randomly assigned wares of any value.\nBoth options do not adhere to a placement average system, where different shops may have similar items.\nWares can be placed with higher or lower tiers than the shop tier by design, but are usually +/- 1 with tiering.')
         self.shop_tiering_checkbox.setChecked(True)
 
+        self.shop_tiering_checkbox = QCheckBox("Shop tiering",self.window)
+        self.shop_tiering_checkbox.setGeometry(QtCore.QRect(10, 180, 350, 30))
+        self.shop_tiering_checkbox.setToolTip('Checked: Shops are placed with wares of increasing value throughout the game.\nUnchecked: All shops have randomly assigned wares of any value.\nBoth options do not adhere to a placement average system, where different shops may have similar items.\nWares can be placed with higher or lower tiers than the shop tier by design, but are usually +/- 1 with tiering.')
+        self.shop_tiering_checkbox.setChecked(True)
+
+
+
+
+
+        self.starting_locations_label = QLabel("Starting locations:",self.window)
+        self.starting_locations_label.setGeometry(QtCore.QRect(389, 160, 200, 30))
+        self.starting_locations_label.setToolTip('1: Player starts in Aliahan.\n2-3: Player starts in Aliahan and is given an extra 1-2 random warp locations.')
+        
+        self.starting_locations_combobox = QComboBox(self.window)
+        self.starting_locations_combobox.setGeometry(QtCore.QRect(540, 160, 40, 30))
+        self.starting_locations_combobox.setToolTip('1: Player starts in Aliahan.\n2-3: Player starts in Aliahan and is given an extra 1-2 random warp locations.')
+        self.starting_locations_combobox.addItem("1")
+        self.starting_locations_combobox.addItem("2")
+        self.starting_locations_combobox.addItem("3")
+
+        
+        self.exp_multiplier_label = QLabel("EXP multiplier:",self.window)
+        self.exp_multiplier_label.setGeometry(QtCore.QRect(413, 200, 200, 30))
+        self.exp_multiplier_label.setToolTip('EXP multiplier settings.')
+
+        
+        self.exp_multiplier_combobox = QComboBox(self.window)
+        self.exp_multiplier_combobox.setGeometry(QtCore.QRect(540, 200, 40, 30))
+        self.exp_multiplier_combobox.setToolTip('EXP multiplier settings.')
+        self.exp_multiplier_combobox.addItem("4")
+        self.exp_multiplier_combobox.addItem("2")
+        self.exp_multiplier_combobox.addItem("1")
+
 
 
         self.small_medal_count_label = QLabel("Small Medal count:",self.window)
@@ -126,7 +159,7 @@ class MainWindow(object):
         self.small_medal_count_input = QLineEdit("15",self.window)
         self.small_medal_count_input.setGeometry(QtCore.QRect(540, 120, 40, 30))
         self.small_medal_count_input.setValidator(self.onlyInt)        
-
+        self.small_medal_count_input.setToolTip('Number of Small Medals to place in the world. Only 12 Small Medals are required for all rewards.\nMinimum amount is 0, and maximum amount is 50.')  
         
         self.generate_button = QPushButton("Generate",self.window)
         self.generate_button.setGeometry(QtCore.QRect(10, 240, 580, 30))
@@ -220,8 +253,8 @@ class MainWindow(object):
         # parse configs into dict
 
         if self.rom_label_input.text() != '' or DEV_OVERRIDE:
-            if DEV_OVERRIDE:
-                self.rom_label_input.setText(DEV_ROM_PATH)
+            # if DEV_OVERRIDE:
+            #     self.rom_label_input.setText(DEV_ROM_PATH)
             
             try:
                 try:        
@@ -245,6 +278,8 @@ class MainWindow(object):
                                 'small_medal_count' : medal_parse,
                                 'reward_tiering' : self.reward_tiering_checkbox.isChecked(),
                                 'shop_tiering' : self.shop_tiering_checkbox.isChecked(),
+                                'starting_locations' : self.starting_locations_combobox.currentText(),
+                                'exp_multiplier' : self.exp_multiplier_combobox.currentText(),
                                 'seed_num' : SEED_NUM}
         
                 self.update_log_text("Beginning seed generation...")        
@@ -285,9 +320,14 @@ class MainWindow(object):
 #            logging.info(self.rom_label_input.text())
             shutil.copy(self.rom_label_input.text(), new_rom_path)
             
-            sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", os.path.join("tmp","patch_r.asm"), new_rom_path]
-
+            sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", os.path.join("asar","patch.asm"), new_rom_path]
             subprocess.call(sh_calls)
+            
+            if DEV_OVERRIDE:
+                sh_calls = ["%s" % os.path.join(THIS_FILEPATH,'asar','asar.exe'), "--fix-checksum=off", os.path.join("asar","patch2.asm"), new_rom_path]
+                subprocess.call(sh_calls)
+                
+                
             new_new_rom_path = os.path.join(THIS_FILEPATH, 'output',os.path.basename(new_rom_path))
 #            logging.info(new_rom_path)
             shutil.move(new_rom_path, new_new_rom_path)
@@ -296,8 +336,8 @@ class MainWindow(object):
             except Exception as e:
                 logging.info("Could not remove files from tmp dir: %s" % e)
             
-            logging.info("File %s successfully patched & created! " % (new_rom_path))
-            self.update_log_text("File %s successfully patched & created! " % (new_rom_path))
+            logging.info("File %s successfully patched & created! " % (new_new_rom_path))
+            self.update_log_text("File %s successfully patched & created! " % (new_new_rom_path))
         except Exception as e:
             logging.info("File %s was NOT successfully patched & created: %s " % (new_rom_path, e))
             self.update_log_text("File %s was NOT successfully patched & created: %s " % (new_rom_path, e))

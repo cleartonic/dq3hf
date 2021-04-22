@@ -12,7 +12,7 @@ TEMP_DIR = os.path.join(THIS_FILEPATH,'tmp')
 
 
 
-DEV_OVERRIDE = False
+DEV_OVERRIDE = True
 try:
     with open(os.path.join(THIS_FILEPATH,'dev','path.txt'),'r') as f:
         DEV_ROM_PATH = f.read()
@@ -30,50 +30,15 @@ with open(os.path.join('data','items.json'),'r') as f:
     items_dict = json.load(f)
 with open(os.path.join('data','shops.json'),'r') as f:
     shops_dict = json.load(f)
+with open(os.path.join('data','warps.json'),'r') as f:
+    warps_dict = json.load(f)
+
 
 if not os.path.exists(os.path.join(THIS_FILEPATH,"output")):
     os.mkdir(os.path.join(THIS_FILEPATH,"output"))
 if not os.path.exists(os.path.join(THIS_FILEPATH,"tmp")):
     os.mkdir(os.path.join(THIS_FILEPATH,"tmp"))
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 def b2i(byte):
     return int(byte,base=16)
@@ -338,9 +303,15 @@ class ShopManager():
                     temp_shop['items'][c.name] = c.bag_id
                 
                 if shop.name == 'Kol Item 2':
-                    temp_shop['items']['King Sword'] = 'E9'
-                if shop.name == 'Sioux Item':
                     # delete last item, replace
+                    # 
+                    # breakpoint()
+                    temp_shop = {'items': {}}
+                    for k, v in shop_data['Kol Item 1']['items'].items():    
+                        temp_shop['items'][k] = v
+                    temp_shop['items']['King Sword'] = '1E'
+                if shop.name == 'Sioux Item':
+                    # delete last 2 items, replace
                     new_dict = {}
                     for k in list(temp_shop['items'].keys())[:-2]:
                         new_dict[k] = temp_shop['items'][k]
@@ -355,6 +326,7 @@ class ShopManager():
                 temp_shop['tier'] = shop.tier
                 shop_data[shop.name] = temp_shop
         
+        # breakpoint()
         output_str = '; SHOP DATA'
         shop_log = "\n========== Shops:==========\n"
         
@@ -840,10 +812,12 @@ class World():
         
         spoiler_str += '\n'
         
+        spoiler_str += self.starting_locations_log
         spoiler_str += self.report_placed_items()
         spoiler_str += self.report_placed_medal_items()     
         spoiler_str += self.sm.shop_log
         spoiler_str += self.report_placed_keys()     
+        
         
         self.spoiler_log = spoiler_str
         with open(os.path.join(THIS_FILEPATH,'output','dq3_%s.log' % self.seed_num),'w') as f:
@@ -903,6 +877,8 @@ class World():
         output_str += self.medal_asm
         output_str += self.sm.shop_asm
         output_str += self.cm.generate_price_changes()
+        output_str += self.starting_locations_asm
+        output_str += self.exp_multiplier_asm
 
         if DEV_OVERRIDE:
             with open(os.path.join(THIS_FILEPATH,'asar','patch_r.asm'),'w') as f:
@@ -910,7 +886,48 @@ class World():
         with open(os.path.join(TEMP_DIR,'patch_r.asm'),'w') as f:
             f.write(output_str)
             
+    def set_starting_locations(self):
+        new_locs = int(self.seed_config['starting_locations']) - 1
         
+        e1 = '01' # aliahan prefixed
+        e2 = '00'
+        e3 = '00'
+        
+        chosens = []
+        locations = list(warps_dict.keys())
+        if new_locs > 0:
+            chosens = random.sample(locations,new_locs)
+            for c in chosens:
+                data = warps_dict[c]
+                if data['address'] == '7E3681':
+                    e1 = i2b(b2i(e1) + b2i(data['bit']))
+                    if len(e1) == 1:
+                        e1 = "0" + e1
+                if data['address'] == '7E3682':
+                    e2 = i2b(b2i(e2) + b2i(data['bit']))
+                    if len(e2) == 1:
+                        e2 = "0" + e2
+                if data['address'] == '7E3683':
+                    e3 = i2b(b2i(e3) + b2i(data['bit']))
+                    if len(e3) == 1:
+                        e3 = "0" + e3
+
+        output_str = "\n;starting locations bits;\norg $C0F570\ndb $%s, $%s, $%s" % (e1,e2,e3)
+                
+        
+        self.starting_locations_asm = output_str
+        starting_locations_log = '\n==========Starting Locations:==========\nAliahan\n'
+        if chosens:
+            for c in chosens:
+                starting_locations_log += '%s\n' % warps_dict[c]['name']
+        starting_locations_log += '\n'
+        self.starting_locations_log = starting_locations_log
+
+
+    def set_exp_multiplier(self):
+        exp = "0%s" % int(self.seed_config['exp_multiplier'])
+        self.exp_multiplier_asm = "\n;exp multiplier;\norg $C0F578\ndb $%s\n" % (exp)
+
         
     def generate_seed(self):
         key_items = [KeyItem(i) for i in ['thief_key','magic_key','magic_ball','final_key','king_letter','lovely_memories','gaia_sword','sailor_bone','thirsty_pitcher','sacred_talisman','blue_orb','green_orb','red_orb','silver_orb','yellow_orb','purple_orb','light_orb','stones_of_sunlight','rain_staff','ra_mirror','fairy_flute','dream_ruby','wake_up_powder']]
@@ -944,7 +961,8 @@ class World():
             self.place_items()
             self.place_medal_rewards()
             self.sm.generate_shops()
-            
+            self.set_starting_locations()
+            self.set_exp_multiplier()
             
             # reporting            
             self.generate_patch()
@@ -977,6 +995,8 @@ if __name__ == '__main__':
                    'reward_tiering' : True,
                    'shop_tiering' : True,
                    'small_medal_count' : 15,
+                   'starting_locations' : '3',
+                   'exp_multiplier' : '4',
                    'seed_num' : SEED_NUM}
     y = World(random, seed_config)
     
