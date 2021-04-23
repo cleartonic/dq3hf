@@ -990,7 +990,7 @@ if __name__ == '__main__':
     random.seed(SEED_NUM)
     
     
-    seed_config = {'starting_areas' : ['Aliahan'], 
+    seed_config = {'starting_areas' : ['Aliahan', 'Samanosa'], 
                    'place_keys_in_chests_only' : True,
                    'reward_tiering' : True,
                    'shop_tiering' : True,

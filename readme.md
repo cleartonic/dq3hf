@@ -4,6 +4,8 @@ Dragon Quest III: Heavenly Flight (DQ3HF) is a key item randomizer for Dragon Qu
 
 You can read more about this randomizer mod at [cleartonic.net's DQ3HF page.](https://cleartonic.net/dq3hf/dq3hf.html)
 
+Join the [Discord server for this project here.](https://discord.gg/YwygyUWMEd)
+
 ## How to play
 
 Download the latest release at this repository's [releases page.](https://github.com/cleartonic/dq3hf/releases/)  After extracting the release files into a directory, open "dq3hf.exe" and make sure your operating system allows the executable to be opened. 

@@ -24,7 +24,7 @@ TEMP_DIR = os.path.join(THIS_FILEPATH,'tmp')
 
 
 
-DEV_OVERRIDE = True
+DEV_OVERRIDE = False
 try:
     with open(os.path.join(THIS_FILEPATH,'dev','path.txt'),'r') as f:
         DEV_ROM_PATH = f.read()
@@ -66,6 +66,8 @@ class MainWindow(object):
         self.title_label = QLabel("Dragon Quest III: Heavenly Flight",self.window)
         self.title_label.setGeometry(QtCore.QRect(0, 0, self.SCREEN_WIDTH, 30))
         self.title_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.title_label.setStyleSheet("font-size:18px;")
+
         
         self.title_label_border = QFrame(self.window)
         self.title_label_border.setGeometry(QtCore.QRect(-10, -10, self.SCREEN_WIDTH + 20, 40))
@@ -192,13 +194,29 @@ class MainWindow(object):
         
         
         self.open_dir_button = QPushButton("Open Output Folder",self.window)
-        self.open_dir_button.setGeometry(QtCore.QRect(410, 540, 180, 30))
+        self.open_dir_button.setGeometry(QtCore.QRect(120, 540, 180, 30))
         self.open_dir_button.clicked.connect(self.open_output_folder)  
 
 
 
 
-
+        self.github_label = QLabel("Link to GitHub",self.window)
+        urlLink="<a href=\'https://github.com/cleartonic/dq3hf'style=\"color: #13bbba;\"><b>Link to GitHub</b></a>" 
+        self.github_label.setText(urlLink)
+        self.github_label.setGeometry(QtCore.QRect(465, 530, 180, 30))
+        self.github_label.setAlignment(QtCore.Qt.AlignBottom)
+        self.github_label.setAlignment(QtCore.Qt.AlignLeft)
+        self.github_label.setOpenExternalLinks(True)
+        self.github_label.setStyleSheet("font-size:18px")
+        
+        self.tw_label = QLabel("Link to GitHub",self.window)
+        urlLink="<a href=\'https://twitter.com/cleartonic'style=\"color: #665ae8;\"><b>@cleartonic</b></a>" 
+        self.tw_label.setText(urlLink)
+        self.tw_label.setGeometry(QtCore.QRect(487, 560, 180, 30))
+        self.tw_label.setAlignment(QtCore.Qt.AlignBottom)
+        self.tw_label.setAlignment(QtCore.Qt.AlignLeft)
+        self.tw_label.setOpenExternalLinks(True)
+        self.tw_label.setStyleSheet("font-size:18px;")
 
 
 
