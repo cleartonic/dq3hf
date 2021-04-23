@@ -295,3 +295,6 @@ jsl $C44777
 jml $C44532
 
 
+; fix gaia sword event
+org $CC90D9
+lda #$0001
