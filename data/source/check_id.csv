@@ -255,7 +255,7 @@ id,address,data,item_data,item_lookup,check_type,og_name,area,tier,location,type
 254,C87760,414c1000721502,0072,072,pickup,Pachisi Ticket,Ra Mirror Cave,3,Floor B1 7,chest,valid,
 255,C87767,41d00e00541602,0054,054,pickup,Life Stone,Ra Mirror Cave,3,Floor B1 8,chest,valid,
 256,C8776E,81c30c80231702,8023,823,pickup,Plush Suit,Ra Mirror Cave,3,Floor B2 1,chest,valid,
-257,C87775,41c50b00524400,0052,052,pickup,Mirror Of Ra,Ra Mirror Cave,3,Floor B2 2,chest,valid,
+257,C87775,41c50b00524400,0052,052,pickup,Mirror Of Ra,Ra Mirror Cave,3,Floor B2 2,chest,no_keys,
 258,C8777C,01c30900341802,0034,034,pickup,Hero Shield,Loto Cave,5,Floor B3 1,chest,valid,
 259,C87783,c1440b00681902,0068,068,pickup,Small Medal,Loto Cave,5,Floor B3 2,chest,valid,
 260,C8778A,80420600721d02,0072,072,pickup,Pachisi Ticket,Marsh Cave,5,Floor B1 Drawer,search,valid,
@@ -453,7 +453,7 @@ id,address,data,item_data,item_lookup,check_type,og_name,area,tier,location,type
 452,CCA02C,,,,event,Ortega's Helmet,Muor,5,Muor Family,event,valid,thief_key
 453,CCA05F,,,,event,Sailor's Bone,Sailor Bone Hut,4,Change Staff Man,event,valid,
 454,CCA0B4,,,,event,Green Orb,Tedanki,4,Tedanki Prisoner,event,valid,final_key
-455,"CCA0E7, CB40D1",,,,event,Purple Orb,Zipangu,5,Orochi II,event,valid,
+455,"CCA0E7, CB40D1",,,,event,Purple Orb,Zipangu,5,Orochi II,event,no_keys,
 456,CCA0F8,,,,event,Yellow Orb,Merchant Town,5,Merchant Town,event,valid,
 457,CCA13C,,,,event,Magic Bikini,Ashalam,6,Domdora Dancer Sidequest,event,valid,magic_key
 458,CCA15E,,,,event,Sacred Talisman,Rubiss Tower,6,Rubiss Statue,event,valid,thief_key
