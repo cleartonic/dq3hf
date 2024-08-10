@@ -1,0 +1,3 @@
+[submodule "vendor/asar"]
+	path = vendor/asar
+	url = https://github.com/RPGHacker/asar.git
